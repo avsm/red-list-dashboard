@@ -4,16 +4,23 @@ The overall goal for this project is to identify candidate locations for collect
 
 To motivate why this is important, we start by understanding how many GBIF samples we have for every plant species and this distribution. My guess is that we have many samples for a few species, especially in the global north, but most species have very few samples. This web app quantifies this.
 
+## Data Source
+
+Occurrence counts are from GBIF with the following filters:
+- `has_coordinate=true` - only georeferenced records
+- `has_geospatial_issue=false` - excluding records with known geospatial issues
+
 ## Key Findings
 
-- **356,505** plant species with georeferenced records in GBIF
-- **462M** total georeferenced occurrences
-- **72.5%** have 100 or fewer occurrences
-- **36.5%** have 10 or fewer occurrences
+- **354,357** plant species with georeferenced records in GBIF
+- **461M** total georeferenced occurrences
+- **72.6%** have 100 or fewer occurrences
+- **36.6%** have 10 or fewer occurrences
 - **9.3%** have just 1 occurrence
+- Median occurrences per species: **24**
 - Top species: *Urtica dioica* (Stinging nettle) with **1.8M** occurrences
 
-![Distribution of plant species occurrence counts](docs/plant_species_distribution_plots.png)
+For example, [African Baobab (*Adansonia digitata*)](https://www.gbif.org/occurrence/search?has_coordinate=true&has_geospatial_issue=false&taxon_key=5406695) has **11,281** occurrences.
 
 ## Web App
 
