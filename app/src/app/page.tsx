@@ -1,0 +1,383 @@
+"use client";
+
+import { useState, useEffect, useCallback } from "react";
+
+interface SpeciesRecord {
+  species_key: number;
+  occurrence_count: number;
+}
+
+interface SpeciesDetails {
+  key: number;
+  scientificName: string;
+  canonicalName: string;
+  vernacularName?: string;
+  kingdom: string;
+  family: string;
+  genus: string;
+  gbifUrl: string;
+}
+
+interface Stats {
+  total: number;
+  filtered: number;
+  totalOccurrences: number;
+  median: number;
+  distribution: {
+    one: number;
+    lte5: number;
+    lte10: number;
+    lte50: number;
+    lte100: number;
+    lte1000: number;
+  };
+}
+
+interface ApiResponse {
+  data: SpeciesRecord[];
+  pagination: {
+    page: number;
+    limit: number;
+    total: number;
+    totalPages: number;
+  };
+  stats: Stats;
+}
+
+type FilterPreset = "all" | "dataDeficient" | "veryRare" | "singletons";
+
+const FILTER_PRESETS: Record<FilterPreset, { minCount: number; maxCount: number; label: string }> = {
+  all: { minCount: 0, maxCount: 999999999, label: "All Species" },
+  dataDeficient: { minCount: 0, maxCount: 100, label: "Data-Deficient (≤100)" },
+  veryRare: { minCount: 0, maxCount: 10, label: "Very Rare (≤10)" },
+  singletons: { minCount: 1, maxCount: 1, label: "Singletons (=1)" },
+};
+
+export default function Home() {
+  const [data, setData] = useState<SpeciesRecord[]>([]);
+  const [stats, setStats] = useState<Stats | null>(null);
+  const [pagination, setPagination] = useState({ page: 1, limit: 50, total: 0, totalPages: 0 });
+  const [loading, setLoading] = useState(true);
+  const [filterPreset, setFilterPreset] = useState<FilterPreset>("all");
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
+  const [selectedSpecies, setSelectedSpecies] = useState<SpeciesDetails | null>(null);
+  const [speciesCache, setSpeciesCache] = useState<Record<number, SpeciesDetails>>({});
+  const [loadingSpecies, setLoadingSpecies] = useState<number | null>(null);
+
+  const fetchData = useCallback(async () => {
+    setLoading(true);
+    const { minCount, maxCount } = FILTER_PRESETS[filterPreset];
+    const params = new URLSearchParams({
+      page: pagination.page.toString(),
+      limit: pagination.limit.toString(),
+      minCount: minCount.toString(),
+      maxCount: maxCount.toString(),
+      sort: sortOrder,
+    });
+
+    const response = await fetch(`/api/species?${params}`);
+    const result: ApiResponse = await response.json();
+
+    setData(result.data);
+    setStats(result.stats);
+    setPagination(result.pagination);
+    setLoading(false);
+  }, [pagination.page, pagination.limit, filterPreset, sortOrder]);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
+  const fetchSpeciesDetails = async (speciesKey: number) => {
+    if (speciesCache[speciesKey]) {
+      setSelectedSpecies(speciesCache[speciesKey]);
+      return;
+    }
+
+    setLoadingSpecies(speciesKey);
+    try {
+      const response = await fetch(`/api/species/${speciesKey}`);
+      const details: SpeciesDetails = await response.json();
+      setSpeciesCache((prev) => ({ ...prev, [speciesKey]: details }));
+      setSelectedSpecies(details);
+    } catch (error) {
+      console.error("Failed to fetch species details:", error);
+    }
+    setLoadingSpecies(null);
+  };
+
+  const handleFilterChange = (preset: FilterPreset) => {
+    setFilterPreset(preset);
+    setPagination((prev) => ({ ...prev, page: 1 }));
+  };
+
+  const formatNumber = (num: number) => num.toLocaleString();
+
+  const getPercentage = (count: number, total: number) => ((count / total) * 100).toFixed(1);
+
+  return (
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 p-4 md:p-8">
+      <main className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">
+            Plant Species Data Explorer
+          </h1>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            Explore GBIF occurrence data for {stats ? formatNumber(stats.total) : "..."} plant species
+          </p>
+        </div>
+
+        {/* Stats Cards */}
+        {stats && (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 shadow-sm border border-zinc-200 dark:border-zinc-800">
+              <div className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
+                {formatNumber(stats.total)}
+              </div>
+              <div className="text-sm text-zinc-500">Total Species</div>
+            </div>
+            <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 shadow-sm border border-zinc-200 dark:border-zinc-800">
+              <div className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
+                {formatNumber(stats.totalOccurrences)}
+              </div>
+              <div className="text-sm text-zinc-500">Total Occurrences</div>
+            </div>
+            <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 shadow-sm border border-zinc-200 dark:border-zinc-800">
+              <div className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
+                {formatNumber(stats.median)}
+              </div>
+              <div className="text-sm text-zinc-500">Median Occurrences</div>
+            </div>
+            <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 shadow-sm border border-zinc-200 dark:border-zinc-800">
+              <div className="text-2xl font-bold text-orange-600">
+                {getPercentage(stats.distribution.lte100, stats.total)}%
+              </div>
+              <div className="text-sm text-zinc-500">Data-Deficient (≤100)</div>
+            </div>
+          </div>
+        )}
+
+        {/* Distribution Breakdown */}
+        {stats && (
+          <div className="bg-white dark:bg-zinc-900 rounded-xl p-6 shadow-sm border border-zinc-200 dark:border-zinc-800 mb-8">
+            <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
+              Distribution Breakdown
+            </h2>
+            <div className="space-y-3">
+              {[
+                { label: "= 1 occurrence (singletons)", count: stats.distribution.one },
+                { label: "≤ 5 occurrences", count: stats.distribution.lte5 },
+                { label: "≤ 10 occurrences", count: stats.distribution.lte10 },
+                { label: "≤ 50 occurrences", count: stats.distribution.lte50 },
+                { label: "≤ 100 occurrences", count: stats.distribution.lte100 },
+                { label: "≤ 1000 occurrences", count: stats.distribution.lte1000 },
+              ].map(({ label, count }) => (
+                <div key={label} className="flex items-center gap-4">
+                  <div className="w-48 text-sm text-zinc-600 dark:text-zinc-400">{label}</div>
+                  <div className="flex-1 bg-zinc-100 dark:bg-zinc-800 rounded-full h-4 overflow-hidden">
+                    <div
+                      className="bg-orange-500 h-full rounded-full transition-all duration-500"
+                      style={{ width: `${(count / stats.total) * 100}%` }}
+                    />
+                  </div>
+                  <div className="w-32 text-sm text-right text-zinc-600 dark:text-zinc-400">
+                    {formatNumber(count)} ({getPercentage(count, stats.total)}%)
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Filters and Controls */}
+        <div className="flex flex-wrap gap-4 mb-6">
+          <div className="flex gap-2">
+            {(Object.keys(FILTER_PRESETS) as FilterPreset[]).map((preset) => (
+              <button
+                key={preset}
+                onClick={() => handleFilterChange(preset)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  filterPreset === preset
+                    ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+                    : "bg-white text-zinc-700 border border-zinc-200 hover:bg-zinc-50 dark:bg-zinc-800 dark:text-zinc-300 dark:border-zinc-700 dark:hover:bg-zinc-700"
+                }`}
+              >
+                {FILTER_PRESETS[preset].label}
+              </button>
+            ))}
+          </div>
+          <button
+            onClick={() => setSortOrder(sortOrder === "desc" ? "asc" : "desc")}
+            className="px-4 py-2 rounded-lg text-sm font-medium bg-white text-zinc-700 border border-zinc-200 hover:bg-zinc-50 dark:bg-zinc-800 dark:text-zinc-300 dark:border-zinc-700 dark:hover:bg-zinc-700"
+          >
+            Sort: {sortOrder === "desc" ? "Most → Least" : "Least → Most"}
+          </button>
+        </div>
+
+        {/* Results count */}
+        <div className="text-sm text-zinc-500 mb-4">
+          Showing {formatNumber(pagination.total)} species
+          {filterPreset !== "all" && ` (filtered: ${FILTER_PRESETS[filterPreset].label})`}
+        </div>
+
+        {/* Data Table */}
+        <div className="bg-white dark:bg-zinc-900 rounded-xl shadow-sm border border-zinc-200 dark:border-zinc-800 overflow-hidden mb-6">
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead className="bg-zinc-50 dark:bg-zinc-800">
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider">
+                    Rank
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider">
+                    Species Key
+                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider">
+                    Species Name
+                  </th>
+                  <th className="px-6 py-3 text-right text-xs font-medium text-zinc-500 uppercase tracking-wider">
+                    Occurrences
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-zinc-200 dark:divide-zinc-800">
+                {loading ? (
+                  <tr>
+                    <td colSpan={4} className="px-6 py-8 text-center text-zinc-500">
+                      Loading...
+                    </td>
+                  </tr>
+                ) : (
+                  data.map((record, index) => {
+                    const rank = sortOrder === "desc"
+                      ? (pagination.page - 1) * pagination.limit + index + 1
+                      : pagination.total - ((pagination.page - 1) * pagination.limit + index);
+                    const cached = speciesCache[record.species_key];
+                    return (
+                      <tr
+                        key={record.species_key}
+                        className="hover:bg-zinc-50 dark:hover:bg-zinc-800 cursor-pointer transition-colors"
+                        onClick={() => fetchSpeciesDetails(record.species_key)}
+                      >
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-zinc-500">
+                          #{formatNumber(rank)}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-mono text-zinc-600 dark:text-zinc-400">
+                          {record.species_key}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-zinc-900 dark:text-zinc-100">
+                          {loadingSpecies === record.species_key ? (
+                            <span className="text-zinc-400">Loading...</span>
+                          ) : cached ? (
+                            <span>
+                              <span className="italic">{cached.canonicalName}</span>
+                              {cached.vernacularName && (
+                                <span className="text-zinc-500 ml-2">({cached.vernacularName})</span>
+                              )}
+                            </span>
+                          ) : (
+                            <span className="text-zinc-400">Click to load</span>
+                          )}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-zinc-900 dark:text-zinc-100">
+                          {formatNumber(record.occurrence_count)}
+                        </td>
+                      </tr>
+                    );
+                  })
+                )}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Pagination */}
+        <div className="flex items-center justify-between">
+          <div className="text-sm text-zinc-500">
+            Page {pagination.page} of {formatNumber(pagination.totalPages)}
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setPagination((prev) => ({ ...prev, page: prev.page - 1 }))}
+              disabled={pagination.page <= 1}
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-white text-zinc-700 border border-zinc-200 hover:bg-zinc-50 disabled:opacity-50 disabled:cursor-not-allowed dark:bg-zinc-800 dark:text-zinc-300 dark:border-zinc-700"
+            >
+              Previous
+            </button>
+            <button
+              onClick={() => setPagination((prev) => ({ ...prev, page: prev.page + 1 }))}
+              disabled={pagination.page >= pagination.totalPages}
+              className="px-4 py-2 rounded-lg text-sm font-medium bg-white text-zinc-700 border border-zinc-200 hover:bg-zinc-50 disabled:opacity-50 disabled:cursor-not-allowed dark:bg-zinc-800 dark:text-zinc-300 dark:border-zinc-700"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+
+        {/* Species Detail Modal */}
+        {selectedSpecies && (
+          <div
+            className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
+            onClick={() => setSelectedSpecies(null)}
+          >
+            <div
+              className="bg-white dark:bg-zinc-900 rounded-2xl p-6 max-w-lg w-full shadow-xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h2 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 italic">
+                    {selectedSpecies.canonicalName}
+                  </h2>
+                  {selectedSpecies.vernacularName && (
+                    <p className="text-zinc-500">{selectedSpecies.vernacularName}</p>
+                  )}
+                </div>
+                <button
+                  onClick={() => setSelectedSpecies(null)}
+                  className="text-zinc-400 hover:text-zinc-600"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <dl className="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <dt className="text-zinc-500">Kingdom</dt>
+                  <dd className="font-medium text-zinc-900 dark:text-zinc-100">{selectedSpecies.kingdom}</dd>
+                </div>
+                <div>
+                  <dt className="text-zinc-500">Family</dt>
+                  <dd className="font-medium text-zinc-900 dark:text-zinc-100">{selectedSpecies.family}</dd>
+                </div>
+                <div>
+                  <dt className="text-zinc-500">Genus</dt>
+                  <dd className="font-medium text-zinc-900 dark:text-zinc-100">{selectedSpecies.genus}</dd>
+                </div>
+                <div>
+                  <dt className="text-zinc-500">GBIF Key</dt>
+                  <dd className="font-mono text-zinc-900 dark:text-zinc-100">{selectedSpecies.key}</dd>
+                </div>
+              </dl>
+              <div className="mt-6">
+                <a
+                  href={selectedSpecies.gbifUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                >
+                  View on GBIF
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+      </main>
+    </div>
+  );
+}
