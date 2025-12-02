@@ -2,17 +2,24 @@
 """
 Train and save classifier models for all experiment species.
 
-These saved models can be loaded quickly for real-time predictions
-without needing to reload the full mosaic or retrain.
+Supports two model types:
+1. LogisticRegression (logistic) - Simple, fast, interpretable
+2. MLP with MC Dropout (mlp) - Provides uncertainty estimates
+
+Models are saved to separate directories for comparison:
+- models/logistic/{taxon_key}.pkl
+- models/mlp/{taxon_key}.pt
 """
 
+import argparse
 import logging
 from pathlib import Path
+from typing import Literal
 
 import numpy as np
 
 from finder import get_species_info, fetch_occurrences, EmbeddingMosaic
-from finder.methods import ClassifierMethod
+from finder.methods import ClassifierMethod, MLPClassifierMethod
 from finder.pipeline import REGIONS, sample_background
 
 logging.basicConfig(level=logging.INFO, format="%(message)s")
@@ -36,9 +43,15 @@ REGION = "cambridge"
 NEGATIVE_RATIO = 5
 SEED = 42
 
+ModelType = Literal["logistic", "mlp", "both"]
 
-def train_and_save_model(species_name: str, mosaic: EmbeddingMosaic) -> bool:
-    """Train a classifier for a species and save it."""
+
+def train_and_save_model(
+    species_name: str,
+    mosaic: EmbeddingMosaic,
+    model_type: ModelType = "both",
+) -> bool:
+    """Train classifier(s) for a species and save them."""
     logger.info(f"\n{'='*60}")
     logger.info(f"Training: {species_name}")
     logger.info("=" * 60)
@@ -73,26 +86,62 @@ def train_and_save_model(species_name: str, mosaic: EmbeddingMosaic) -> bool:
         )
         logger.info(f"  Background samples: {len(negative_embeddings)}")
 
-        # Train classifier
-        classifier = ClassifierMethod()
-        classifier.fit(positive_embeddings, negative_embeddings)
+        # Train and save Logistic Regression
+        if model_type in ("logistic", "both"):
+            logger.info("  Training Logistic Regression...")
+            logistic_classifier = ClassifierMethod()
+            logistic_classifier.fit(positive_embeddings, negative_embeddings)
 
-        # Save model
-        MODELS_DIR.mkdir(parents=True, exist_ok=True)
-        model_path = MODELS_DIR / f"{taxon_key}.pkl"
-        classifier.save(model_path)
-        logger.info(f"  Saved: {model_path}")
+            logistic_dir = MODELS_DIR / "logistic"
+            logistic_dir.mkdir(parents=True, exist_ok=True)
+            logistic_path = logistic_dir / f"{taxon_key}.pkl"
+            logistic_classifier.save(logistic_path)
+            logger.info(f"  Saved: {logistic_path}")
+
+        # Train and save MLP with MC Dropout
+        if model_type in ("mlp", "both"):
+            logger.info("  Training MLP with MC Dropout...")
+            mlp_classifier = MLPClassifierMethod(
+                hidden_dim=256,
+                dropout_rate=0.3,
+                learning_rate=1e-3,
+                n_epochs=100,
+                batch_size=64,
+            )
+            mlp_classifier.fit(positive_embeddings, negative_embeddings, verbose=True)
+
+            mlp_dir = MODELS_DIR / "mlp"
+            mlp_dir.mkdir(parents=True, exist_ok=True)
+            mlp_path = mlp_dir / f"{taxon_key}.pt"
+            mlp_classifier.save(mlp_path)
+            logger.info(f"  Saved: {mlp_path}")
 
         return True
 
     except Exception as e:
         logger.error(f"  Error: {e}")
+        import traceback
+        traceback.print_exc()
         return False
 
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="Train classifier models for species habitat prediction"
+    )
+    parser.add_argument(
+        "--model-type",
+        type=str,
+        choices=["logistic", "mlp", "both"],
+        default="both",
+        help="Type of model to train: logistic, mlp, or both (default: both)",
+    )
+    args = parser.parse_args()
+
+    model_type: ModelType = args.model_type
+
     logger.info("=" * 60)
-    logger.info("Training Classifier Models")
+    logger.info(f"Training Classifier Models (type: {model_type})")
     logger.info("=" * 60)
 
     # Load mosaic once
@@ -105,7 +154,7 @@ def main():
     # Train models for each species
     success_count = 0
     for species in SPECIES_LIST:
-        if train_and_save_model(species, mosaic):
+        if train_and_save_model(species, mosaic, model_type=model_type):
             success_count += 1
 
     logger.info(f"\n{'='*60}")

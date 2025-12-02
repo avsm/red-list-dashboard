@@ -37,6 +37,10 @@ interface Point {
 interface Trial {
   seed: number;
   auc: number;
+  precision: number;
+  recall: number;
+  f1: number;
+  accuracy: number;
   mean_positive: number;
   mean_negative: number;
   n_test_positive: number;
@@ -53,6 +57,12 @@ interface Experiment {
   n_trials: number;
   auc_mean: number;
   auc_std: number;
+  f1_mean: number;
+  f1_std: number;
+  precision_mean: number;
+  precision_std: number;
+  recall_mean: number;
+  recall_std: number;
   trials: Trial[];
 }
 
@@ -60,10 +70,13 @@ interface SpeciesData {
   species: string;
   species_key: number;
   region: string;
+  model_type?: string;
   n_occurrences: number;
   n_trials: number;
   experiments: Experiment[];
 }
+
+type ExperimentModelType = "logistic" | "mlp";
 
 interface SpeciesNames {
   [key: string]: string | undefined; // species_key -> vernacular name
@@ -73,29 +86,34 @@ interface LocalPrediction {
   lon: number;
   lat: number;
   score: number;
+  uncertainty?: number;
+  confidence?: number;
 }
 
 interface LocalPredictionResult {
   predictions: LocalPrediction[];
   species: string;
   species_key: number;
+  model_type: "logistic" | "mlp";
+  has_uncertainty: boolean;
   center: { lon: number; lat: number };
   grid_size_m: number;
   n_pixels: number;
 }
 
+type ModelType = "logistic" | "mlp";
+
 const SPECIES_FILES = [
   "quercus_robur",
   "fraxinus_excelsior",
-  "alnus_glutinosa",
-  "crataegus_monogyna",
   "urtica_dioica",
-  "salix_caprea",
-  "aesculus_hippocastanum",
 ];
 
 export default function ExperimentPage() {
-  const [speciesData, setSpeciesData] = useState<Record<string, SpeciesData>>({});
+  const [speciesDataByModel, setSpeciesDataByModel] = useState<Record<ExperimentModelType, Record<string, SpeciesData>>>({
+    logistic: {},
+    mlp: {},
+  });
   const [speciesNames, setSpeciesNames] = useState<SpeciesNames>({});
   const [selectedSpecies, setSelectedSpecies] = useState<string>("quercus_robur");
   const [selectedNPositive, setSelectedNPositive] = useState<number>(10);
@@ -103,6 +121,7 @@ export default function ExperimentPage() {
   const [threshold, setThreshold] = useState<number>(0.5);
   const [mounted, setMounted] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [experimentModelType, setExperimentModelType] = useState<ExperimentModelType>("logistic");
 
   // Location-based prediction state
   const [userLocation, setUserLocation] = useState<{ lat: number; lon: number } | null>(null);
@@ -110,33 +129,46 @@ export default function ExperimentPage() {
   const [showHeatmap, setShowHeatmap] = useState(true);
   const [localLoading, setLocalLoading] = useState(false);
   const [localError, setLocalError] = useState<string | null>(null);
+  const [modelType, setModelType] = useState<ModelType>("mlp");
+  const [showConfidence, setShowConfidence] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    // Load experiment data
-    Promise.all(
-      SPECIES_FILES.map(async (slug) => {
-        try {
-          const res = await fetch(`/experiments/${slug}.json`);
-          if (res.ok) {
-            const data = await res.json();
-            return [slug, data] as [string, SpeciesData];
+    // Load experiment data for both model types
+    const loadModelData = async (modelType: ExperimentModelType) => {
+      const results = await Promise.all(
+        SPECIES_FILES.map(async (slug) => {
+          try {
+            const res = await fetch(`/experiments/${modelType}/${slug}.json`);
+            if (res.ok) {
+              const data = await res.json();
+              return [slug, data] as [string, SpeciesData];
+            }
+          } catch (e) {
+            console.error(`Failed to load ${modelType}/${slug}:`, e);
           }
-        } catch (e) {
-          console.error(`Failed to load ${slug}:`, e);
-        }
-        return null;
-      })
-    ).then((results) => {
+          return null;
+        })
+      );
       const data: Record<string, SpeciesData> = {};
       results.forEach((r) => {
         if (r) data[r[0]] = r[1];
       });
-      setSpeciesData(data);
+      return data;
+    };
+
+    Promise.all([
+      loadModelData("logistic"),
+      loadModelData("mlp"),
+    ]).then(([logisticData, mlpData]) => {
+      setSpeciesDataByModel({
+        logistic: logisticData,
+        mlp: mlpData,
+      });
       setLoading(false);
 
-      // Fetch vernacular names for all species
-      const speciesKeys = Object.values(data).map((d) => d.species_key);
+      // Fetch vernacular names for all species (use logistic data for keys)
+      const speciesKeys = Object.values(logisticData).map((d) => d.species_key);
       Promise.all(
         speciesKeys.map(async (key) => {
           try {
@@ -160,10 +192,16 @@ export default function ExperimentPage() {
     });
   }, []);
 
+  const speciesData = speciesDataByModel[experimentModelType];
   const currentData = speciesData[selectedSpecies];
   const currentExp = currentData?.experiments.find((e) => e.n_positive === selectedNPositive);
   const availableNPositive = currentData?.experiments.map((e) => e.n_positive) || [];
   const currentTrial = currentExp?.trials[selectedTrialIdx];
+
+  // Get comparison data from the other model
+  const otherModelType: ExperimentModelType = experimentModelType === "logistic" ? "mlp" : "logistic";
+  const otherModelData = speciesDataByModel[otherModelType][selectedSpecies];
+  const otherModelExp = otherModelData?.experiments.find((e) => e.n_positive === selectedNPositive);
 
   // Ensure selectedNPositive is valid for current species
   useEffect(() => {
@@ -204,7 +242,7 @@ export default function ExperimentPage() {
 
       // Fetch predictions for this location (500m x 500m grid)
       const res = await fetch(
-        `/api/predict-local?lat=${lat}&lon=${lon}&speciesKey=${currentData.species_key}&gridSize=500`
+        `/api/predict-local?lat=${lat}&lon=${lon}&speciesKey=${currentData.species_key}&gridSize=500&modelType=${modelType}`
       );
 
       if (!res.ok) {
@@ -269,7 +307,36 @@ export default function ExperimentPage() {
         </div>
 
         {/* Controls */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+          {/* Model type selector for experiments */}
+          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
+            <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
+              Model Type
+            </label>
+            <div className="flex rounded-lg overflow-hidden border border-zinc-200 dark:border-zinc-700">
+              <button
+                onClick={() => setExperimentModelType("logistic")}
+                className={`flex-1 px-3 py-2 text-sm font-medium transition-colors ${
+                  experimentModelType === "logistic"
+                    ? "bg-green-600 text-white"
+                    : "bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700"
+                }`}
+              >
+                Logistic
+              </button>
+              <button
+                onClick={() => setExperimentModelType("mlp")}
+                className={`flex-1 px-3 py-2 text-sm font-medium transition-colors ${
+                  experimentModelType === "mlp"
+                    ? "bg-purple-600 text-white"
+                    : "bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700"
+                }`}
+              >
+                MLP
+              </button>
+            </div>
+          </div>
+
           {/* Species selector */}
           <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
             <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
@@ -285,7 +352,7 @@ export default function ExperimentPage() {
                 return (
                   <option key={slug} value={slug}>
                     {data.species}
-                    {vernacularName ? ` (${vernacularName})` : ""} - {data.n_occurrences} occurrences
+                    {vernacularName ? ` (${vernacularName})` : ""} - {data.n_occurrences} occ
                   </option>
                 );
               })}
@@ -348,35 +415,119 @@ export default function ExperimentPage() {
         </div>
 
         {/* Metrics */}
-        <div className="grid grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
           <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
             <div className={`text-2xl font-bold ${currentExp.auc_mean >= 0.7 ? "text-green-600" : currentExp.auc_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
               {(currentExp.auc_mean * 100).toFixed(1)}%
-              <span className="text-sm font-normal text-zinc-500 ml-1">
-                ± {(currentExp.auc_std * 100).toFixed(1)}
-              </span>
             </div>
-            <div className="text-sm text-zinc-500">Mean AUC</div>
+            <div className="text-xs text-zinc-400">± {(currentExp.auc_std * 100).toFixed(1)}</div>
+            <div className="text-sm text-zinc-500">AUC</div>
           </div>
           <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
-            <div className={`text-2xl font-bold ${currentTrial.auc >= 0.7 ? "text-green-600" : currentTrial.auc >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
-              {(currentTrial.auc * 100).toFixed(1)}%
+            <div className={`text-2xl font-bold ${currentExp.f1_mean >= 0.7 ? "text-green-600" : currentExp.f1_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
+              {(currentExp.f1_mean * 100).toFixed(1)}%
             </div>
-            <div className="text-sm text-zinc-500">This Trial AUC</div>
+            <div className="text-xs text-zinc-400">± {(currentExp.f1_std * 100).toFixed(1)}</div>
+            <div className="text-sm text-zinc-500">F1 Score</div>
           </div>
           <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
-            <div className="text-2xl font-bold text-green-600">
+            <div className="text-2xl font-bold text-blue-600">
+              {(currentExp.precision_mean * 100).toFixed(1)}%
+            </div>
+            <div className="text-xs text-zinc-400">± {(currentExp.precision_std * 100).toFixed(1)}</div>
+            <div className="text-sm text-zinc-500">Precision</div>
+          </div>
+          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
+            <div className="text-2xl font-bold text-purple-600">
+              {(currentExp.recall_mean * 100).toFixed(1)}%
+            </div>
+            <div className="text-xs text-zinc-400">± {(currentExp.recall_std * 100).toFixed(1)}</div>
+            <div className="text-sm text-zinc-500">Recall</div>
+          </div>
+          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
+            <div className="text-lg font-bold text-green-600">
               {currentTrial.mean_positive.toFixed(3)}
             </div>
-            <div className="text-sm text-zinc-500">Mean Positive Score</div>
-          </div>
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
-            <div className="text-2xl font-bold text-red-600">
+            <div className="text-lg font-bold text-red-600">
               {currentTrial.mean_negative.toFixed(3)}
             </div>
-            <div className="text-sm text-zinc-500">Mean Negative Score</div>
+            <div className="text-sm text-zinc-500">Pos/Neg Score</div>
           </div>
         </div>
+
+        {/* Model Comparison */}
+        {otherModelExp && (
+          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 mb-6">
+            <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-3">
+              Model Comparison (n={selectedNPositive})
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-zinc-200 dark:border-zinc-700">
+                    <th className="text-left py-2 px-3 text-zinc-500">Model</th>
+                    <th className="text-right py-2 px-3 text-zinc-500">AUC</th>
+                    <th className="text-right py-2 px-3 text-zinc-500">F1</th>
+                    <th className="text-right py-2 px-3 text-zinc-500">Precision</th>
+                    <th className="text-right py-2 px-3 text-zinc-500">Recall</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className={`border-b border-zinc-100 dark:border-zinc-800 ${experimentModelType === "logistic" ? "bg-green-50 dark:bg-green-900/10" : ""}`}>
+                    <td className="py-2 px-3 font-medium">
+                      <span className={experimentModelType === "logistic" ? "text-green-600" : ""}>Logistic</span>
+                    </td>
+                    <td className="py-2 px-3 text-right">
+                      {experimentModelType === "logistic"
+                        ? `${(currentExp.auc_mean * 100).toFixed(1)}%`
+                        : `${(otherModelExp.auc_mean * 100).toFixed(1)}%`}
+                    </td>
+                    <td className="py-2 px-3 text-right">
+                      {experimentModelType === "logistic"
+                        ? `${(currentExp.f1_mean * 100).toFixed(1)}%`
+                        : `${(otherModelExp.f1_mean * 100).toFixed(1)}%`}
+                    </td>
+                    <td className="py-2 px-3 text-right">
+                      {experimentModelType === "logistic"
+                        ? `${(currentExp.precision_mean * 100).toFixed(1)}%`
+                        : `${(otherModelExp.precision_mean * 100).toFixed(1)}%`}
+                    </td>
+                    <td className="py-2 px-3 text-right">
+                      {experimentModelType === "logistic"
+                        ? `${(currentExp.recall_mean * 100).toFixed(1)}%`
+                        : `${(otherModelExp.recall_mean * 100).toFixed(1)}%`}
+                    </td>
+                  </tr>
+                  <tr className={experimentModelType === "mlp" ? "bg-purple-50 dark:bg-purple-900/10" : ""}>
+                    <td className="py-2 px-3 font-medium">
+                      <span className={experimentModelType === "mlp" ? "text-purple-600" : ""}>MLP</span>
+                    </td>
+                    <td className="py-2 px-3 text-right">
+                      {experimentModelType === "mlp"
+                        ? `${(currentExp.auc_mean * 100).toFixed(1)}%`
+                        : `${(otherModelExp.auc_mean * 100).toFixed(1)}%`}
+                    </td>
+                    <td className="py-2 px-3 text-right">
+                      {experimentModelType === "mlp"
+                        ? `${(currentExp.f1_mean * 100).toFixed(1)}%`
+                        : `${(otherModelExp.f1_mean * 100).toFixed(1)}%`}
+                    </td>
+                    <td className="py-2 px-3 text-right">
+                      {experimentModelType === "mlp"
+                        ? `${(currentExp.precision_mean * 100).toFixed(1)}%`
+                        : `${(otherModelExp.precision_mean * 100).toFixed(1)}%`}
+                    </td>
+                    <td className="py-2 px-3 text-right">
+                      {experimentModelType === "mlp"
+                        ? `${(currentExp.recall_mean * 100).toFixed(1)}%`
+                        : `${(otherModelExp.recall_mean * 100).toFixed(1)}%`}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
 
         {/* Confusion Matrix */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -461,20 +612,20 @@ export default function ExperimentPage() {
           </div>
         </div>
 
-        {/* AUC by training size */}
+        {/* Metrics by training size */}
         <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 mb-6">
           <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-3">
-            AUC by Training Size
+            Metrics by Training Size ({experimentModelType === "mlp" ? "MLP" : "Logistic"})
           </h3>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-zinc-200 dark:border-zinc-700">
-                  <th className="text-left py-2 px-3 text-zinc-500">Train +</th>
-                  <th className="text-left py-2 px-3 text-zinc-500">Train −</th>
-                  <th className="text-right py-2 px-3 text-green-600">Mean AUC</th>
-                  <th className="text-right py-2 px-3 text-zinc-500">Std</th>
-                  <th className="text-right py-2 px-3 text-zinc-500">Trials</th>
+                  <th className="text-left py-2 px-3 text-zinc-500">n</th>
+                  <th className="text-right py-2 px-3 text-zinc-500">AUC</th>
+                  <th className="text-right py-2 px-3 text-zinc-500">F1</th>
+                  <th className="text-right py-2 px-3 text-zinc-500">Precision</th>
+                  <th className="text-right py-2 px-3 text-zinc-500">Recall</th>
                 </tr>
               </thead>
               <tbody>
@@ -487,14 +638,18 @@ export default function ExperimentPage() {
                     onClick={() => setSelectedNPositive(exp.n_positive)}
                   >
                     <td className="py-2 px-3 font-medium">{exp.n_positive}</td>
-                    <td className="py-2 px-3 font-medium">{exp.n_negative}</td>
                     <td className={`py-2 px-3 text-right font-medium ${exp.auc_mean >= 0.7 ? "text-green-600" : exp.auc_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
                       {(exp.auc_mean * 100).toFixed(1)}%
                     </td>
-                    <td className="py-2 px-3 text-right text-zinc-500">
-                      ±{(exp.auc_std * 100).toFixed(1)}%
+                    <td className={`py-2 px-3 text-right ${exp.f1_mean >= 0.7 ? "text-green-600" : exp.f1_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
+                      {(exp.f1_mean * 100).toFixed(1)}%
                     </td>
-                    <td className="py-2 px-3 text-right text-zinc-500">{exp.n_trials}</td>
+                    <td className="py-2 px-3 text-right text-zinc-600 dark:text-zinc-400">
+                      {(exp.precision_mean * 100).toFixed(1)}%
+                    </td>
+                    <td className="py-2 px-3 text-right text-zinc-600 dark:text-zinc-400">
+                      {(exp.recall_mean * 100).toFixed(1)}%
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -693,7 +848,7 @@ export default function ExperimentPage() {
 
         {/* Find Me - Local Predictions */}
         <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 mt-6">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
             <div>
               <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
                 Predict Near Me
@@ -702,29 +857,57 @@ export default function ExperimentPage() {
                 Get predictions for a 500m × 500m grid at your current location
               </p>
             </div>
-            <button
-              onClick={handleFindMe}
-              disabled={localLoading}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
-            >
-              {localLoading ? (
-                <>
-                  <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                  </svg>
-                  <span>Finding...</span>
-                </>
-              ) : (
-                <>
-                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>Find Me</span>
-                </>
-              )}
-            </button>
+            <div className="flex items-center gap-3">
+              {/* Model Type Selector */}
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-zinc-500">Model:</span>
+                <div className="flex rounded-lg overflow-hidden border border-zinc-200 dark:border-zinc-700">
+                  <button
+                    onClick={() => setModelType("logistic")}
+                    className={`px-3 py-1.5 text-xs font-medium transition-colors ${
+                      modelType === "logistic"
+                        ? "bg-green-600 text-white"
+                        : "bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700"
+                    }`}
+                  >
+                    Logistic
+                  </button>
+                  <button
+                    onClick={() => setModelType("mlp")}
+                    className={`px-3 py-1.5 text-xs font-medium transition-colors ${
+                      modelType === "mlp"
+                        ? "bg-purple-600 text-white"
+                        : "bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700"
+                    }`}
+                  >
+                    MLP + Uncertainty
+                  </button>
+                </div>
+              </div>
+              <button
+                onClick={handleFindMe}
+                disabled={localLoading}
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+              >
+                {localLoading ? (
+                  <>
+                    <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                    </svg>
+                    <span>Finding...</span>
+                  </>
+                ) : (
+                  <>
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span>Find Me</span>
+                  </>
+                )}
+              </button>
+            </div>
           </div>
 
           {localError && (
@@ -735,6 +918,22 @@ export default function ExperimentPage() {
 
           {localPredictions && (
             <div className="space-y-4">
+              {/* Model info badge */}
+              <div className="flex items-center gap-2">
+                <span className={`px-2 py-1 text-xs font-medium rounded ${
+                  localPredictions.model_type === "mlp"
+                    ? "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400"
+                    : "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
+                }`}>
+                  {localPredictions.model_type === "mlp" ? "MLP + MC Dropout" : "Logistic Regression"}
+                </span>
+                {localPredictions.has_uncertainty && (
+                  <span className="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
+                    Uncertainty Available
+                  </span>
+                )}
+              </div>
+
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="text-center p-3 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
                   <div className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
@@ -756,14 +955,25 @@ export default function ExperimentPage() {
                   </div>
                   <div className="text-xs text-zinc-500">Max score</div>
                 </div>
-                <div className="text-center p-3 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-                  <div className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                    {localPredictions.predictions.length > 0
-                      ? (localPredictions.predictions.reduce((a, b) => a + b.score, 0) / localPredictions.predictions.length).toFixed(2)
-                      : "N/A"}
+                {localPredictions.has_uncertainty ? (
+                  <div className="text-center p-3 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
+                    <div className="text-lg font-bold text-purple-600">
+                      {localPredictions.predictions.length > 0
+                        ? (localPredictions.predictions.reduce((a, b) => a + (b.confidence ?? 0), 0) / localPredictions.predictions.length * 100).toFixed(0) + "%"
+                        : "N/A"}
+                    </div>
+                    <div className="text-xs text-zinc-500">Mean confidence</div>
                   </div>
-                  <div className="text-xs text-zinc-500">Mean score</div>
-                </div>
+                ) : (
+                  <div className="text-center p-3 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
+                    <div className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
+                      {localPredictions.predictions.length > 0
+                        ? (localPredictions.predictions.reduce((a, b) => a + b.score, 0) / localPredictions.predictions.length).toFixed(2)
+                        : "N/A"}
+                    </div>
+                    <div className="text-xs text-zinc-500">Mean score</div>
+                  </div>
+                )}
               </div>
 
               {userLocation && (
@@ -776,35 +986,68 @@ export default function ExperimentPage() {
               {userLocation && (
                 <div className="rounded-lg overflow-hidden border border-zinc-200 dark:border-zinc-700">
                   <div className="p-2 bg-zinc-50 dark:bg-zinc-800 border-b border-zinc-200 dark:border-zinc-700">
-                    <div className="flex flex-wrap items-center justify-between">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
                       <div className="flex flex-wrap items-center gap-3 text-xs">
-                        <div className="flex items-center gap-1">
-                          <div className="w-3 h-3 rounded bg-red-500" />
-                          <span className="text-zinc-600 dark:text-zinc-400">High</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <div className="w-3 h-3 rounded bg-yellow-500" />
-                          <span className="text-zinc-600 dark:text-zinc-400">Medium</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <div className="w-3 h-3 rounded bg-blue-500" />
-                          <span className="text-zinc-600 dark:text-zinc-400">Low</span>
-                        </div>
+                        {showConfidence && localPredictions.has_uncertainty ? (
+                          <>
+                            <div className="flex items-center gap-1">
+                              <div className="w-3 h-3 rounded bg-green-500" />
+                              <span className="text-zinc-600 dark:text-zinc-400">High confidence</span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <div className="w-3 h-3 rounded bg-yellow-500" />
+                              <span className="text-zinc-600 dark:text-zinc-400">Medium</span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <div className="w-3 h-3 rounded bg-red-500" />
+                              <span className="text-zinc-600 dark:text-zinc-400">Low confidence</span>
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <div className="flex items-center gap-1">
+                              <div className="w-3 h-3 rounded bg-red-500" />
+                              <span className="text-zinc-600 dark:text-zinc-400">High prob</span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <div className="w-3 h-3 rounded bg-yellow-500" />
+                              <span className="text-zinc-600 dark:text-zinc-400">Medium</span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <div className="w-3 h-3 rounded bg-blue-500" />
+                              <span className="text-zinc-600 dark:text-zinc-400">Low</span>
+                            </div>
+                          </>
+                        )}
                         <div className="flex items-center gap-1">
                           <div className="w-3 h-3 rounded-full bg-white border-2 border-zinc-800" />
                           <span className="text-zinc-600 dark:text-zinc-400">You</span>
                         </div>
                       </div>
-                      <button
-                        onClick={() => setShowHeatmap(!showHeatmap)}
-                        className={`px-3 py-1 text-xs rounded-lg transition-colors ${
-                          showHeatmap
-                            ? "bg-green-600 text-white"
-                            : "bg-zinc-200 text-zinc-700 dark:bg-zinc-700 dark:text-zinc-300"
-                        }`}
-                      >
-                        {showHeatmap ? "Heatmap On" : "Heatmap Off"}
-                      </button>
+                      <div className="flex items-center gap-2">
+                        {localPredictions.has_uncertainty && (
+                          <button
+                            onClick={() => setShowConfidence(!showConfidence)}
+                            className={`px-3 py-1 text-xs rounded-lg transition-colors ${
+                              showConfidence
+                                ? "bg-purple-600 text-white"
+                                : "bg-zinc-200 text-zinc-700 dark:bg-zinc-700 dark:text-zinc-300"
+                            }`}
+                          >
+                            {showConfidence ? "Showing Confidence" : "Show Confidence"}
+                          </button>
+                        )}
+                        <button
+                          onClick={() => setShowHeatmap(!showHeatmap)}
+                          className={`px-3 py-1 text-xs rounded-lg transition-colors ${
+                            showHeatmap
+                              ? "bg-green-600 text-white"
+                              : "bg-zinc-200 text-zinc-700 dark:bg-zinc-700 dark:text-zinc-300"
+                          }`}
+                        >
+                          {showHeatmap ? "Heatmap On" : "Heatmap Off"}
+                        </button>
+                      </div>
                     </div>
                   </div>
                   <div className="h-[400px]">
@@ -820,21 +1063,41 @@ export default function ExperimentPage() {
                         />
                         {/* Heatmap rectangles */}
                         {showHeatmap && localPredictions.predictions.map((pt, idx) => {
-                          // Color gradient from blue (0) -> yellow (0.5) -> red (1)
-                          const score = pt.score;
+                          // Determine what value to visualize
+                          const useConfidenceColor = showConfidence && localPredictions.has_uncertainty;
+                          const value = useConfidenceColor ? (pt.confidence ?? 0.5) : pt.score;
+
                           let r, g, b;
-                          if (score < 0.5) {
-                            // Blue to Yellow
-                            const t = score * 2;
-                            r = Math.round(255 * t);
-                            g = Math.round(255 * t);
-                            b = Math.round(255 * (1 - t));
+                          if (useConfidenceColor) {
+                            // For confidence: green (high) -> yellow (medium) -> red (low)
+                            if (value > 0.5) {
+                              // Green to Yellow
+                              const t = (value - 0.5) * 2;
+                              r = Math.round(255 * (1 - t));
+                              g = 255;
+                              b = 0;
+                            } else {
+                              // Yellow to Red
+                              const t = value * 2;
+                              r = 255;
+                              g = Math.round(255 * t);
+                              b = 0;
+                            }
                           } else {
-                            // Yellow to Red
-                            const t = (score - 0.5) * 2;
-                            r = 255;
-                            g = Math.round(255 * (1 - t));
-                            b = 0;
+                            // For score: blue (low) -> yellow (medium) -> red (high)
+                            if (value < 0.5) {
+                              // Blue to Yellow
+                              const t = value * 2;
+                              r = Math.round(255 * t);
+                              g = Math.round(255 * t);
+                              b = Math.round(255 * (1 - t));
+                            } else {
+                              // Yellow to Red
+                              const t = (value - 0.5) * 2;
+                              r = 255;
+                              g = Math.round(255 * (1 - t));
+                              b = 0;
+                            }
                           }
                           const color = `rgb(${r},${g},${b})`;
 
@@ -857,8 +1120,14 @@ export default function ExperimentPage() {
                               }}
                             >
                               <Popup>
-                                <div className="text-sm">
+                                <div className="text-sm space-y-1">
                                   <div className="font-medium">Score: {pt.score.toFixed(3)}</div>
+                                  {pt.uncertainty !== undefined && (
+                                    <>
+                                      <div>Uncertainty: {pt.uncertainty.toFixed(3)}</div>
+                                      <div>Confidence: {((pt.confidence ?? 0) * 100).toFixed(0)}%</div>
+                                    </>
+                                  )}
                                 </div>
                               </Popup>
                             </Rectangle>

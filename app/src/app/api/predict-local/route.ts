@@ -6,16 +6,22 @@ interface PredictionPoint {
   lon: number;
   lat: number;
   score: number;
+  uncertainty?: number;
+  confidence?: number;
 }
 
 interface PredictionResult {
   predictions: PredictionPoint[];
   species: string;
   species_key: number;
+  model_type: "logistic" | "mlp";
+  has_uncertainty: boolean;
   center: { lon: number; lat: number };
   grid_size_m: number;
   n_pixels: number;
 }
+
+type ModelType = "logistic" | "mlp";
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
@@ -23,10 +29,20 @@ export async function GET(request: NextRequest) {
   const lon = parseFloat(searchParams.get("lon") || "");
   const speciesKey = parseInt(searchParams.get("speciesKey") || "");
   const gridSize = parseInt(searchParams.get("gridSize") || "100"); // meters
+  const modelType: ModelType = (searchParams.get("modelType") as ModelType) || "mlp";
+  const mcSamples = parseInt(searchParams.get("mcSamples") || "30");
 
   if (isNaN(lat) || isNaN(lon) || isNaN(speciesKey)) {
     return NextResponse.json(
       { error: "Missing required parameters: lat, lon, speciesKey" },
+      { status: 400 }
+    );
+  }
+
+  // Validate model type
+  if (!["logistic", "mlp"].includes(modelType)) {
+    return NextResponse.json(
+      { error: "Invalid modelType. Must be 'logistic' or 'mlp'" },
       { status: 400 }
     );
   }
@@ -43,6 +59,8 @@ export async function GET(request: NextRequest) {
         "--lon", lon.toString(),
         "--species-key", speciesKey.toString(),
         "--grid-size", gridSize.toString(),
+        "--model-type", modelType,
+        "--mc-samples", mcSamples.toString(),
       ], {
         cwd: projectRoot,
       });
