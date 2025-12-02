@@ -32,7 +32,7 @@ export async function GET(request: NextRequest) {
       kingdomKey: PLANTAE_KINGDOM_KEY.toString(),
       geometry: `POLYGON((${CAMBRIDGE_BBOX.minLon} ${CAMBRIDGE_BBOX.minLat}, ${CAMBRIDGE_BBOX.maxLon} ${CAMBRIDGE_BBOX.minLat}, ${CAMBRIDGE_BBOX.maxLon} ${CAMBRIDGE_BBOX.maxLat}, ${CAMBRIDGE_BBOX.minLon} ${CAMBRIDGE_BBOX.maxLat}, ${CAMBRIDGE_BBOX.minLon} ${CAMBRIDGE_BBOX.minLat}))`,
       facet: "speciesKey",
-      facetLimit: "500", // Get top 500 species
+      facetLimit: "10000", // Get all species (GBIF allows up to 100k)
       limit: "0", // We only want facets, not actual occurrences
       hasCoordinate: "true",
       hasGeospatialIssue: "false",

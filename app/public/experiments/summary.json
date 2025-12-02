@@ -93,6 +93,83 @@
           "auc_std": 0.015291589056240586
         }
       ]
+    },
+    {
+      "species": "Alnus glutinosa",
+      "n_occurrences": 70,
+      "results": [
+        {
+          "n_positive": 1,
+          "auc_mean": 0.49283763915143874,
+          "auc_std": 0.06577028025751383
+        },
+        {
+          "n_positive": 2,
+          "auc_mean": 0.5221020761245676,
+          "auc_std": 0.07239215678464363
+        },
+        {
+          "n_positive": 5,
+          "auc_mean": 0.5516686390532544,
+          "auc_std": 0.10570249907965168
+        },
+        {
+          "n_positive": 10,
+          "auc_mean": 0.5751111111111111,
+          "auc_std": 0.06227468026789969
+        },
+        {
+          "n_positive": 20,
+          "auc_mean": 0.6616,
+          "auc_std": 0.060824731811985853
+        },
+        {
+          "n_positive": 50,
+          "auc_mean": 0.7585000000000001,
+          "auc_std": 0.0974371592360943
+        }
+      ]
+    },
+    {
+      "species": "Crataegus monogyna",
+      "n_occurrences": 498,
+      "results": [
+        {
+          "n_positive": 1,
+          "auc_mean": 0.5016319243428378,
+          "auc_std": 0.09341967770346604
+        },
+        {
+          "n_positive": 2,
+          "auc_mean": 0.5608123048907387,
+          "auc_std": 0.08820231892773883
+        },
+        {
+          "n_positive": 5,
+          "auc_mean": 0.5882871355158835,
+          "auc_std": 0.06822100802189725
+        },
+        {
+          "n_positive": 10,
+          "auc_mean": 0.662466406879871,
+          "auc_std": 0.0516478583602939
+        },
+        {
+          "n_positive": 20,
+          "auc_mean": 0.7306699812678349,
+          "auc_std": 0.03800113624331929
+        },
+        {
+          "n_positive": 50,
+          "auc_mean": 0.8322614397321428,
+          "auc_std": 0.020337290560371007
+        },
+        {
+          "n_positive": 100,
+          "auc_mean": 0.872094139036893,
+          "auc_std": 0.014646486303455015
+        }
+      ]
     }
   ]
 }

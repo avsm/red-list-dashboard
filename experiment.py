@@ -24,7 +24,12 @@ CACHE_DIR = PROJECT_ROOT / "cache"
 OUTPUT_DIR = PROJECT_ROOT / "output" / "experiments"
 
 # Experiment parameters
-SPECIES_LIST = ["Quercus robur", "Fraxinus excelsior"]  # Oak, Ash
+SPECIES_LIST = [
+    "Quercus robur",       # Oak - widespread woodland
+    "Fraxinus excelsior",  # Ash - woodland/hedgerows
+    "Alnus glutinosa",     # Alder - wetland/riparian (different habitat)
+    "Crataegus monogyna",  # Hawthorn - hedgerows (different habitat)
+]
 REGION = "cambridge"
 N_POSITIVE_VALUES = [1, 2, 5, 10, 20, 50, 100]  # Positive training samples (matched by negatives)
 N_TRIALS = 5  # Number of random trials per n value
