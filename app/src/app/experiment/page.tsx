@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import SpeciesInfoBar from "../../components/SpeciesInfoBar";
 
 const MapContainer = dynamic(
   () => import("react-leaflet").then((mod) => mod.MapContainer),
@@ -184,16 +183,6 @@ export default function ExperimentPage() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 p-4 md:p-8">
       <main className="max-w-6xl mx-auto">
-        {/* Species Info Bar */}
-        <div className="mb-6">
-          <SpeciesInfoBar
-            speciesKey={currentData.species_key}
-            speciesName={currentData.species}
-            occurrenceCount={currentData.n_occurrences}
-            region={currentData.region}
-          />
-        </div>
-
         <div className="mb-6">
           <p className="text-zinc-600 dark:text-zinc-400">
             Validating classifier performance on held-out occurrences vs random background
@@ -223,6 +212,14 @@ export default function ExperimentPage() {
                 );
               })}
             </select>
+            <a
+              href={`https://www.gbif.org/species/${currentData.species_key}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-2 text-sm text-green-600 hover:text-green-700 hover:underline"
+            >
+              View on GBIF →
+            </a>
           </div>
 
           {/* N selector */}
