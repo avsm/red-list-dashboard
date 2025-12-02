@@ -23,16 +23,16 @@ const Popup = dynamic(
 interface Point {
   lon: number;
   lat: number;
-  sim_score?: number;
-  clf_score?: number;
+  score?: number;
 }
 
 interface Experiment {
   n: number;
   n_test_positive: number;
   n_test_negative: number;
-  similarity: { auc: number; mean_positive: number; mean_negative: number };
-  classifier: { auc: number; mean_positive: number; mean_negative: number };
+  auc: number;
+  mean_positive: number;
+  mean_negative: number;
   train: { lon: number; lat: number }[];
   test_positive: Point[];
   test_negative: Point[];
@@ -52,7 +52,6 @@ export default function ExperimentPage() {
   const [speciesData, setSpeciesData] = useState<Record<string, SpeciesData>>({});
   const [selectedSpecies, setSelectedSpecies] = useState<string>("quercus_robur");
   const [selectedN, setSelectedN] = useState<number>(10);
-  const [method, setMethod] = useState<"similarity" | "classifier">("classifier");
   const [threshold, setThreshold] = useState<number>(0.5);
   const [mounted, setMounted] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -110,15 +109,13 @@ export default function ExperimentPage() {
     );
   }
 
-  const metrics = method === "similarity" ? currentExp.similarity : currentExp.classifier;
-
   // Compute confusion matrix based on threshold
-  const getScore = (pt: Point) => method === "similarity" ? pt.sim_score : pt.clf_score;
+  const getScore = (pt: Point) => pt.score ?? 0;
 
-  const truePositives = currentExp.test_positive.filter(pt => (getScore(pt) ?? 0) >= threshold);
-  const falseNegatives = currentExp.test_positive.filter(pt => (getScore(pt) ?? 0) < threshold);
-  const trueNegatives = currentExp.test_negative.filter(pt => (getScore(pt) ?? 0) < threshold);
-  const falsePositives = currentExp.test_negative.filter(pt => (getScore(pt) ?? 0) >= threshold);
+  const truePositives = currentExp.test_positive.filter(pt => getScore(pt) >= threshold);
+  const falseNegatives = currentExp.test_positive.filter(pt => getScore(pt) < threshold);
+  const trueNegatives = currentExp.test_negative.filter(pt => getScore(pt) < threshold);
+  const falsePositives = currentExp.test_negative.filter(pt => getScore(pt) >= threshold);
 
   const tp = truePositives.length;
   const fn = falseNegatives.length;
@@ -133,16 +130,13 @@ export default function ExperimentPage() {
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 p-4 md:p-8">
       <main className="max-w-6xl mx-auto">
         <div className="mb-6">
-          <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">
-            Similarity vs Classifier Experiment
-          </h1>
           <p className="text-zinc-600 dark:text-zinc-400">
-            Comparing methods for predicting species locations from habitat embeddings
+            Validating classifier performance on held-out occurrences vs random background
           </p>
         </div>
 
         {/* Controls */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           {/* Species selector */}
           <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
             <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
@@ -173,7 +167,7 @@ export default function ExperimentPage() {
                   onClick={() => setSelectedN(n)}
                   className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                     selectedN === n
-                      ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+                      ? "bg-green-600 text-white"
                       : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
                   }`}
                 >
@@ -182,54 +176,25 @@ export default function ExperimentPage() {
               ))}
             </div>
           </div>
-
-          {/* Method selector */}
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
-            <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
-              Method
-            </label>
-            <div className="flex gap-2">
-              <button
-                onClick={() => setMethod("similarity")}
-                className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  method === "similarity"
-                    ? "bg-blue-600 text-white"
-                    : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
-                }`}
-              >
-                Similarity
-              </button>
-              <button
-                onClick={() => setMethod("classifier")}
-                className={`flex-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  method === "classifier"
-                    ? "bg-green-600 text-white"
-                    : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
-                }`}
-              >
-                Classifier
-              </button>
-            </div>
-          </div>
         </div>
 
         {/* Metrics */}
         <div className="grid grid-cols-3 gap-4 mb-6">
           <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
-            <div className={`text-3xl font-bold ${metrics.auc >= 0.7 ? "text-green-600" : metrics.auc >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
-              {(metrics.auc * 100).toFixed(1)}%
+            <div className={`text-3xl font-bold ${currentExp.auc >= 0.7 ? "text-green-600" : currentExp.auc >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
+              {(currentExp.auc * 100).toFixed(1)}%
             </div>
             <div className="text-sm text-zinc-500">AUC</div>
           </div>
           <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
-            <div className="text-3xl font-bold text-blue-600">
-              {metrics.mean_positive.toFixed(3)}
+            <div className="text-3xl font-bold text-green-600">
+              {currentExp.mean_positive.toFixed(3)}
             </div>
             <div className="text-sm text-zinc-500">Mean Positive Score</div>
           </div>
           <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
             <div className="text-3xl font-bold text-red-600">
-              {metrics.mean_negative.toFixed(3)}
+              {currentExp.mean_negative.toFixed(3)}
             </div>
             <div className="text-sm text-zinc-500">Mean Negative Score</div>
           </div>
@@ -318,7 +283,7 @@ export default function ExperimentPage() {
           </div>
         </div>
 
-        {/* AUC comparison table */}
+        {/* AUC by training size */}
         <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 mb-6">
           <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-3">
             AUC by Training Size
@@ -328,31 +293,28 @@ export default function ExperimentPage() {
               <thead>
                 <tr className="border-b border-zinc-200 dark:border-zinc-700">
                   <th className="text-left py-2 px-3 text-zinc-500">n</th>
-                  <th className="text-right py-2 px-3 text-blue-600">Similarity</th>
-                  <th className="text-right py-2 px-3 text-green-600">Classifier</th>
-                  <th className="text-right py-2 px-3 text-zinc-500">Δ</th>
+                  <th className="text-right py-2 px-3 text-green-600">AUC</th>
+                  <th className="text-right py-2 px-3 text-zinc-500">Test +</th>
+                  <th className="text-right py-2 px-3 text-zinc-500">Test −</th>
                 </tr>
               </thead>
               <tbody>
-                {currentData.experiments.map((exp) => {
-                  const delta = exp.classifier.auc - exp.similarity.auc;
-                  return (
-                    <tr
-                      key={exp.n}
-                      className={`border-b border-zinc-100 dark:border-zinc-800 cursor-pointer hover:bg-zinc-50 dark:hover:bg-zinc-800 ${
-                        exp.n === selectedN ? "bg-zinc-100 dark:bg-zinc-800" : ""
-                      }`}
-                      onClick={() => setSelectedN(exp.n)}
-                    >
-                      <td className="py-2 px-3 font-medium">{exp.n}</td>
-                      <td className="py-2 px-3 text-right">{(exp.similarity.auc * 100).toFixed(1)}%</td>
-                      <td className="py-2 px-3 text-right">{(exp.classifier.auc * 100).toFixed(1)}%</td>
-                      <td className={`py-2 px-3 text-right ${delta > 0 ? "text-green-600" : "text-red-600"}`}>
-                        {delta > 0 ? "+" : ""}{(delta * 100).toFixed(1)}%
-                      </td>
-                    </tr>
-                  );
-                })}
+                {currentData.experiments.map((exp) => (
+                  <tr
+                    key={exp.n}
+                    className={`border-b border-zinc-100 dark:border-zinc-800 cursor-pointer hover:bg-zinc-50 dark:hover:bg-zinc-800 ${
+                      exp.n === selectedN ? "bg-zinc-100 dark:bg-zinc-800" : ""
+                    }`}
+                    onClick={() => setSelectedN(exp.n)}
+                  >
+                    <td className="py-2 px-3 font-medium">{exp.n}</td>
+                    <td className={`py-2 px-3 text-right font-medium ${exp.auc >= 0.7 ? "text-green-600" : exp.auc >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
+                      {(exp.auc * 100).toFixed(1)}%
+                    </td>
+                    <td className="py-2 px-3 text-right text-zinc-500">{exp.n_test_positive}</td>
+                    <td className="py-2 px-3 text-right text-zinc-500">{exp.n_test_negative}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
@@ -413,7 +375,7 @@ export default function ExperimentPage() {
                       <Popup>
                         <div className="text-sm">
                           <div className="font-medium text-zinc-600">True Negative (TN)</div>
-                          <div>Score: {score?.toFixed(3) ?? "N/A"}</div>
+                          <div>Score: {score.toFixed(3)}</div>
                           <div className="text-xs text-zinc-500">Correctly rejected</div>
                         </div>
                       </Popup>
@@ -438,7 +400,7 @@ export default function ExperimentPage() {
                       <Popup>
                         <div className="text-sm">
                           <div className="font-medium text-red-600">False Positive (FP)</div>
-                          <div>Score: {score?.toFixed(3) ?? "N/A"}</div>
+                          <div>Score: {score.toFixed(3)}</div>
                           <div className="text-xs text-zinc-500">Incorrectly predicted</div>
                         </div>
                       </Popup>
@@ -463,7 +425,7 @@ export default function ExperimentPage() {
                       <Popup>
                         <div className="text-sm">
                           <div className="font-medium text-orange-600">False Negative (FN)</div>
-                          <div>Score: {score?.toFixed(3) ?? "N/A"}</div>
+                          <div>Score: {score.toFixed(3)}</div>
                           <div className="text-xs text-zinc-500">Missed occurrence</div>
                         </div>
                       </Popup>
@@ -488,7 +450,7 @@ export default function ExperimentPage() {
                       <Popup>
                         <div className="text-sm">
                           <div className="font-medium text-green-600">True Positive (TP)</div>
-                          <div>Score: {score?.toFixed(3) ?? "N/A"}</div>
+                          <div>Score: {score.toFixed(3)}</div>
                           <div className="text-xs text-zinc-500">Correctly identified</div>
                         </div>
                       </Popup>

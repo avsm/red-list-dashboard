@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Experiment: Compare similarity vs classifier approaches.
+Experiment: Validate classifier approach for habitat prediction.
 
 Tests whether held-out occurrences score higher than random background points.
 """
@@ -25,31 +25,8 @@ OUTPUT_DIR = PROJECT_ROOT / "output" / "experiments"
 # Experiment parameters
 SPECIES_LIST = ["Quercus robur", "Fraxinus excelsior"]  # Oak, Ash
 REGION = "cambridge"
-N_VALUES = [1, 2, 5, 10, 20, 50, 100]
+N_VALUES = [2, 5, 10, 20, 50, 100]  # Min 2 for classifier
 SEED = 42
-
-
-def compute_similarity(train_emb: np.ndarray, test_emb: np.ndarray) -> np.ndarray:
-    """Cosine similarity to centroid of training embeddings."""
-    # L2 normalize training
-    train_norms = np.linalg.norm(train_emb, axis=1, keepdims=True)
-    train_norms[train_norms == 0] = 1
-    train_norm = train_emb / train_norms
-
-    # Centroid
-    centroid = train_norm.mean(axis=0)
-    centroid_norm = np.linalg.norm(centroid)
-    if centroid_norm == 0:
-        return np.zeros(len(test_emb))
-    centroid = centroid / centroid_norm
-
-    # Score test
-    test_norms = np.linalg.norm(test_emb, axis=1, keepdims=True)
-    test_norms[test_norms == 0] = 1
-    test_norm = test_emb / test_norms
-
-    similarities = test_norm @ centroid
-    return (similarities + 1) / 2
 
 
 def compute_classifier(
@@ -159,46 +136,30 @@ def run_species_experiment(species_name: str, mosaic: EmbeddingMosaic, rng: np.r
             mosaic, n_test, valid_coords + train_neg_coords, rng
         )
 
-        # Method 1: Similarity
-        sim_pos_scores = compute_similarity(train_emb, test_pos_emb)
-        sim_neg_scores = compute_similarity(train_emb, test_neg_emb)
-        sim_auc = compute_auc(sim_pos_scores, sim_neg_scores)
+        # Train classifier and score
+        pos_scores = compute_classifier(train_emb, train_neg_emb, test_pos_emb)
+        neg_scores = compute_classifier(train_emb, train_neg_emb, test_neg_emb)
+        auc = compute_auc(pos_scores, neg_scores)
 
-        # Method 2: Classifier (needs at least 2 samples per class)
-        if n >= 2:
-            clf_pos_scores = compute_classifier(train_emb, train_neg_emb, test_pos_emb)
-            clf_neg_scores = compute_classifier(train_emb, train_neg_emb, test_neg_emb)
-            clf_auc = compute_auc(clf_pos_scores, clf_neg_scores)
-        else:
-            clf_pos_scores = np.zeros(n_test)
-            clf_neg_scores = np.zeros(len(test_neg_coords))
-            clf_auc = 0.5
-
-        logger.info(f"  Similarity AUC: {sim_auc:.3f}")
-        logger.info(f"  Classifier AUC: {clf_auc:.3f}")
+        logger.info(f"  AUC: {auc:.3f}")
+        logger.info(f"  Mean positive score: {pos_scores.mean():.3f}")
+        logger.info(f"  Mean negative score: {neg_scores.mean():.3f}")
 
         exp_data = {
             "n": n,
             "n_test_positive": n_test,
             "n_test_negative": len(test_neg_coords),
-            "similarity": {
-                "auc": sim_auc,
-                "mean_positive": float(sim_pos_scores.mean()),
-                "mean_negative": float(sim_neg_scores.mean()),
-            },
-            "classifier": {
-                "auc": clf_auc,
-                "mean_positive": float(clf_pos_scores.mean()),
-                "mean_negative": float(clf_neg_scores.mean()),
-            },
+            "auc": auc,
+            "mean_positive": float(pos_scores.mean()),
+            "mean_negative": float(neg_scores.mean()),
             "train": [{"lon": lon, "lat": lat} for lon, lat in train_coords],
             "test_positive": [
-                {"lon": lon, "lat": lat, "sim_score": float(s1), "clf_score": float(s2)}
-                for (lon, lat), s1, s2 in zip(test_pos_coords, sim_pos_scores, clf_pos_scores)
+                {"lon": lon, "lat": lat, "score": float(s)}
+                for (lon, lat), s in zip(test_pos_coords, pos_scores)
             ],
             "test_negative": [
-                {"lon": lon, "lat": lat, "sim_score": float(s1), "clf_score": float(s2)}
-                for (lon, lat), s1, s2 in zip(test_neg_coords, sim_neg_scores, clf_neg_scores)
+                {"lon": lon, "lat": lat, "score": float(s)}
+                for (lon, lat), s in zip(test_neg_coords, neg_scores)
             ],
         }
         experiments.append(exp_data)
@@ -215,7 +176,7 @@ def run_species_experiment(species_name: str, mosaic: EmbeddingMosaic, rng: np.r
 def run_all_experiments():
     """Run experiments for all species."""
     logger.info("=" * 60)
-    logger.info("Similarity vs Classifier Experiment")
+    logger.info("Classifier Validation Experiment")
     logger.info("=" * 60)
 
     rng = np.random.default_rng(SEED)
@@ -253,11 +214,7 @@ def run_all_experiments():
                 "species": species,
                 "n_occurrences": result["n_occurrences"],
                 "results": [
-                    {
-                        "n": exp["n"],
-                        "similarity_auc": exp["similarity"]["auc"],
-                        "classifier_auc": exp["classifier"]["auc"],
-                    }
+                    {"n": exp["n"], "auc": exp["auc"]}
                     for exp in result["experiments"]
                 ],
             }
@@ -273,11 +230,11 @@ def run_all_experiments():
     logger.info("\n" + "=" * 60)
     logger.info("SUMMARY")
     logger.info("=" * 60)
-    logger.info(f"{'Species':<25} {'n':>5} {'Sim AUC':>10} {'Clf AUC':>10}")
-    logger.info("-" * 55)
+    logger.info(f"{'Species':<25} {'n':>5} {'AUC':>10}")
+    logger.info("-" * 45)
     for sp in summary["species"]:
         for r in sp["results"]:
-            logger.info(f"{sp['species']:<25} {r['n']:>5} {r['similarity_auc']:>10.3f} {r['classifier_auc']:>10.3f}")
+            logger.info(f"{sp['species']:<25} {r['n']:>5} {r['auc']:>10.3f}")
         logger.info("")
 
     logger.info("=" * 60)
