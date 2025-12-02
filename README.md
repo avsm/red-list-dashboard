@@ -1,28 +1,58 @@
 # Data-Deficient Plant Search
 
-The overall goal for this project is to identify candidate locations for collecting samples for a plant species of interest using embeddings from geospatial foundation models and n training samples of GPS locations of that species.
+Identify candidate locations for collecting samples for a plant species using embeddings from geospatial foundation models.
 
-To motivate why this is important, we start by understanding how many GBIF samples we have for every plant species and this distribution. My guess is that we have many samples for a few species, especially in the global north, but most species have very few samples. This web app quantifies this.
+## Why This Matters
 
-## Data Source
-
-Occurrence counts are from GBIF with the following filters:
-- `has_coordinate=true` - only georeferenced records
-- `has_geospatial_issue=false` - excluding records with known geospatial issues
-
-## Key Findings
-
-- **354,357** plant species with georeferenced records in GBIF
-- **461M** total georeferenced occurrences
+GBIF has occurrence data for 354,357 plant species, but:
 - **72.6%** have 100 or fewer occurrences
 - **36.6%** have 10 or fewer occurrences
 - **9.3%** have just 1 occurrence
-- Median occurrences per species: **24**
-- Top species: *Urtica dioica* (Stinging nettle) with **1.8M** occurrences
 
-For example, [African Baobab (*Adansonia digitata*)](https://www.gbif.org/occurrence/search?has_coordinate=true&has_geospatial_issue=false&taxon_key=5406695) has **11,281** occurrences.
+This tool helps conservation biologists find where to look for rare/data-deficient plants by learning habitat signatures from known locations.
+
+## Quick Start
+
+```bash
+# Find candidate locations for Common Oak in Cambridge area
+uv run python run.py "Quercus robur" --region cambridge
+```
+
+This will:
+1. Fetch known occurrences from GBIF
+2. Sample Tessera embeddings at those locations
+3. Train a classifier to recognize the habitat signature
+4. Scan the region to find candidate locations
+5. Save results to `output/quercus_robur/`
+
+## Usage
+
+```bash
+# Using a predefined region
+uv run python run.py "Quercus robur" --region cambridge
+uv run python run.py "Quercus robur" --region uk
+
+# Using a custom bounding box (min_lon,min_lat,max_lon,max_lat)
+uv run python run.py "Adansonia digitata" --bbox -20,10,50,25
+
+# Custom output directory
+uv run python run.py "Quercus robur" --region cambridge -o my_output/
+```
+
+## Requirements
+
+**Tessera embeddings cache**: The pipeline requires pre-downloaded Tessera embeddings in `cache/2024/`. These are 0.1° tiles of 128-dimensional embeddings from the Tessera geospatial foundation model.
+
+## Output
+
+Results are saved to `output/{species_name}/`:
+- `candidates.geojson` - Predicted candidate locations with probability scores
+- `occurrences.geojson` - Known GBIF occurrences used for training
+- `model.joblib` - Trained classifier (can be reused)
 
 ## Web App
+
+Visualize results and explore GBIF data:
 
 ```bash
 cd app
@@ -30,20 +60,17 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000 to explore the data with filtering, sorting, and on-demand species lookups from GBIF.
+Open http://localhost:3000 to:
+- Browse plant species by occurrence count
+- View occurrence maps
+- Overlay AI-predicted candidate locations
 
-## Refreshing Data from GBIF
+## Project Structure
 
-The species occurrence count data is stored as a static CSV file (`app/public/plant_species_counts.csv`). To update it with fresh data from GBIF:
-
-```bash
-# From the project root directory
-uv run python main.py --fetch-all
 ```
-
-This will:
-1. Query GBIF for occurrence counts of all plant species (takes several minutes)
-2. Save updated data to `app/public/plant_species_counts.csv`
-3. Generate analysis summary in `app/public/plant_species_counts.json`
-
-After refreshing, redeploy the app to see the updated data in production.
+/
+├── run.py          # Main CLI - the only script you need
+├── app/            # Next.js visualization app
+├── cache/          # Tessera embeddings (gitignored)
+└── output/         # Generated results (gitignored)
+```

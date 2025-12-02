@@ -68,6 +68,17 @@ interface OccurrenceFeature {
   };
 }
 
+interface CandidateFeature {
+  type: "Feature";
+  properties: {
+    probability: number;
+  };
+  geometry: {
+    type: "Point";
+    coordinates: [number, number];
+  };
+}
+
 interface Stats {
   total: number;
   filtered: number;
@@ -145,6 +156,21 @@ const SEARCH_ENDPOINT = "/api/search";
 const formatNumber = (num: number) => num.toLocaleString();
 const getPercentage = (count: number, total: number) => ((count / total) * 100).toFixed(1);
 
+// Color scale from grey (low prob) to red (high prob)
+function getProbabilityColor(probability: number): string {
+  // Grey: rgb(180, 180, 180) -> Red: rgb(220, 38, 38)
+  const r = Math.round(180 + (220 - 180) * probability);
+  const g = Math.round(180 - (180 - 38) * probability);
+  const b = Math.round(180 - (180 - 38) * probability);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+// Get candidate key from canonical name (just lowercase it to match API format)
+function getCandidateKey(canonicalName: string | undefined): string | null {
+  if (!canonicalName) return null;
+  return canonicalName.toLowerCase();
+}
+
 // ============================================================================
 // Components
 // ============================================================================
@@ -217,14 +243,20 @@ function StatsCards({ stats }: { stats: Stats }) {
 
 interface ExpandedRowProps {
   speciesKey: number;
+  speciesName?: string;
   regionMode: RegionMode;
   mounted: boolean;
   colSpan: number;
+  hasCandidates?: boolean;
 }
 
-function ExpandedRow({ speciesKey, regionMode, mounted, colSpan }: ExpandedRowProps) {
+function ExpandedRow({ speciesKey, speciesName, regionMode, mounted, colSpan, hasCandidates }: ExpandedRowProps) {
   const [occurrences, setOccurrences] = useState<OccurrenceFeature[]>([]);
+  const [candidates, setCandidates] = useState<CandidateFeature[]>([]);
   const [loadingOccurrences, setLoadingOccurrences] = useState(true);
+  const [loadingCandidates, setLoadingCandidates] = useState(false);
+  const [showCandidates, setShowCandidates] = useState(true);
+  const [heatmapOpacity, setHeatmapOpacity] = useState(0.7);
 
   const config = REGION_CONFIG[regionMode];
 
@@ -238,12 +270,72 @@ function ExpandedRow({ speciesKey, regionMode, mounted, colSpan }: ExpandedRowPr
       .finally(() => setLoadingOccurrences(false));
   }, [speciesKey, config.occurrencesEndpoint]);
 
+  // Fetch ALL candidates (no threshold) for heatmap
+  useEffect(() => {
+    if (!hasCandidates || !speciesName) return;
+
+    setLoadingCandidates(true);
+    fetch(`/api/candidates?species=${encodeURIComponent(speciesName)}&minProb=0`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (!data.error) {
+          setCandidates(data.features || []);
+        }
+      })
+      .catch(console.error)
+      .finally(() => setLoadingCandidates(false));
+  }, [speciesName, hasCandidates]);
+
+  // Sort candidates by probability (low first so high prob renders on top)
+  const sortedCandidates = [...candidates].sort((a, b) => a.properties.probability - b.properties.probability);
+
   return (
     <tr>
       <td colSpan={colSpan} className="p-0">
         <div className="bg-zinc-50 dark:bg-zinc-800/50 border-t border-zinc-200 dark:border-zinc-700">
           <div className="p-2">
-            {/* Map Only */}
+            {/* Controls for candidates */}
+            {hasCandidates && (
+              <div className="flex flex-wrap items-center gap-4 mb-2 p-2 bg-white dark:bg-zinc-900 rounded-lg border border-zinc-200 dark:border-zinc-700">
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={showCandidates}
+                    onChange={(e) => setShowCandidates(e.target.checked)}
+                    className="w-4 h-4 rounded accent-orange-500"
+                  />
+                  <span className="text-sm text-zinc-700 dark:text-zinc-300">
+                    Show heatmap ({loadingCandidates ? "..." : candidates.length} points)
+                  </span>
+                </label>
+                {showCandidates && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-zinc-500">Opacity:</span>
+                    <input
+                      type="range"
+                      min="0.1"
+                      max="1"
+                      step="0.1"
+                      value={heatmapOpacity}
+                      onChange={(e) => setHeatmapOpacity(parseFloat(e.target.value))}
+                      className="w-20 accent-orange-500"
+                    />
+                  </div>
+                )}
+                <div className="flex items-center gap-3 ml-auto text-xs">
+                  <div className="flex items-center gap-1">
+                    <div className="w-3 h-3 rounded-full bg-blue-500 border-2 border-blue-700" />
+                    <span className="text-zinc-500">GBIF record</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <div className="w-12 h-3 rounded" style={{background: "linear-gradient(to right, rgb(180,180,180), rgb(220,38,38))"}} />
+                    <span className="text-zinc-500">Low → High prob</span>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Map */}
             <div className="h-[300px] md:h-[400px] rounded-lg overflow-hidden border border-zinc-200 dark:border-zinc-700 relative">
               {loadingOccurrences ? (
                 <div className="flex items-center justify-center h-full bg-zinc-100 dark:bg-zinc-800">
@@ -266,18 +358,50 @@ function ExpandedRow({ speciesKey, regionMode, mounted, colSpan }: ExpandedRowPr
                       pathOptions={{ color: "#22c55e", weight: 2, fillOpacity: 0.05 }}
                     />
                   )}
+                  {/* Render candidates as heatmap (sorted low-to-high so high prob on top) */}
+                  {showCandidates && sortedCandidates.map((feature, idx) => {
+                    const [lon, lat] = feature.geometry.coordinates;
+                    const prob = feature.properties.probability;
+                    const color = getProbabilityColor(prob);
+                    // Opacity scales with probability: low prob = more transparent
+                    const opacity = 0.2 + (prob * 0.8 * heatmapOpacity);
+                    return (
+                      <CircleMarker
+                        key={`candidate-${idx}`}
+                        center={[lat, lon]}
+                        radius={6}
+                        pathOptions={{
+                          color: "transparent",
+                          fillColor: color,
+                          fillOpacity: opacity,
+                          weight: 0,
+                        }}
+                      >
+                        <Popup>
+                          <div className="text-sm">
+                            <div className="font-medium text-orange-600">Predicted Location</div>
+                            <div>Probability: {(prob * 100).toFixed(1)}%</div>
+                            <div className="text-xs text-gray-500">
+                              {lat.toFixed(4)}, {lon.toFixed(4)}
+                            </div>
+                          </div>
+                        </Popup>
+                      </CircleMarker>
+                    );
+                  })}
+                  {/* Render occurrences on top with distinct style */}
                   {occurrences.map((feature, idx) => {
                     const [lon, lat] = feature.geometry.coordinates;
                     return (
                       <CircleMarker
                         key={feature.properties.gbifID || idx}
                         center={[lat, lon]}
-                        radius={6}
+                        radius={5}
                         pathOptions={{
-                          color: "#3b82f6",
+                          color: "#1d4ed8",
                           fillColor: "#3b82f6",
-                          fillOpacity: 0.7,
-                          weight: 1,
+                          fillOpacity: 0.9,
+                          weight: 2,
                         }}
                       >
                         <Popup>
@@ -307,6 +431,7 @@ function ExpandedRow({ speciesKey, regionMode, mounted, colSpan }: ExpandedRowPr
               {!loadingOccurrences && (
                 <div className="absolute bottom-2 left-2 bg-white dark:bg-zinc-800 px-2 py-1 rounded text-xs text-zinc-600 dark:text-zinc-300 shadow">
                   {occurrences.length} occurrences
+                  {hasCandidates && showCandidates && ` • ${candidates.length} predictions`}
                 </div>
               )}
             </div>
@@ -347,10 +472,26 @@ export default function Home() {
   const [selectedOccurrenceCount, setSelectedOccurrenceCount] = useState<number>(0);
   const [mounted, setMounted] = useState(false);
 
+  // Candidates
+  const [availableCandidates, setAvailableCandidates] = useState<string[]>([]);
+  const [showOnlyWithCandidates, setShowOnlyWithCandidates] = useState(false);
+
   const config = REGION_CONFIG[regionMode];
 
   useEffect(() => {
     setMounted(true);
+  }, []);
+
+  // Fetch available candidates list
+  useEffect(() => {
+    fetch("/api/candidates")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.available) {
+          setAvailableCandidates(data.available.map((s: string) => s.toLowerCase()));
+        }
+      })
+      .catch(console.error);
   }, []);
 
   // Fetch data based on region mode
@@ -593,7 +734,7 @@ export default function Home() {
         {/* Filters */}
         {searchResults === null && (
           <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               {(Object.keys(FILTER_PRESETS) as FilterPreset[]).map((preset) => (
                 <button
                   key={preset}
@@ -607,6 +748,21 @@ export default function Home() {
                   {FILTER_PRESETS[preset].label}
                 </button>
               ))}
+              {availableCandidates.length > 0 && (
+                <button
+                  onClick={() => setShowOnlyWithCandidates(!showOnlyWithCandidates)}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 ${
+                    showOnlyWithCandidates
+                      ? "bg-orange-500 text-white"
+                      : "bg-white text-zinc-700 border border-zinc-200 hover:bg-zinc-50 dark:bg-zinc-800 dark:text-zinc-300 dark:border-zinc-700"
+                  }`}
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                  Has Predictions
+                </button>
+              )}
             </div>
             <select
               value={sortOrder}
@@ -695,15 +851,24 @@ export default function Home() {
                     {selectedSpeciesKey === species.key && (
                       <ExpandedRow
                         speciesKey={species.key}
+                        speciesName={getCandidateKey(species.canonicalName)}
                         regionMode={regionMode}
                         mounted={mounted}
                         colSpan={5}
+                        hasCandidates={!!getCandidateKey(species.canonicalName) && availableCandidates.includes(getCandidateKey(species.canonicalName)!)}
                       />
                     )}
                   </React.Fragment>
                 ))
               ) : (
-                data.map((record, index) => {
+                data
+                  .filter((record) => {
+                    if (!showOnlyWithCandidates) return true;
+                    const name = speciesCache[record.species_key]?.canonicalName || record.canonicalName;
+                    const candidateKey = getCandidateKey(name);
+                    return candidateKey && availableCandidates.includes(candidateKey);
+                  })
+                  .map((record, index) => {
                   const rank =
                     sortOrder === "desc"
                       ? (pagination.page - 1) * pagination.limit + index + 1
@@ -714,6 +879,8 @@ export default function Home() {
                   // Use cached data if available, otherwise use inline data from API
                   const displayName = cached?.canonicalName || record.canonicalName || (isLoading ? "Loading..." : "—");
                   const commonName = cached?.vernacularName || record.vernacularName || (isLoading ? "..." : "—");
+                  const candidateKey = getCandidateKey(displayName);
+                  const hasCandidates = candidateKey && availableCandidates.includes(candidateKey);
 
                   return (
                     <React.Fragment key={record.species_key}>
@@ -732,7 +899,14 @@ export default function Home() {
                           )}
                         </td>
                         <td className="px-2 sm:px-4 py-2">
-                          <div className="text-sm text-zinc-900 dark:text-zinc-100">{commonName}</div>
+                          <div className="flex items-center gap-2">
+                            <span className="text-sm text-zinc-900 dark:text-zinc-100">{commonName}</span>
+                            {hasCandidates && (
+                              <span className="px-1.5 py-0.5 text-[10px] font-medium bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400 rounded">
+                                AI
+                              </span>
+                            )}
+                          </div>
                           <div className="text-xs text-zinc-500 italic">{displayName}</div>
                         </td>
                         <td className="px-2 sm:px-4 py-2 text-sm text-right font-medium text-zinc-900 dark:text-zinc-100">
@@ -755,9 +929,11 @@ export default function Home() {
                       {selectedSpeciesKey === record.species_key && (
                         <ExpandedRow
                           speciesKey={record.species_key}
+                          speciesName={candidateKey}
                           regionMode={regionMode}
                           mounted={mounted}
                           colSpan={6}
+                          hasCandidates={hasCandidates}
                         />
                       )}
                     </React.Fragment>

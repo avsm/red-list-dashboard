@@ -37,10 +37,9 @@ async function loadCandidates(species: string): Promise<CandidatesGeoJSON | null
     return candidateCache[cacheKey];
   }
 
-  // Look for candidate file in data directory
-  const dataDir = path.join(process.cwd(), "..", "data");
-  const filename = `${cacheKey}_candidates.geojson`;
-  const filePath = path.join(dataDir, filename);
+  // Look for candidate file in output/{species}/ directory
+  const outputDir = path.join(process.cwd(), "..", "output", cacheKey);
+  const filePath = path.join(outputDir, "candidates.geojson");
 
   try {
     const content = await fs.readFile(filePath, "utf-8");
@@ -48,33 +47,30 @@ async function loadCandidates(species: string): Promise<CandidatesGeoJSON | null
     candidateCache[cacheKey] = geojson;
     return geojson;
   } catch {
-    // Try alternative naming patterns
-    const altFilename = `oak_candidates.geojson`;
-    const altPath = path.join(dataDir, altFilename);
-
-    try {
-      const content = await fs.readFile(altPath, "utf-8");
-      const geojson = JSON.parse(content) as CandidatesGeoJSON;
-      candidateCache[cacheKey] = geojson;
-      return geojson;
-    } catch {
-      return null;
-    }
+    return null;
   }
 }
 
 async function listAvailableSpecies(): Promise<string[]> {
-  const dataDir = path.join(process.cwd(), "..", "data");
+  const outputDir = path.join(process.cwd(), "..", "output");
 
   try {
-    const files = await fs.readdir(dataDir);
-    const candidateFiles = files.filter(f => f.endsWith("_candidates.geojson"));
+    const dirs = await fs.readdir(outputDir);
+    const speciesWithCandidates: string[] = [];
 
-    return candidateFiles.map(f => {
-      // Convert oak_candidates.geojson -> Oak
-      const name = f.replace("_candidates.geojson", "");
-      return name.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-    });
+    for (const dir of dirs) {
+      const candidatesPath = path.join(outputDir, dir, "candidates.geojson");
+      try {
+        await fs.access(candidatesPath);
+        // Convert quercus_robur -> Quercus Robur
+        const name = dir.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+        speciesWithCandidates.push(name);
+      } catch {
+        // No candidates file in this directory
+      }
+    }
+
+    return speciesWithCandidates;
   } catch {
     return [];
   }

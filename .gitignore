@@ -35,11 +35,6 @@ __pycache__/
 .venv/
 *.egg-info/
 
-# Data directories (large files)
-brambles_tessera/
-data/
-global_0.1_degree_representation/
-global_0.1_degree_tiff_all/
-
-# Notebooks
-*.ipynb
+# Project outputs (large files, regeneratable)
+cache/
+output/
