@@ -57,7 +57,15 @@ interface SpeciesData {
   experiments: Experiment[];
 }
 
-const SPECIES_FILES = ["quercus_robur", "fraxinus_excelsior", "alnus_glutinosa", "crataegus_monogyna"];
+const SPECIES_FILES = [
+  "quercus_robur",
+  "fraxinus_excelsior",
+  "alnus_glutinosa",
+  "crataegus_monogyna",
+  "urtica_dioica",
+  "salix_caprea",
+  "aesculus_hippocastanum",
+];
 
 export default function ExperimentPage() {
   const [speciesData, setSpeciesData] = useState<Record<string, SpeciesData>>({});

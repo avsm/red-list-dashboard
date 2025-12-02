@@ -27,8 +27,12 @@ OUTPUT_DIR = PROJECT_ROOT / "output" / "experiments"
 SPECIES_LIST = [
     "Quercus robur",       # Oak - widespread woodland
     "Fraxinus excelsior",  # Ash - woodland/hedgerows
-    "Alnus glutinosa",     # Alder - wetland/riparian (different habitat)
-    "Crataegus monogyna",  # Hawthorn - hedgerows (different habitat)
+    "Alnus glutinosa",     # Alder - wetland/riparian
+    "Crataegus monogyna",  # Hawthorn - hedgerows
+    "Urtica dioica",       # Stinging Nettle - disturbed/nutrient-rich
+    "Salix caprea",        # Goat Willow - wet areas
+    "Castanea sativa",     # Sweet Chestnut - planted woodland
+    "Aesculus hippocastanum",  # Horse Chestnut - parkland/planted
 ]
 REGION = "cambridge"
 N_POSITIVE_VALUES = [1, 2, 5, 10, 20, 50, 100]  # Positive training samples (matched by negatives)
