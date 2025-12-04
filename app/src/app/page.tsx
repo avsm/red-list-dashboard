@@ -659,8 +659,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 p-4 md:p-8">
       <main className="max-w-7xl mx-auto">
-        {/* Subtitle */}
+        {/* Header */}
         <div className="mb-6">
+          <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">
+            Plant GBIF Data Explorer
+          </h1>
           <p className="text-zinc-600 dark:text-zinc-400">
             {stats
               ? `Explore ${formatNumber(stats.total)} plant species - ${getDescription()}`
