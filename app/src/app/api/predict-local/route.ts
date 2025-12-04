@@ -53,7 +53,8 @@ export async function GET(request: NextRequest) {
 
   try {
     const result = await new Promise<PredictionResult>((resolve, reject) => {
-      const proc = spawn("python3", [
+      const proc = spawn("uv", [
+        "run", "python3",
         scriptPath,
         "--lat", lat.toString(),
         "--lon", lon.toString(),
