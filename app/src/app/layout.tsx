@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Plant Species Data Explorer",
-  description: "Explore GBIF occurrence data for plant species to identify data-deficient species",
+  title: "Plant GBIF Data Explorer",
+  description: "Breaking down GBIF occurrence data for plants across the world",
 };
 
 export default function RootLayout({

@@ -648,14 +648,6 @@ export default function Home() {
     }
   };
 
-  // Description text based on mode
-  const getDescription = () => {
-    if (regionMode === "country" && selectedCountryName) {
-      return `Plant species in ${selectedCountryName}`;
-    }
-    return "Worldwide GBIF occurrence data";
-  };
-
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 p-4 md:p-8">
       <main className="max-w-7xl mx-auto">
@@ -666,7 +658,7 @@ export default function Home() {
           </h1>
           <p className="text-zinc-600 dark:text-zinc-400">
             {stats
-              ? `Explore ${formatNumber(stats.total)} plant species - ${getDescription()}`
+              ? `Breaking down GBIF occurrence data for ${formatNumber(stats.total)} plant species across the world`
               : regionMode === "country" && !selectedCountry
                 ? "Select a country on the map to explore its plant species"
                 : `Loading...`}

@@ -116,21 +116,21 @@ export default function ExperimentPage() {
   });
   const [speciesNames, setSpeciesNames] = useState<SpeciesNames>({});
   const [selectedSpecies, setSelectedSpecies] = useState<string>("quercus_robur");
-  const [selectedNPositive, setSelectedNPositive] = useState<number>(10);
+  const [selectedNPositive, setSelectedNPositive] = useState<number>(50);
   const [selectedTrialIdx, setSelectedTrialIdx] = useState<number>(0);
   const [threshold, setThreshold] = useState<number>(0.5);
   const [mounted, setMounted] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [experimentModelType, setExperimentModelType] = useState<ExperimentModelType>("logistic");
+  const [experimentModelType, setExperimentModelType] = useState<ExperimentModelType>("mlp");
 
   // Location-based prediction state
   const [userLocation, setUserLocation] = useState<{ lat: number; lon: number } | null>(null);
   const [localPredictions, setLocalPredictions] = useState<LocalPredictionResult | null>(null);
   const [showHeatmap, setShowHeatmap] = useState(true);
+  const [showConfidence, setShowConfidence] = useState(false);
   const [localLoading, setLocalLoading] = useState(false);
   const [localError, setLocalError] = useState<string | null>(null);
   const [modelType, setModelType] = useState<ModelType>("mlp");
-  const [showConfidence, setShowConfidence] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -295,28 +295,62 @@ export default function ExperimentPage() {
   const accuracy = (tp + tn) / (tp + tn + fp + fn);
   const precision = tp / (tp + fp) || 0;
   const recall = tp / (tp + fn) || 0;
+  const f1 = precision + recall > 0 ? (2 * precision * recall) / (precision + recall) : 0;
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 p-4 md:p-8">
       <main className="max-w-6xl mx-auto">
         <div className="mb-6">
+          <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">
+            Tree Species Classification in Cambridge
+          </h1>
           <p className="text-zinc-600 dark:text-zinc-400">
-            Validating classifier performance on held-out occurrences vs random background
+            Validating classifier performance on held-out occurrences vs random background points
             <span className="ml-1 text-zinc-500">({currentData.n_trials} trials per setting)</span>
           </p>
         </div>
 
-        {/* Controls */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-          {/* Model type selector for experiments */}
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
-            <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
-              Model Type
+        {/* Species selector - full width */}
+        <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 mb-6">
+          <div className="flex flex-wrap items-center gap-4">
+            <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+              Species
             </label>
+            <select
+              value={selectedSpecies}
+              onChange={(e) => setSelectedSpecies(e.target.value)}
+              className="flex-1 min-w-[200px] px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100"
+            >
+              {Object.entries(speciesData).map(([slug, data]) => {
+                const vernacularName = speciesNames[data.species_key.toString()];
+                return (
+                  <option key={slug} value={slug}>
+                    {data.species}
+                    {vernacularName ? ` (${vernacularName})` : ""} - {data.n_occurrences} occurrences
+                  </option>
+                );
+              })}
+            </select>
+            <a
+              href={`https://www.gbif.org/species/${currentData.species_key}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-green-600 hover:text-green-700 hover:underline"
+            >
+              View on GBIF →
+            </a>
+          </div>
+        </div>
+
+        {/* Controls row */}
+        <div className="flex flex-wrap items-center gap-4 mb-4 bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
+          {/* Model type selector */}
+          <div className="flex items-center gap-2">
+            <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Model</label>
             <div className="flex rounded-lg overflow-hidden border border-zinc-200 dark:border-zinc-700">
               <button
                 onClick={() => setExperimentModelType("logistic")}
-                className={`flex-1 px-3 py-2 text-sm font-medium transition-colors ${
+                className={`px-3 py-1.5 text-sm font-medium transition-colors ${
                   experimentModelType === "logistic"
                     ? "bg-green-600 text-white"
                     : "bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700"
@@ -326,7 +360,7 @@ export default function ExperimentPage() {
               </button>
               <button
                 onClick={() => setExperimentModelType("mlp")}
-                className={`flex-1 px-3 py-2 text-sm font-medium transition-colors ${
+                className={`px-3 py-1.5 text-sm font-medium transition-colors border-l border-zinc-200 dark:border-zinc-700 ${
                   experimentModelType === "mlp"
                     ? "bg-purple-600 text-white"
                     : "bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700"
@@ -337,48 +371,17 @@ export default function ExperimentPage() {
             </div>
           </div>
 
-          {/* Species selector */}
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
-            <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
-              Species
-            </label>
-            <select
-              value={selectedSpecies}
-              onChange={(e) => setSelectedSpecies(e.target.value)}
-              className="w-full px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100"
-            >
-              {Object.entries(speciesData).map(([slug, data]) => {
-                const vernacularName = speciesNames[data.species_key.toString()];
-                return (
-                  <option key={slug} value={slug}>
-                    {data.species}
-                    {vernacularName ? ` (${vernacularName})` : ""} - {data.n_occurrences} occ
-                  </option>
-                );
-              })}
-            </select>
-            <a
-              href={`https://www.gbif.org/species/${currentData.species_key}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-2 text-sm text-green-600 hover:text-green-700 hover:underline"
-            >
-              View on GBIF →
-            </a>
-          </div>
+          <div className="h-6 w-px bg-zinc-200 dark:bg-zinc-700" />
 
           {/* N selector */}
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
-            <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
-              Positive training samples
-              <span className="font-normal text-zinc-500 ml-1">(+ matching negatives)</span>
-            </label>
-            <div className="flex flex-wrap gap-2">
+          <div className="flex items-center gap-2">
+            <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Training samples</label>
+            <div className="flex flex-wrap gap-1">
               {availableNPositive.map((n) => (
                 <button
                   key={n}
                   onClick={() => setSelectedNPositive(n)}
-                  className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
+                  className={`px-2 py-1 rounded text-xs font-medium transition-colors ${
                     selectedNPositive === n
                       ? "bg-green-600 text-white"
                       : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
@@ -390,18 +393,19 @@ export default function ExperimentPage() {
             </div>
           </div>
 
+          <div className="h-6 w-px bg-zinc-200 dark:bg-zinc-700" />
+
           {/* Trial selector */}
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
-            <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
-              Trial
-              <span className="font-normal text-zinc-500 ml-1">(seed: {currentTrial.seed})</span>
+          <div className="flex items-center gap-2">
+            <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+              Trial <span className="font-normal text-zinc-500">(seed: {currentTrial.seed})</span>
             </label>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1">
               {currentExp.trials.map((trial, idx) => (
                 <button
                   key={idx}
                   onClick={() => setSelectedTrialIdx(idx)}
-                  className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
+                  className={`px-2 py-1 rounded text-xs font-medium transition-colors ${
                     selectedTrialIdx === idx
                       ? "bg-blue-600 text-white"
                       : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300"
@@ -414,280 +418,39 @@ export default function ExperimentPage() {
           </div>
         </div>
 
-        {/* Metrics */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
-            <div className={`text-2xl font-bold ${currentExp.auc_mean >= 0.7 ? "text-green-600" : currentExp.auc_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
-              {(currentExp.auc_mean * 100).toFixed(1)}%
-            </div>
-            <div className="text-xs text-zinc-400">± {(currentExp.auc_std * 100).toFixed(1)}</div>
-            <div className="text-sm text-zinc-500">AUC</div>
-          </div>
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
-            <div className={`text-2xl font-bold ${currentExp.f1_mean >= 0.7 ? "text-green-600" : currentExp.f1_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
-              {(currentExp.f1_mean * 100).toFixed(1)}%
-            </div>
-            <div className="text-xs text-zinc-400">± {(currentExp.f1_std * 100).toFixed(1)}</div>
-            <div className="text-sm text-zinc-500">F1 Score</div>
-          </div>
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
-            <div className="text-2xl font-bold text-blue-600">
-              {(currentExp.precision_mean * 100).toFixed(1)}%
-            </div>
-            <div className="text-xs text-zinc-400">± {(currentExp.precision_std * 100).toFixed(1)}</div>
-            <div className="text-sm text-zinc-500">Precision</div>
-          </div>
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
-            <div className="text-2xl font-bold text-purple-600">
-              {(currentExp.recall_mean * 100).toFixed(1)}%
-            </div>
-            <div className="text-xs text-zinc-400">± {(currentExp.recall_std * 100).toFixed(1)}</div>
-            <div className="text-sm text-zinc-500">Recall</div>
-          </div>
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
-            <div className="text-lg font-bold text-green-600">
-              {currentTrial.mean_positive.toFixed(3)}
-            </div>
-            <div className="text-lg font-bold text-red-600">
-              {currentTrial.mean_negative.toFixed(3)}
-            </div>
-            <div className="text-sm text-zinc-500">Pos/Neg Score</div>
-          </div>
-        </div>
-
-        {/* Model Comparison */}
-        {otherModelExp && (
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 mb-6">
-            <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-3">
-              Model Comparison (n={selectedNPositive})
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-zinc-200 dark:border-zinc-700">
-                    <th className="text-left py-2 px-3 text-zinc-500">Model</th>
-                    <th className="text-right py-2 px-3 text-zinc-500">AUC</th>
-                    <th className="text-right py-2 px-3 text-zinc-500">F1</th>
-                    <th className="text-right py-2 px-3 text-zinc-500">Precision</th>
-                    <th className="text-right py-2 px-3 text-zinc-500">Recall</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className={`border-b border-zinc-100 dark:border-zinc-800 ${experimentModelType === "logistic" ? "bg-green-50 dark:bg-green-900/10" : ""}`}>
-                    <td className="py-2 px-3 font-medium">
-                      <span className={experimentModelType === "logistic" ? "text-green-600" : ""}>Logistic</span>
-                    </td>
-                    <td className="py-2 px-3 text-right">
-                      {experimentModelType === "logistic"
-                        ? `${(currentExp.auc_mean * 100).toFixed(1)}%`
-                        : `${(otherModelExp.auc_mean * 100).toFixed(1)}%`}
-                    </td>
-                    <td className="py-2 px-3 text-right">
-                      {experimentModelType === "logistic"
-                        ? `${(currentExp.f1_mean * 100).toFixed(1)}%`
-                        : `${(otherModelExp.f1_mean * 100).toFixed(1)}%`}
-                    </td>
-                    <td className="py-2 px-3 text-right">
-                      {experimentModelType === "logistic"
-                        ? `${(currentExp.precision_mean * 100).toFixed(1)}%`
-                        : `${(otherModelExp.precision_mean * 100).toFixed(1)}%`}
-                    </td>
-                    <td className="py-2 px-3 text-right">
-                      {experimentModelType === "logistic"
-                        ? `${(currentExp.recall_mean * 100).toFixed(1)}%`
-                        : `${(otherModelExp.recall_mean * 100).toFixed(1)}%`}
-                    </td>
-                  </tr>
-                  <tr className={experimentModelType === "mlp" ? "bg-purple-50 dark:bg-purple-900/10" : ""}>
-                    <td className="py-2 px-3 font-medium">
-                      <span className={experimentModelType === "mlp" ? "text-purple-600" : ""}>MLP</span>
-                    </td>
-                    <td className="py-2 px-3 text-right">
-                      {experimentModelType === "mlp"
-                        ? `${(currentExp.auc_mean * 100).toFixed(1)}%`
-                        : `${(otherModelExp.auc_mean * 100).toFixed(1)}%`}
-                    </td>
-                    <td className="py-2 px-3 text-right">
-                      {experimentModelType === "mlp"
-                        ? `${(currentExp.f1_mean * 100).toFixed(1)}%`
-                        : `${(otherModelExp.f1_mean * 100).toFixed(1)}%`}
-                    </td>
-                    <td className="py-2 px-3 text-right">
-                      {experimentModelType === "mlp"
-                        ? `${(currentExp.precision_mean * 100).toFixed(1)}%`
-                        : `${(otherModelExp.precision_mean * 100).toFixed(1)}%`}
-                    </td>
-                    <td className="py-2 px-3 text-right">
-                      {experimentModelType === "mlp"
-                        ? `${(currentExp.recall_mean * 100).toFixed(1)}%`
-                        : `${(otherModelExp.recall_mean * 100).toFixed(1)}%`}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        )}
-
-        {/* Confusion Matrix */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          {/* Threshold control */}
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
-            <div className="flex items-center justify-between mb-3">
-              <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
-                Decision Threshold
-              </h3>
-              <span className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                {threshold.toFixed(2)}
-              </span>
-            </div>
-            <input
-              type="range"
-              min="0"
-              max="1"
-              step="0.05"
-              value={threshold}
-              onChange={(e) => setThreshold(parseFloat(e.target.value))}
-              className="w-full accent-green-600"
-            />
-            <div className="flex justify-between text-xs text-zinc-500 mt-1">
-              <span>0</span>
-              <span>0.5</span>
-              <span>1</span>
-            </div>
-            {/* Derived metrics */}
-            <div className="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-zinc-200 dark:border-zinc-700">
-              <div className="text-center">
-                <div className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                  {(accuracy * 100).toFixed(1)}%
+        {/* Map with metrics sidebar */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-4 mb-6">
+          {/* Map */}
+          <div className="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 overflow-hidden">
+            <div className="p-2 border-b border-zinc-200 dark:border-zinc-700">
+              <div className="flex flex-wrap items-center justify-center gap-3 text-xs">
+                <div className="flex items-center gap-1">
+                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-500 border border-yellow-700" />
+                  <span className="text-zinc-600 dark:text-zinc-400">Train+</span>
                 </div>
-                <div className="text-xs text-zinc-500">Accuracy</div>
-              </div>
-              <div className="text-center">
-                <div className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                  {(precision * 100).toFixed(1)}%
+                <div className="flex items-center gap-1">
+                  <div className="w-2.5 h-2.5 rounded-full bg-purple-500 border border-purple-700" />
+                  <span className="text-zinc-600 dark:text-zinc-400">Train−</span>
                 </div>
-                <div className="text-xs text-zinc-500">Precision</div>
-              </div>
-              <div className="text-center">
-                <div className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                  {(recall * 100).toFixed(1)}%
+                <div className="flex items-center gap-1">
+                  <div className="w-2.5 h-2.5 rounded-full bg-green-500 border border-green-700" />
+                  <span className="text-zinc-600 dark:text-zinc-400">TP</span>
                 </div>
-                <div className="text-xs text-zinc-500">Recall</div>
+                <div className="flex items-center gap-1">
+                  <div className="w-2.5 h-2.5 rounded-full bg-orange-500 border border-orange-700" />
+                  <span className="text-zinc-600 dark:text-zinc-400">FN</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-2.5 h-2.5 rounded-full bg-red-500 border border-red-700" />
+                  <span className="text-zinc-600 dark:text-zinc-400">FP</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-2.5 h-2.5 rounded-full bg-zinc-400 border border-zinc-600" />
+                  <span className="text-zinc-600 dark:text-zinc-400">TN</span>
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Confusion matrix */}
-          <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
-            <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-3">
-              Confusion Matrix
-            </h3>
-            <div className="grid grid-cols-3 gap-1 text-center text-sm">
-              {/* Header row */}
-              <div></div>
-              <div className="text-zinc-500 font-medium py-1">Pred +</div>
-              <div className="text-zinc-500 font-medium py-1">Pred −</div>
-              {/* True positive row */}
-              <div className="text-zinc-500 font-medium py-2">Actual +</div>
-              <div className="bg-green-100 dark:bg-green-900/30 rounded p-2">
-                <div className="text-xl font-bold text-green-700 dark:text-green-400">{tp}</div>
-                <div className="text-xs text-green-600 dark:text-green-500">TP</div>
-              </div>
-              <div className="bg-red-100 dark:bg-red-900/30 rounded p-2">
-                <div className="text-xl font-bold text-red-700 dark:text-red-400">{fn}</div>
-                <div className="text-xs text-red-600 dark:text-red-500">FN</div>
-              </div>
-              {/* True negative row */}
-              <div className="text-zinc-500 font-medium py-2">Actual −</div>
-              <div className="bg-red-100 dark:bg-red-900/30 rounded p-2">
-                <div className="text-xl font-bold text-red-700 dark:text-red-400">{fp}</div>
-                <div className="text-xs text-red-600 dark:text-red-500">FP</div>
-              </div>
-              <div className="bg-green-100 dark:bg-green-900/30 rounded p-2">
-                <div className="text-xl font-bold text-green-700 dark:text-green-400">{tn}</div>
-                <div className="text-xs text-green-600 dark:text-green-500">TN</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Metrics by training size */}
-        <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 mb-6">
-          <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-3">
-            Metrics by Training Size ({experimentModelType === "mlp" ? "MLP" : "Logistic"})
-          </h3>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-zinc-200 dark:border-zinc-700">
-                  <th className="text-left py-2 px-3 text-zinc-500">n</th>
-                  <th className="text-right py-2 px-3 text-zinc-500">AUC</th>
-                  <th className="text-right py-2 px-3 text-zinc-500">F1</th>
-                  <th className="text-right py-2 px-3 text-zinc-500">Precision</th>
-                  <th className="text-right py-2 px-3 text-zinc-500">Recall</th>
-                </tr>
-              </thead>
-              <tbody>
-                {currentData.experiments.map((exp) => (
-                  <tr
-                    key={exp.n_positive}
-                    className={`border-b border-zinc-100 dark:border-zinc-800 cursor-pointer hover:bg-zinc-50 dark:hover:bg-zinc-800 ${
-                      exp.n_positive === selectedNPositive ? "bg-zinc-100 dark:bg-zinc-800" : ""
-                    }`}
-                    onClick={() => setSelectedNPositive(exp.n_positive)}
-                  >
-                    <td className="py-2 px-3 font-medium">{exp.n_positive}</td>
-                    <td className={`py-2 px-3 text-right font-medium ${exp.auc_mean >= 0.7 ? "text-green-600" : exp.auc_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
-                      {(exp.auc_mean * 100).toFixed(1)}%
-                    </td>
-                    <td className={`py-2 px-3 text-right ${exp.f1_mean >= 0.7 ? "text-green-600" : exp.f1_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
-                      {(exp.f1_mean * 100).toFixed(1)}%
-                    </td>
-                    <td className="py-2 px-3 text-right text-zinc-600 dark:text-zinc-400">
-                      {(exp.precision_mean * 100).toFixed(1)}%
-                    </td>
-                    <td className="py-2 px-3 text-right text-zinc-600 dark:text-zinc-400">
-                      {(exp.recall_mean * 100).toFixed(1)}%
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* Map */}
-        <div className="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 overflow-hidden">
-          <div className="p-4 border-b border-zinc-200 dark:border-zinc-700">
-            <div className="flex flex-wrap items-center gap-4">
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-yellow-500 border-2 border-yellow-700" />
-                <span className="text-sm text-zinc-600 dark:text-zinc-400">Train + ({currentTrial.train_positive.length})</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-purple-500 border-2 border-purple-700" />
-                <span className="text-sm text-zinc-600 dark:text-zinc-400">Train − ({currentTrial.train_negative.length})</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-green-500 border-2 border-green-700" />
-                <span className="text-sm text-zinc-600 dark:text-zinc-400">TP ({tp})</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-orange-500 border-2 border-orange-700" />
-                <span className="text-sm text-zinc-600 dark:text-zinc-400">FN ({fn})</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-red-500 border-2 border-red-700" />
-                <span className="text-sm text-zinc-600 dark:text-zinc-400">FP ({fp})</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-zinc-400 border-2 border-zinc-600" />
-                <span className="text-sm text-zinc-600 dark:text-zinc-400">TN ({tn})</span>
-              </div>
-            </div>
-          </div>
-          <div className="h-[500px]">
+            <div className="h-[500px]">
             {mounted && (
               <MapContainer
                 center={[52.205, 0.1235]}
@@ -717,6 +480,9 @@ export default function ExperimentPage() {
                         <div className="text-sm">
                           <div className="font-medium text-zinc-600">True Negative (TN)</div>
                           <div>Score: {score.toFixed(3)}</div>
+                          {experimentModelType === "mlp" && pt.confidence !== undefined && (
+                            <div className="text-purple-600">Confidence: {(pt.confidence * 100).toFixed(0)}%</div>
+                          )}
                           <div className="text-xs text-zinc-500">Correctly rejected</div>
                         </div>
                       </Popup>
@@ -742,6 +508,9 @@ export default function ExperimentPage() {
                         <div className="text-sm">
                           <div className="font-medium text-red-600">False Positive (FP)</div>
                           <div>Score: {score.toFixed(3)}</div>
+                          {experimentModelType === "mlp" && pt.confidence !== undefined && (
+                            <div className="text-purple-600">Confidence: {(pt.confidence * 100).toFixed(0)}%</div>
+                          )}
                           <div className="text-xs text-zinc-500">Incorrectly predicted</div>
                         </div>
                       </Popup>
@@ -767,6 +536,9 @@ export default function ExperimentPage() {
                         <div className="text-sm">
                           <div className="font-medium text-orange-600">False Negative (FN)</div>
                           <div>Score: {score.toFixed(3)}</div>
+                          {experimentModelType === "mlp" && pt.confidence !== undefined && (
+                            <div className="text-purple-600">Confidence: {(pt.confidence * 100).toFixed(0)}%</div>
+                          )}
                           <div className="text-xs text-zinc-500">Missed occurrence</div>
                         </div>
                       </Popup>
@@ -792,6 +564,9 @@ export default function ExperimentPage() {
                         <div className="text-sm">
                           <div className="font-medium text-green-600">True Positive (TP)</div>
                           <div>Score: {score.toFixed(3)}</div>
+                          {experimentModelType === "mlp" && pt.confidence !== undefined && (
+                            <div className="text-purple-600">Confidence: {(pt.confidence * 100).toFixed(0)}%</div>
+                          )}
                           <div className="text-xs text-zinc-500">Correctly identified</div>
                         </div>
                       </Popup>
@@ -843,18 +618,168 @@ export default function ExperimentPage() {
 
               </MapContainer>
             )}
+            </div>
+          </div>
+
+          {/* Right sidebar - Metrics */}
+          <div className="space-y-4">
+            {/* AUC */}
+            <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
+              <div className={`text-3xl font-bold ${currentExp.auc_mean >= 0.7 ? "text-green-600" : currentExp.auc_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
+                {(currentExp.auc_mean * 100).toFixed(1)}%
+              </div>
+              <div className="text-xs text-zinc-400">± {(currentExp.auc_std * 100).toFixed(1)}</div>
+              <div className="text-sm text-zinc-500">AUC</div>
+            </div>
+
+            {/* F1 */}
+            <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 text-center">
+              <div className={`text-3xl font-bold ${f1 >= 0.7 ? "text-green-600" : f1 >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
+                {(f1 * 100).toFixed(1)}%
+              </div>
+              <div className="text-sm text-zinc-500">F1 Score</div>
+            </div>
+
+            {/* Threshold + Confusion matrix */}
+            <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                  Decision Threshold
+                </h3>
+                <span className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
+                  {threshold.toFixed(2)}
+                </span>
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step="0.05"
+                value={threshold}
+                onChange={(e) => setThreshold(parseFloat(e.target.value))}
+                className="w-full accent-green-600 mb-4"
+              />
+              <h4 className="text-xs font-medium text-zinc-500 mb-2">Confusion Matrix</h4>
+              <div className="grid grid-cols-3 gap-1.5 text-center text-sm">
+                <div></div>
+                <div className="text-zinc-500 font-medium text-xs py-1">Predicted +</div>
+                <div className="text-zinc-500 font-medium text-xs py-1">Predicted −</div>
+                <div className="text-zinc-500 font-medium text-xs py-2">Actual +</div>
+                <div className="bg-green-100 dark:bg-green-900/30 rounded-lg p-2">
+                  <div className="text-xl font-bold text-green-700 dark:text-green-400">{tp}</div>
+                  <div className="text-xs text-green-600 dark:text-green-500">TP</div>
+                </div>
+                <div className="bg-red-100 dark:bg-red-900/30 rounded-lg p-2">
+                  <div className="text-xl font-bold text-red-700 dark:text-red-400">{fn}</div>
+                  <div className="text-xs text-red-600 dark:text-red-500">FN</div>
+                </div>
+                <div className="text-zinc-500 font-medium text-xs py-2">Actual −</div>
+                <div className="bg-red-100 dark:bg-red-900/30 rounded-lg p-2">
+                  <div className="text-xl font-bold text-red-700 dark:text-red-400">{fp}</div>
+                  <div className="text-xs text-red-600 dark:text-red-500">FP</div>
+                </div>
+                <div className="bg-green-100 dark:bg-green-900/30 rounded-lg p-2">
+                  <div className="text-xl font-bold text-green-700 dark:text-green-400">{tn}</div>
+                  <div className="text-xs text-green-600 dark:text-green-500">TN</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Find Me - Local Predictions */}
+        {/* Metrics by training size - with model comparison */}
+        <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 mb-6">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+              Metrics by Training Size
+            </h3>
+            <span className="text-xs text-zinc-500">F1 computed at threshold = 0.5</span>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-zinc-200 dark:border-zinc-700">
+                  <th className="text-left py-2 px-3 text-zinc-500">n</th>
+                  <th className="text-center py-2 px-3 text-zinc-500 border-l border-zinc-200 dark:border-zinc-700" colSpan={2}>
+                    <span className="text-green-600">Logistic</span>
+                  </th>
+                  <th className="text-center py-2 px-3 text-zinc-500 border-l border-zinc-200 dark:border-zinc-700" colSpan={2}>
+                    <span className="text-purple-600">MLP</span>
+                  </th>
+                </tr>
+                <tr className="border-b border-zinc-200 dark:border-zinc-700 text-xs">
+                  <th></th>
+                  <th className="text-right py-1 px-2 text-zinc-400 border-l border-zinc-200 dark:border-zinc-700">AUC</th>
+                  <th className="text-right py-1 px-2 text-zinc-400">F1</th>
+                  <th className="text-right py-1 px-2 text-zinc-400 border-l border-zinc-200 dark:border-zinc-700">AUC</th>
+                  <th className="text-right py-1 px-2 text-zinc-400">F1</th>
+                </tr>
+              </thead>
+              <tbody>
+                {currentData.experiments.map((exp) => {
+                  const mlpData = speciesDataByModel.mlp[selectedSpecies];
+                  const mlpExp = mlpData?.experiments.find((e) => e.n_positive === exp.n_positive);
+                  const logisticData = speciesDataByModel.logistic[selectedSpecies];
+                  const logisticExp = logisticData?.experiments.find((e) => e.n_positive === exp.n_positive);
+
+                  return (
+                    <tr
+                      key={exp.n_positive}
+                      className={`border-b border-zinc-100 dark:border-zinc-800 cursor-pointer hover:bg-zinc-50 dark:hover:bg-zinc-800 ${
+                        exp.n_positive === selectedNPositive ? "bg-zinc-100 dark:bg-zinc-800" : ""
+                      }`}
+                      onClick={() => setSelectedNPositive(exp.n_positive)}
+                    >
+                      <td className="py-2 px-3 font-medium">{exp.n_positive}</td>
+                      <td className={`py-2 px-2 text-right border-l border-zinc-200 dark:border-zinc-700 ${logisticExp && logisticExp.auc_mean >= 0.7 ? "text-green-600" : logisticExp && logisticExp.auc_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
+                        {logisticExp ? (
+                          <span>
+                            {(logisticExp.auc_mean * 100).toFixed(0)}%
+                            <span className="text-zinc-400 text-xs ml-0.5">±{(logisticExp.auc_std * 100).toFixed(0)}</span>
+                          </span>
+                        ) : "-"}
+                      </td>
+                      <td className={`py-2 px-2 text-right ${logisticExp && logisticExp.f1_mean >= 0.7 ? "text-green-600" : logisticExp && logisticExp.f1_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
+                        {logisticExp ? (
+                          <span>
+                            {(logisticExp.f1_mean * 100).toFixed(0)}%
+                            <span className="text-zinc-400 text-xs ml-0.5">±{(logisticExp.f1_std * 100).toFixed(0)}</span>
+                          </span>
+                        ) : "-"}
+                      </td>
+                      <td className={`py-2 px-2 text-right border-l border-zinc-200 dark:border-zinc-700 ${mlpExp && mlpExp.auc_mean >= 0.7 ? "text-green-600" : mlpExp && mlpExp.auc_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
+                        {mlpExp ? (
+                          <span>
+                            {(mlpExp.auc_mean * 100).toFixed(0)}%
+                            <span className="text-zinc-400 text-xs ml-0.5">±{(mlpExp.auc_std * 100).toFixed(0)}</span>
+                          </span>
+                        ) : "-"}
+                      </td>
+                      <td className={`py-2 px-2 text-right ${mlpExp && mlpExp.f1_mean >= 0.7 ? "text-green-600" : mlpExp && mlpExp.f1_mean >= 0.5 ? "text-yellow-600" : "text-red-600"}`}>
+                        {mlpExp ? (
+                          <span>
+                            {(mlpExp.f1_mean * 100).toFixed(0)}%
+                            <span className="text-zinc-400 text-xs ml-0.5">±{(mlpExp.f1_std * 100).toFixed(0)}</span>
+                          </span>
+                        ) : "-"}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Local Predictions */}
         <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 border border-zinc-200 dark:border-zinc-800 mt-6">
           <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
             <div>
               <h3 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
-                Predict Near Me
+                Predict at Your Location
               </h3>
               <p className="text-xs text-zinc-500 mt-1">
-                Get predictions for a 500m × 500m grid at your current location
+                Predict {speciesData[selectedSpecies]?.species || "species"} ({speciesNames[speciesData[selectedSpecies]?.species_key?.toString()] || "tree"}) presence in a 500m grid around you
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -880,7 +805,7 @@ export default function ExperimentPage() {
                         : "bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700"
                     }`}
                   >
-                    MLP + Uncertainty
+                    MLP
                   </button>
                 </div>
               </div>
@@ -895,7 +820,7 @@ export default function ExperimentPage() {
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                     </svg>
-                    <span>Finding...</span>
+                    <span>Predicting...</span>
                   </>
                 ) : (
                   <>
@@ -903,7 +828,7 @@ export default function ExperimentPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    <span>Find Me</span>
+                    <span>Use My Location</span>
                   </>
                 )}
               </button>
@@ -916,71 +841,8 @@ export default function ExperimentPage() {
             </div>
           )}
 
-          {localPredictions && (
+          {localPredictions && userLocation && (
             <div className="space-y-4">
-              {/* Model info badge */}
-              <div className="flex items-center gap-2">
-                <span className={`px-2 py-1 text-xs font-medium rounded ${
-                  localPredictions.model_type === "mlp"
-                    ? "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400"
-                    : "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
-                }`}>
-                  {localPredictions.model_type === "mlp" ? "MLP + MC Dropout" : "Logistic Regression"}
-                </span>
-                {localPredictions.has_uncertainty && (
-                  <span className="px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
-                    Uncertainty Available
-                  </span>
-                )}
-              </div>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="text-center p-3 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-                  <div className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                    {localPredictions.n_pixels}
-                  </div>
-                  <div className="text-xs text-zinc-500">Pixels analyzed</div>
-                </div>
-                <div className="text-center p-3 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-                  <div className="text-lg font-bold text-green-600">
-                    {localPredictions.predictions.filter(p => p.score >= threshold).length}
-                  </div>
-                  <div className="text-xs text-zinc-500">High probability</div>
-                </div>
-                <div className="text-center p-3 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-                  <div className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                    {localPredictions.predictions.length > 0
-                      ? Math.max(...localPredictions.predictions.map(p => p.score)).toFixed(2)
-                      : "N/A"}
-                  </div>
-                  <div className="text-xs text-zinc-500">Max score</div>
-                </div>
-                {localPredictions.has_uncertainty ? (
-                  <div className="text-center p-3 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-                    <div className="text-lg font-bold text-purple-600">
-                      {localPredictions.predictions.length > 0
-                        ? (localPredictions.predictions.reduce((a, b) => a + (b.confidence ?? 0), 0) / localPredictions.predictions.length * 100).toFixed(0) + "%"
-                        : "N/A"}
-                    </div>
-                    <div className="text-xs text-zinc-500">Mean confidence</div>
-                  </div>
-                ) : (
-                  <div className="text-center p-3 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
-                    <div className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                      {localPredictions.predictions.length > 0
-                        ? (localPredictions.predictions.reduce((a, b) => a + b.score, 0) / localPredictions.predictions.length).toFixed(2)
-                        : "N/A"}
-                    </div>
-                    <div className="text-xs text-zinc-500">Mean score</div>
-                  </div>
-                )}
-              </div>
-
-              {userLocation && (
-                <div className="text-xs text-zinc-500 mb-2">
-                  Location: {userLocation.lat.toFixed(5)}, {userLocation.lon.toFixed(5)}
-                </div>
-              )}
 
               {/* Satellite Map for Local Predictions */}
               {userLocation && (
@@ -992,30 +854,30 @@ export default function ExperimentPage() {
                           <>
                             <div className="flex items-center gap-1">
                               <div className="w-3 h-3 rounded bg-green-500" />
-                              <span className="text-zinc-600 dark:text-zinc-400">High confidence</span>
+                              <span className="text-zinc-600 dark:text-zinc-400">Confident</span>
                             </div>
                             <div className="flex items-center gap-1">
                               <div className="w-3 h-3 rounded bg-yellow-500" />
-                              <span className="text-zinc-600 dark:text-zinc-400">Medium</span>
+                              <span className="text-zinc-600 dark:text-zinc-400">Uncertain</span>
                             </div>
                             <div className="flex items-center gap-1">
                               <div className="w-3 h-3 rounded bg-red-500" />
-                              <span className="text-zinc-600 dark:text-zinc-400">Low confidence</span>
+                              <span className="text-zinc-600 dark:text-zinc-400">Very uncertain</span>
                             </div>
                           </>
                         ) : (
                           <>
                             <div className="flex items-center gap-1">
                               <div className="w-3 h-3 rounded bg-red-500" />
-                              <span className="text-zinc-600 dark:text-zinc-400">High prob</span>
+                              <span className="text-zinc-600 dark:text-zinc-400">Likely present</span>
                             </div>
                             <div className="flex items-center gap-1">
                               <div className="w-3 h-3 rounded bg-yellow-500" />
-                              <span className="text-zinc-600 dark:text-zinc-400">Medium</span>
+                              <span className="text-zinc-600 dark:text-zinc-400">Maybe</span>
                             </div>
                             <div className="flex items-center gap-1">
                               <div className="w-3 h-3 rounded bg-blue-500" />
-                              <span className="text-zinc-600 dark:text-zinc-400">Low</span>
+                              <span className="text-zinc-600 dark:text-zinc-400">Unlikely</span>
                             </div>
                           </>
                         )}
@@ -1034,7 +896,7 @@ export default function ExperimentPage() {
                                 : "bg-zinc-200 text-zinc-700 dark:bg-zinc-700 dark:text-zinc-300"
                             }`}
                           >
-                            {showConfidence ? "Showing Confidence" : "Show Confidence"}
+                            {showConfidence ? "Confidence" : "Probability"}
                           </button>
                         )}
                         <button
@@ -1063,36 +925,31 @@ export default function ExperimentPage() {
                         />
                         {/* Heatmap rectangles */}
                         {showHeatmap && localPredictions.predictions.map((pt, idx) => {
-                          // Determine what value to visualize
-                          const useConfidenceColor = showConfidence && localPredictions.has_uncertainty;
-                          const value = useConfidenceColor ? (pt.confidence ?? 0.5) : pt.score;
-
+                          const useConfidence = showConfidence && localPredictions.has_uncertainty;
+                          const value = useConfidence ? (pt.confidence ?? 0.5) : pt.score;
                           let r, g, b;
-                          if (useConfidenceColor) {
-                            // For confidence: green (high) -> yellow (medium) -> red (low)
+
+                          if (useConfidence) {
+                            // Green (confident) -> Yellow -> Red (uncertain)
                             if (value > 0.5) {
-                              // Green to Yellow
                               const t = (value - 0.5) * 2;
                               r = Math.round(255 * (1 - t));
                               g = 255;
                               b = 0;
                             } else {
-                              // Yellow to Red
                               const t = value * 2;
                               r = 255;
                               g = Math.round(255 * t);
                               b = 0;
                             }
                           } else {
-                            // For score: blue (low) -> yellow (medium) -> red (high)
+                            // Blue (low) -> Yellow (medium) -> Red (high probability)
                             if (value < 0.5) {
-                              // Blue to Yellow
                               const t = value * 2;
                               r = Math.round(255 * t);
                               g = Math.round(255 * t);
                               b = Math.round(255 * (1 - t));
                             } else {
-                              // Yellow to Red
                               const t = (value - 0.5) * 2;
                               r = 255;
                               g = Math.round(255 * (1 - t));
@@ -1101,8 +958,7 @@ export default function ExperimentPage() {
                           }
                           const color = `rgb(${r},${g},${b})`;
 
-                          // Each pixel is ~10m, convert to degrees
-                          const pixelSize = 0.0001; // ~10m in degrees
+                          const pixelSize = 0.0001;
                           const bounds: [[number, number], [number, number]] = [
                             [pt.lat - pixelSize / 2, pt.lon - pixelSize / 2],
                             [pt.lat + pixelSize / 2, pt.lon + pixelSize / 2],
@@ -1120,13 +976,10 @@ export default function ExperimentPage() {
                               }}
                             >
                               <Popup>
-                                <div className="text-sm space-y-1">
-                                  <div className="font-medium">Score: {pt.score.toFixed(3)}</div>
-                                  {pt.uncertainty !== undefined && (
-                                    <>
-                                      <div>Uncertainty: {pt.uncertainty.toFixed(3)}</div>
-                                      <div>Confidence: {((pt.confidence ?? 0) * 100).toFixed(0)}%</div>
-                                    </>
+                                <div className="text-sm">
+                                  <div className="font-medium">Probability: {(pt.score * 100).toFixed(0)}%</div>
+                                  {pt.confidence !== undefined && (
+                                    <div className="text-purple-600">Confidence: {(pt.confidence * 100).toFixed(0)}%</div>
                                   )}
                                 </div>
                               </Popup>

@@ -4,8 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const TABS = [
-  { href: "/", label: "Species Explorer", icon: "search" },
-  { href: "/experiment", label: "Experiment", icon: "flask" },
+  { href: "/", label: "Explore", icon: "search" },
+  { href: "/experiment", label: "Classification", icon: "flask" },
 ];
 
 export default function Navigation() {
@@ -17,7 +17,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-14">
           <div className="flex items-center gap-2">
             <span className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-              Plant Finder
+              Flora Explorer
             </span>
           </div>
           <div className="flex gap-1">
