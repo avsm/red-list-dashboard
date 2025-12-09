@@ -1,0 +1,3818 @@
+{
+  "species": [
+    {
+      "sis_taxon_id": 136680,
+      "assessment_id": 518740,
+      "scientific_name": "Myotis alcathoe",
+      "family": "VESPERTILIONIDAE",
+      "category": "DD",
+      "assessment_date": "2016-04-25",
+      "year_published": "2016",
+      "url": "https://www.iucnredlist.org/species/136680/518740",
+      "population_trend": "Unknown",
+      "countries": [
+        "BG",
+        "CH",
+        "CZ",
+        "DE",
+        "ES",
+        "FR",
+        "GR",
+        "HU",
+        "ME",
+        "RO",
+        "RS",
+        "SK"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 4326892,
+          "category": "DD"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 15602,
+      "assessment_id": 739675,
+      "scientific_name": "Euryoryzomys lamia",
+      "family": "CRICETIDAE",
+      "category": "VU",
+      "assessment_date": "2017-02-28",
+      "year_published": "2018",
+      "url": "https://www.iucnredlist.org/species/15602/739675",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BR"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 4890429,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 4890573,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 17026,
+      "assessment_id": 1306343,
+      "scientific_name": "Phocarctos hookeri",
+      "family": "OTARIIDAE",
+      "category": "EN",
+      "assessment_date": "2014-11-18",
+      "year_published": "2015",
+      "url": "https://www.iucnredlist.org/species/17026/1306343",
+      "population_trend": "Decreasing",
+      "countries": [
+        "AU",
+        "NZ"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 6733144,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 6733320,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 6733123,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 20429,
+      "assessment_id": 2772339,
+      "scientific_name": "Spalax giganteus",
+      "family": "SPALACIDAE",
+      "category": "LC",
+      "assessment_date": "2016-02-08",
+      "year_published": "2016",
+      "url": "https://www.iucnredlist.org/species/20429/2772339",
+      "population_trend": "Stable",
+      "countries": [
+        "RU"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 9198902,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 9199056,
+          "category": "VU"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 2150,
+      "assessment_id": 2775649,
+      "scientific_name": "Arvicola sapidus",
+      "family": "CRICETIDAE",
+      "category": "NT",
+      "assessment_date": "2023-02-27",
+      "year_published": "2024",
+      "url": "https://www.iucnredlist.org/species/2150/2775649",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ES",
+        "FR",
+        "PT"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 9290712,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 9290979,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 7618,
+      "assessment_id": 3139783,
+      "scientific_name": "Eliomys quercinus",
+      "family": "GLIRIDAE",
+      "category": "VU",
+      "assessment_date": "2023-02-27",
+      "year_published": "2024",
+      "url": "https://www.iucnredlist.org/species/7618/3139783",
+      "population_trend": "Decreasing",
+      "countries": [
+        "AD",
+        "AT",
+        "BA",
+        "BE",
+        "CH",
+        "CZ",
+        "DE",
+        "ES",
+        "FR",
+        "HR",
+        "IT",
+        "LU",
+        "NL",
+        "PL",
+        "PT",
+        "RU",
+        "SI"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 12835766,
+          "category": "NT"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 12835410,
+          "category": "VU"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 136562,
+      "assessment_id": 4311281,
+      "scientific_name": "Nycticeius aenobarbus",
+      "family": "VESPERTILIONIDAE",
+      "category": "DD",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/136562/4311281",
+      "population_trend": "Unknown",
+      "countries": [],
+      "assessment_count": 1,
+      "previous_assessments": []
+    },
+    {
+      "sis_taxon_id": 136612,
+      "assessment_id": 4318302,
+      "scientific_name": "Scotophilus collinus",
+      "family": "VESPERTILIONIDAE",
+      "category": "LC",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/136612/4318302",
+      "population_trend": "Unknown",
+      "countries": [
+        "ID",
+        "MY",
+        "TL"
+      ],
+      "assessment_count": 1,
+      "previous_assessments": []
+    },
+    {
+      "sis_taxon_id": 14296,
+      "assessment_id": 4430073,
+      "scientific_name": "Naemorhedus goral",
+      "family": "BOVIDAE",
+      "category": "NT",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/14296/4430073",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BT",
+        "CN",
+        "IN",
+        "NP",
+        "PK"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 4430308,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 15740,
+      "assessment_id": 5076357,
+      "scientific_name": "Ovis nivicola",
+      "family": "BOVIDAE",
+      "category": "LC",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/15740/5076357",
+      "population_trend": "Unknown",
+      "countries": [
+        "RU"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 5076532,
+          "category": "LR/cd"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 19534,
+      "assessment_id": 8957242,
+      "scientific_name": "Rhinolophus cornutus",
+      "family": "RHINOLOPHIDAE",
+      "category": "LR/nt",
+      "assessment_date": "1996-08-01",
+      "year_published": "1996",
+      "url": "https://www.iucnredlist.org/species/19534/8957242",
+      "population_trend": "Unknown",
+      "countries": [
+        "JP"
+      ],
+      "assessment_count": 1,
+      "previous_assessments": []
+    },
+    {
+      "sis_taxon_id": 19558,
+      "assessment_id": 8976934,
+      "scientific_name": "Rhinolophus paradoxolophus",
+      "family": "RHINOLOPHIDAE",
+      "category": "LC",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/19558/8976934",
+      "population_trend": "Unknown",
+      "countries": [
+        "CN",
+        "LA",
+        "TH",
+        "VN"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 8977091,
+          "category": "VU"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 20065,
+      "assessment_id": 9141459,
+      "scientific_name": "Scotophilus celebensis",
+      "family": "VESPERTILIONIDAE",
+      "category": "DD",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/20065/9141459",
+      "population_trend": "Unknown",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 9141607,
+          "category": "DD"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 20468,
+      "assessment_id": 9203243,
+      "scientific_name": "Speothos venaticus",
+      "family": "CANIDAE",
+      "category": "NT",
+      "assessment_date": "2011-08-04",
+      "year_published": "2011",
+      "url": "https://www.iucnredlist.org/species/20468/9203243",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BO",
+        "BR",
+        "CO",
+        "EC",
+        "GF",
+        "GY",
+        "PA",
+        "PE",
+        "PY",
+        "SR",
+        "VE"
+      ],
+      "assessment_count": 9,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 9202812,
+          "category": "NT"
+        },
+        {
+          "year": "2004",
+          "assessment_id": 9203016,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 9202774,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 9203192,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 9203175,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 9203226,
+          "category": "V"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 9203209,
+          "category": "V"
+        },
+        {
+          "year": "1982",
+          "assessment_id": 9202795,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 2461,
+      "assessment_id": 9441445,
+      "scientific_name": "Babyrousa babyrussa",
+      "family": "SUIDAE",
+      "category": "VU",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/2461/9441445",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 6,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 9441624,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 9441684,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 9441667,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 9441424,
+          "category": "V"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 9441407,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 3160,
+      "assessment_id": 9643719,
+      "scientific_name": "Budorcas taxicolor",
+      "family": "BOVIDAE",
+      "category": "VU",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/3160/9643719",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BT",
+        "CN",
+        "IN",
+        "MM"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 9643982,
+          "category": "VU"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 3339,
+      "assessment_id": 9775825,
+      "scientific_name": "Burramys parvus",
+      "family": "BURRAMYIDAE",
+      "category": "CR",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/3339/9775825",
+      "population_trend": "Decreasing",
+      "countries": [
+        "AU"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 9776001,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 9775808,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 3748,
+      "assessment_id": 10051312,
+      "scientific_name": "Canis simensis",
+      "family": "CANIDAE",
+      "category": "EN",
+      "assessment_date": "2011-03-15",
+      "year_published": "2011",
+      "url": "https://www.iucnredlist.org/species/3748/10051312",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ET"
+      ],
+      "assessment_count": 8,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10050994,
+          "category": "EN"
+        },
+        {
+          "year": "2004",
+          "assessment_id": 10051155,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10050956,
+          "category": "CR"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10051295,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 10051517,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10051500,
+          "category": "E"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 10050977,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 3810,
+      "assessment_id": 10096148,
+      "scientific_name": "Capricornis swinhoei",
+      "family": "BOVIDAE",
+      "category": "LC",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/3810/10096148",
+      "population_trend": "Unknown",
+      "countries": [
+        "TW"
+      ],
+      "assessment_count": 5,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 10096373,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10096436,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 10096127,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10096106,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 40540,
+      "assessment_id": 10331066,
+      "scientific_name": "Sarcophilus harrisii",
+      "family": "DASYURIDAE",
+      "category": "EN",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/40540/10331066",
+      "population_trend": "Decreasing",
+      "countries": [
+        "AU"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 10331032,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10331221,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 41502,
+      "assessment_id": 10479343,
+      "scientific_name": "Galeopterus variegatus",
+      "family": "CYNOCEPHALIDAE",
+      "category": "LC",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/41502/10479343",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BN",
+        "ID",
+        "KH",
+        "LA",
+        "MM",
+        "MY",
+        "SG",
+        "TH",
+        "VN"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 10479569,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 41777,
+      "assessment_id": 10562361,
+      "scientific_name": "Pecari tajacu",
+      "family": "TAYASSUIDAE",
+      "category": "LC",
+      "assessment_date": "2011-06-24",
+      "year_published": "2011",
+      "url": "https://www.iucnredlist.org/species/41777/10562361",
+      "population_trend": "Stable",
+      "countries": [
+        "AR",
+        "BO",
+        "BR",
+        "BZ",
+        "CO",
+        "CR",
+        "EC",
+        "GF",
+        "GT",
+        "GY",
+        "HN",
+        "MX",
+        "NI",
+        "PA",
+        "PE",
+        "PY",
+        "SR",
+        "SV",
+        "TT",
+        "US",
+        "VE"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10562712,
+          "category": "LC"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10563032,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 42188,
+      "assessment_id": 10656554,
+      "scientific_name": "Dama dama",
+      "family": "CERVIDAE",
+      "category": "LC",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/42188/10656554",
+      "population_trend": "Unknown",
+      "countries": [
+        "TR"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2007",
+          "assessment_id": 10656222,
+          "category": "LC"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10656023,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 5076,
+      "assessment_id": 11112095,
+      "scientific_name": "Coelops robinsoni",
+      "family": "HIPPOSIDERIDAE",
+      "category": "VU",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/5076/11112095",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID",
+        "MY"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 11112241,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 6081,
+      "assessment_id": 12410826,
+      "scientific_name": "Cynocephalus volans",
+      "family": "CYNOCEPHALIDAE",
+      "category": "LC",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/6081/12410826",
+      "population_trend": "Stable",
+      "countries": [
+        "PH"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "1996",
+          "assessment_id": 12410974,
+          "category": "VU"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 6924,
+      "assessment_id": 12814890,
+      "scientific_name": "Atelocynus microtis",
+      "family": "CANIDAE",
+      "category": "NT",
+      "assessment_date": "2011-08-04",
+      "year_published": "2011",
+      "url": "https://www.iucnredlist.org/species/6924/12814890",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BO",
+        "BR",
+        "CO",
+        "EC",
+        "PE"
+      ],
+      "assessment_count": 9,
+      "previous_assessments": [
+        {
+          "year": "2011",
+          "assessment_id": 12814660,
+          "category": "NT"
+        },
+        {
+          "year": "2008",
+          "assessment_id": 12814341,
+          "category": "NT"
+        },
+        {
+          "year": "2004",
+          "assessment_id": 12814507,
+          "category": "DD"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 12814300,
+          "category": "DD"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 12814639,
+          "category": "K"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 12814869,
+          "category": "K"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 12814850,
+          "category": "K"
+        },
+        {
+          "year": "1982",
+          "assessment_id": 12814322,
+          "category": "K"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 9917,
+      "assessment_id": 13026736,
+      "scientific_name": "Nilgiritragus hylocrius",
+      "family": "BOVIDAE",
+      "category": "EN",
+      "assessment_date": "2008-06-30",
+      "year_published": "2008",
+      "url": "https://www.iucnredlist.org/species/9917/13026736",
+      "population_trend": "Decreasing",
+      "countries": [
+        "IN"
+      ],
+      "assessment_count": 8,
+      "previous_assessments": [
+        {
+          "year": "2000",
+          "assessment_id": 13026663,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 13026912,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 13026952,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 13026934,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 13026988,
+          "category": "V"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 13026970,
+          "category": "V"
+        },
+        {
+          "year": "1965",
+          "assessment_id": 13026715,
+          "category": "N/A"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 22781,
+      "assessment_id": 13985603,
+      "scientific_name": "Urocyon littoralis",
+      "family": "CANIDAE",
+      "category": "NT",
+      "assessment_date": "2013-07-23",
+      "year_published": "2013",
+      "url": "https://www.iucnredlist.org/species/22781/13985603",
+      "population_trend": "Increasing",
+      "countries": [
+        "US"
+      ],
+      "assessment_count": 6,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 9386293,
+          "category": "CR"
+        },
+        {
+          "year": "2004",
+          "assessment_id": 9386405,
+          "category": "CR"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 9386252,
+          "category": "LR/cd"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 9386524,
+          "category": "R"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 9386274,
+          "category": "R"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 22823,
+      "assessment_id": 14871490,
+      "scientific_name": "Ursus maritimus",
+      "family": "URSIDAE",
+      "category": "VU",
+      "assessment_date": "2015-08-27",
+      "year_published": "2015",
+      "url": "https://www.iucnredlist.org/species/22823/14871490",
+      "population_trend": "Unknown",
+      "countries": [
+        "CA",
+        "GL",
+        "NO",
+        "RU",
+        "SJ",
+        "US"
+      ],
+      "assessment_count": 12,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 9391171,
+          "category": "VU"
+        },
+        {
+          "year": "2007",
+          "assessment_id": 9390963,
+          "category": "VU"
+        },
+        {
+          "year": "2006",
+          "assessment_id": 9390655,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 9390941,
+          "category": "LR/cd"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 9391570,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 9391551,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 9391493,
+          "category": "V"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 9391474,
+          "category": "V"
+        },
+        {
+          "year": "1982",
+          "assessment_id": 9391532,
+          "category": "V"
+        },
+        {
+          "year": "1965",
+          "assessment_id": 9391512,
+          "category": "N/A"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 3921,
+      "assessment_id": 14895982,
+      "scientific_name": "Carterodon sulcidens",
+      "family": "ECHIMYIDAE",
+      "category": "DD",
+      "assessment_date": "2016-06-10",
+      "year_published": "2016",
+      "url": "https://www.iucnredlist.org/species/3921/14895982",
+      "population_trend": "Unknown",
+      "countries": [
+        "BR"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10175302,
+          "category": "DD"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10175391,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 13325,
+      "assessment_id": 16113437,
+      "scientific_name": "Microcebus myoxinus",
+      "family": "CHEIROGALEIDAE",
+      "category": "VU",
+      "assessment_date": "2012-07-11",
+      "year_published": "2014",
+      "url": "https://www.iucnredlist.org/species/13325/16113437",
+      "population_trend": "Decreasing",
+      "countries": [
+        "MG"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3654245,
+          "category": "DD"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3654191,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3654330,
+          "category": "VU"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 23052,
+      "assessment_id": 16813736,
+      "scientific_name": "Vulpes pallida",
+      "family": "CANIDAE",
+      "category": "LC",
+      "assessment_date": "2012-05-17",
+      "year_published": "2012",
+      "url": "https://www.iucnredlist.org/species/23052/16813736",
+      "population_trend": "Unknown",
+      "countries": [
+        "BF",
+        "BJ",
+        "CM",
+        "ER",
+        "ET",
+        "GM",
+        "ML",
+        "MR",
+        "NE",
+        "NG",
+        "SD",
+        "SN",
+        "SS",
+        "TD"
+      ],
+      "assessment_count": 6,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 9411067,
+          "category": "DD"
+        },
+        {
+          "year": "2004",
+          "assessment_id": 9411226,
+          "category": "DD"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 9411030,
+          "category": "DD"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 9411367,
+          "category": "K"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 9411050,
+          "category": "K"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 16971461,
+      "assessment_id": 16971464,
+      "scientific_name": "Microcebus gerpi",
+      "family": "CHEIROGALEIDAE",
+      "category": "CR",
+      "assessment_date": "2012-07-11",
+      "year_published": "2014",
+      "url": "https://www.iucnredlist.org/species/16971461/16971464",
+      "population_trend": "Decreasing",
+      "countries": [
+        "MG"
+      ],
+      "assessment_count": 1,
+      "previous_assessments": []
+    },
+    {
+      "sis_taxon_id": 39953,
+      "assessment_id": 17922442,
+      "scientific_name": "Aotus zonalis",
+      "family": "AOTIDAE",
+      "category": "NT",
+      "assessment_date": "2020-12-01",
+      "year_published": "2021",
+      "url": "https://www.iucnredlist.org/species/39953/17922442",
+      "population_trend": "Unknown",
+      "countries": [
+        "CO",
+        "PA"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10297100,
+          "category": "DD"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10297272,
+          "category": "DD"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 1808,
+      "assessment_id": 17922601,
+      "scientific_name": "Aotus lemurinus",
+      "family": "AOTIDAE",
+      "category": "VU",
+      "assessment_date": "2020-12-03",
+      "year_published": "2021",
+      "url": "https://www.iucnredlist.org/species/1808/17922601",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CO",
+        "EC",
+        "VE"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 7651803,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 7651982,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 7651779,
+          "category": "VU"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39915,
+      "assessment_id": 17923405,
+      "scientific_name": "Aotus brumbacki",
+      "family": "AOTIDAE",
+      "category": "VU",
+      "assessment_date": "2020-03-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39915/17923405",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CO"
+      ],
+      "assessment_count": 6,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10284518,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10284700,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10284472,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10284736,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10284497,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 41546,
+      "assessment_id": 17924752,
+      "scientific_name": "Alouatta sara",
+      "family": "ATELIDAE",
+      "category": "NT",
+      "assessment_date": "2020-10-03",
+      "year_published": "2021",
+      "url": "https://www.iucnredlist.org/species/41546/17924752",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BO",
+        "PE"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10497139,
+          "category": "LC"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 10497317,
+          "category": "LC"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10497115,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 914,
+      "assessment_id": 17926000,
+      "scientific_name": "Alouatta pigra",
+      "family": "ATELIDAE",
+      "category": "EN",
+      "assessment_date": "2020-03-02",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/914/17926000",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BZ",
+        "GT",
+        "MX"
+      ],
+      "assessment_count": 10,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 13094441,
+          "category": "EN"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 13094675,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 13094415,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 13094393,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 13094818,
+          "category": "K"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 13094755,
+          "category": "K"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 13094734,
+          "category": "I"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 13094797,
+          "category": "I"
+        },
+        {
+          "year": "1982",
+          "assessment_id": 13094776,
+          "category": "I"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39961,
+      "assessment_id": 17929680,
+      "scientific_name": "Ateles hybridus",
+      "family": "ATELIDAE",
+      "category": "CR",
+      "assessment_date": "2020-03-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39961/17929680",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CO",
+        "VE"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10280054,
+          "category": "CR"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 10280292,
+          "category": "CR"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10280027,
+          "category": "EN"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 19824,
+      "assessment_id": 17930113,
+      "scientific_name": "Leontocebus tripartitus",
+      "family": "CALLITRICHIDAE",
+      "category": "NT",
+      "assessment_date": "2015-01-26",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/19824/17930113",
+      "population_trend": "Decreasing",
+      "countries": [
+        "EC",
+        "PE"
+      ],
+      "assessment_count": 6,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 9020295,
+          "category": "NT"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 9020454,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 9020247,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 9020273,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 9020497,
+          "category": "K"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39945,
+      "assessment_id": 17932254,
+      "scientific_name": "Leontocebus nigricollis",
+      "family": "CALLITRICHIDAE",
+      "category": "LC",
+      "assessment_date": "2015-01-26",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39945/17932254",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BR",
+        "CO",
+        "EC",
+        "PE"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10294823,
+          "category": "LC"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 10295021,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10294797,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39912,
+      "assessment_id": 17934089,
+      "scientific_name": "Mico leucippe",
+      "family": "CALLITRICHIDAE",
+      "category": "LC",
+      "assessment_date": "2020-10-30",
+      "year_published": "2021",
+      "url": "https://www.iucnredlist.org/species/39912/17934089",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BR"
+      ],
+      "assessment_count": 11,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10283351,
+          "category": "VU"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 10283543,
+          "category": "DD"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10283303,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10283330,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10283697,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10283613,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 10283592,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10283655,
+          "category": "V"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 10283634,
+          "category": "V"
+        },
+        {
+          "year": "1982",
+          "assessment_id": 10283676,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39911,
+      "assessment_id": 17934268,
+      "scientific_name": "Mico intermedius",
+      "family": "CALLITRICHIDAE",
+      "category": "LC",
+      "assessment_date": "2015-01-26",
+      "year_published": "2018",
+      "url": "https://www.iucnredlist.org/species/39911/17934268",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BR"
+      ],
+      "assessment_count": 8,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10282931,
+          "category": "LC"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 10283102,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10282879,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10282907,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10283140,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10283182,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 10283161,
+          "category": "K"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39913,
+      "assessment_id": 17934547,
+      "scientific_name": "Mico nigriceps",
+      "family": "CALLITRICHIDAE",
+      "category": "NT",
+      "assessment_date": "2015-01-26",
+      "year_published": "2019",
+      "url": "https://www.iucnredlist.org/species/39913/17934547",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BR"
+      ],
+      "assessment_count": 7,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10283857,
+          "category": "DD"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 10284038,
+          "category": "DD"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10283811,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10283836,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10284108,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10284087,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 11505,
+      "assessment_id": 17935400,
+      "scientific_name": "Leontopithecus chrysopygus",
+      "family": "CALLITRICHIDAE",
+      "category": "EN",
+      "assessment_date": "2020-01-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/11505/17935400",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BR"
+      ],
+      "assessment_count": 10,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3290864,
+          "category": "EN"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 3291045,
+          "category": "CR"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3290835,
+          "category": "CR"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3290814,
+          "category": "CR"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 3291165,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 3291114,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 3291097,
+          "category": "E"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 3291148,
+          "category": "E"
+        },
+        {
+          "year": "1982",
+          "assessment_id": 3291131,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 19839,
+      "assessment_id": 17940474,
+      "scientific_name": "Saimiri vanzolinii",
+      "family": "CEBIDAE",
+      "category": "EN",
+      "assessment_date": "2020-12-01",
+      "year_published": "2021",
+      "url": "https://www.iucnredlist.org/species/19839/17940474",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BR"
+      ],
+      "assessment_count": 6,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 9023022,
+          "category": "VU"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 9023163,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 9022993,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 9022972,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 9023215,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 19836,
+      "assessment_id": 17940807,
+      "scientific_name": "Saimiri oerstedii",
+      "family": "CEBIDAE",
+      "category": "EN",
+      "assessment_date": "2020-12-01",
+      "year_published": "2021",
+      "url": "https://www.iucnredlist.org/species/19836/17940807",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CR",
+        "PA"
+      ],
+      "assessment_count": 10,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 9022609,
+          "category": "VU"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 9022812,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 9022580,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 9022559,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 9022955,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 9022904,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 9022887,
+          "category": "E"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 9022938,
+          "category": "E"
+        },
+        {
+          "year": "1982",
+          "assessment_id": 9022921,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39826,
+      "assessment_id": 17941247,
+      "scientific_name": "Pygathrix nemaeus",
+      "family": "CERCOPITHECIDAE",
+      "category": "CR",
+      "assessment_date": "2015-11-20",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39826/17941247",
+      "population_trend": "Decreasing",
+      "countries": [
+        "KH",
+        "LA",
+        "VN"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10272920,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10273165,
+          "category": "EN"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39827,
+      "assessment_id": 17941672,
+      "scientific_name": "Pygathrix cinerea",
+      "family": "CERCOPITHECIDAE",
+      "category": "CR",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39827/17941672",
+      "population_trend": "Decreasing",
+      "countries": [
+        "VN"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10273229,
+          "category": "CR"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 10273439,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10273202,
+          "category": "DD"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39832,
+      "assessment_id": 17942050,
+      "scientific_name": "Semnopithecus entellus",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39832/17942050",
+      "population_trend": "Decreasing",
+      "countries": [
+        "IN"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10274074,
+          "category": "LC"
+        },
+        {
+          "year": "2004",
+          "assessment_id": 10274283,
+          "category": "NT"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10274049,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 167543916,
+      "assessment_id": 17942313,
+      "scientific_name": "Semnopithecus hypoleucos",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2015-11-22",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/167543916/17942313",
+      "population_trend": "Decreasing",
+      "countries": [
+        "IN"
+      ],
+      "assessment_count": 1,
+      "previous_assessments": []
+    },
+    {
+      "sis_taxon_id": 39837,
+      "assessment_id": 17942651,
+      "scientific_name": "Semnopithecus hector",
+      "family": "CERCOPITHECIDAE",
+      "category": "NT",
+      "assessment_date": "2015-11-20",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39837/17942651",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BT",
+        "IN",
+        "NP"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10274974,
+          "category": "NT"
+        },
+        {
+          "year": "2004",
+          "assessment_id": 10275128,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10274949,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39840,
+      "assessment_id": 17942792,
+      "scientific_name": "Semnopithecus schistaceus",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2015-11-21",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39840/17942792",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BT",
+        "CN",
+        "IN",
+        "NP",
+        "PK"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10275563,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10275747,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 167546892,
+      "assessment_id": 17942964,
+      "scientific_name": "Semnopithecus priam",
+      "family": "CERCOPITHECIDAE",
+      "category": "NT",
+      "assessment_date": "2015-11-22",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/167546892/17942964",
+      "population_trend": "Decreasing",
+      "countries": [
+        "IN",
+        "LK"
+      ],
+      "assessment_count": 1,
+      "previous_assessments": []
+    },
+    {
+      "sis_taxon_id": 39833,
+      "assessment_id": 17943210,
+      "scientific_name": "Semnopithecus ajax",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2015-11-21",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39833/17943210",
+      "population_trend": "Decreasing",
+      "countries": [
+        "IN"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10274370,
+          "category": "EN"
+        },
+        {
+          "year": "2004",
+          "assessment_id": 10274549,
+          "category": "CR"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10274343,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 13508501,
+      "assessment_id": 17943490,
+      "scientific_name": "Rhinopithecus strykeri",
+      "family": "CERCOPITHECIDAE",
+      "category": "CR",
+      "assessment_date": "2015-11-22",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/13508501/17943490",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CN",
+        "MM"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "2012",
+          "assessment_id": 13508504,
+          "category": "CR"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 19597,
+      "assessment_id": 17943738,
+      "scientific_name": "Rhinopithecus bieti",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2015-03-21",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/19597/17943738",
+      "population_trend": "Stable",
+      "countries": [
+        "CN"
+      ],
+      "assessment_count": 7,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 8986243,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 8986176,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 8986405,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 8986447,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 8986428,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 8986224,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 19594,
+      "assessment_id": 17944213,
+      "scientific_name": "Rhinopithecus avunculus",
+      "family": "CERCOPITHECIDAE",
+      "category": "CR",
+      "assessment_date": "2015-11-21",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/19594/17944213",
+      "population_trend": "Decreasing",
+      "countries": [
+        "VN"
+      ],
+      "assessment_count": 8,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 8984679,
+          "category": "CR"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 8984886,
+          "category": "CR"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 8984652,
+          "category": "CR"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 8984629,
+          "category": "CR"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 8984952,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 8984992,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 8984973,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 5145,
+      "assessment_id": 17944405,
+      "scientific_name": "Colobus satanas",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2019-10-01",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/5145/17944405",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CG",
+        "CM",
+        "GA",
+        "GQ"
+      ],
+      "assessment_count": 9,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 11117016,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 11116902,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 11117176,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 11117214,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 11117197,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 11117231,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 11117248,
+          "category": "E"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 11116995,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 5144,
+      "assessment_id": 17944855,
+      "scientific_name": "Colobus polykomos",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2019-06-25",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/5144/17944855",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CI",
+        "GN",
+        "GW",
+        "LR",
+        "SL"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 11116648,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 11116810,
+          "category": "LR/nt"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 11116631,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 4225,
+      "assessment_id": 17945536,
+      "scientific_name": "Cercopithecus petaurista",
+      "family": "CERCOPITHECIDAE",
+      "category": "NT",
+      "assessment_date": "2017-07-27",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/4225/17945536",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CI",
+        "GH",
+        "GN",
+        "GW",
+        "LR",
+        "SL",
+        "TG"
+      ],
+      "assessment_count": 5,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10683942,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10684070,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10683901,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10683921,
+          "category": "nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 4229,
+      "assessment_id": 17945814,
+      "scientific_name": "Cercopithecus sclateri",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2019-01-08",
+      "year_published": "2019",
+      "url": "https://www.iucnredlist.org/species/4229/17945814",
+      "population_trend": "Decreasing",
+      "countries": [
+        "NG"
+      ],
+      "assessment_count": 6,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10678392,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10678294,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10678543,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10678564,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 10678373,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 4218,
+      "assessment_id": 17946043,
+      "scientific_name": "Cercopithecus erythrotis",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2020-02-20",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/4218/17946043",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CM",
+        "GQ",
+        "NG"
+      ],
+      "assessment_count": 9,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10651543,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10651426,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10651696,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10651734,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 10651717,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10651768,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10651751,
+          "category": "E"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 10651522,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 4217,
+      "assessment_id": 17946182,
+      "scientific_name": "Cercopithecus erythrogaster",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2016-10-24",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/4217/17946182",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BJ",
+        "NG",
+        "TG"
+      ],
+      "assessment_count": 9,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10672698,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10672587,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10672853,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10672891,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 10672874,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10672925,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10672908,
+          "category": "E"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 10672677,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 4222,
+      "assessment_id": 17946672,
+      "scientific_name": "Cercopithecus mona",
+      "family": "CERCOPITHECIDAE",
+      "category": "NT",
+      "assessment_date": "2019-06-20",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/4222/17946672",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BJ",
+        "CM",
+        "GH",
+        "NG",
+        "TG"
+      ],
+      "assessment_count": 5,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10677731,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10677857,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10677694,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10677714,
+          "category": "nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 4223,
+      "assessment_id": 17947167,
+      "scientific_name": "Cercopithecus neglectus",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2016-08-20",
+      "year_published": "2019",
+      "url": "https://www.iucnredlist.org/species/4223/17947167",
+      "population_trend": "Unknown",
+      "countries": [
+        "AO",
+        "CD",
+        "CF",
+        "CG",
+        "CM",
+        "ET",
+        "GA",
+        "GQ",
+        "KE",
+        "SS",
+        "UG"
+      ],
+      "assessment_count": 5,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10680717,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10680905,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10680680,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10680700,
+          "category": "nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 4212,
+      "assessment_id": 17947340,
+      "scientific_name": "Cercopithecus ascanius",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2018-03-20",
+      "year_published": "2019",
+      "url": "https://www.iucnredlist.org/species/4212/17947340",
+      "population_trend": "Decreasing",
+      "countries": [
+        "AO",
+        "BI",
+        "CD",
+        "CF",
+        "KE",
+        "RW",
+        "SS",
+        "TZ",
+        "UG",
+        "ZM"
+      ],
+      "assessment_count": 5,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10654844,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10654980,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10654803,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10654823,
+          "category": "nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12563,
+      "assessment_id": 17947990,
+      "scientific_name": "Macaca tonkeana",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12563/17947990",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3359793,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3359746,
+          "category": "LR/nt"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3359990,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12562,
+      "assessment_id": 17948236,
+      "scientific_name": "Macaca thibetana",
+      "family": "CERCOPITHECIDAE",
+      "category": "NT",
+      "assessment_date": "2015-11-22",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12562/17948236",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CN"
+      ],
+      "assessment_count": 7,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3359510,
+          "category": "NT"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3359444,
+          "category": "LR/cd"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3359688,
+          "category": "LR/cd"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 3359725,
+          "category": "K"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 3359708,
+          "category": "K"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 3359489,
+          "category": "K"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12568,
+      "assessment_id": 17948400,
+      "scientific_name": "Macaca nigrescens",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12568/17948400",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3360226,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3360177,
+          "category": "LR/cd"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3360382,
+          "category": "LR/cd"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 136569,
+      "assessment_id": 17948833,
+      "scientific_name": "Macaca munzala",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2015-11-21",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/136569/17948833",
+      "population_trend": "Decreasing",
+      "countries": [
+        "IN"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 4311929,
+          "category": "EN"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12570,
+      "assessment_id": 17948969,
+      "scientific_name": "Macaca hecki",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2015-11-22",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12570/17948969",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 7,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3360807,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3360950,
+          "category": "LR/nt"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3360766,
+          "category": "LR/nt"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 3361018,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 3360999,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 3360788,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39795,
+      "assessment_id": 17949710,
+      "scientific_name": "Macaca siberu",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2015-11-21",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39795/17949710",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10258847,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10259025,
+          "category": "CR"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12550,
+      "assessment_id": 17949875,
+      "scientific_name": "Macaca cyclopis",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2015-11-21",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12550/17949875",
+      "population_trend": "Stable",
+      "countries": [
+        "TW"
+      ],
+      "assessment_count": 7,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3355290,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3355423,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3355248,
+          "category": "VU"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 3355493,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 3355474,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 3355271,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39794,
+      "assessment_id": 17949995,
+      "scientific_name": "Macaca pagensis",
+      "family": "CERCOPITHECIDAE",
+      "category": "CR",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39794/17949995",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10258510,
+          "category": "CR"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10258717,
+          "category": "CR"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12549,
+      "assessment_id": 17950189,
+      "scientific_name": "Macaca assamensis",
+      "family": "CERCOPITHECIDAE",
+      "category": "NT",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12549/17950189",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BD",
+        "BT",
+        "CN",
+        "IN",
+        "LA",
+        "MM",
+        "NP",
+        "TH",
+        "VN"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3354977,
+          "category": "NT"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3354874,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3355223,
+          "category": "VU"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12556,
+      "assessment_id": 17950422,
+      "scientific_name": "Macaca nigra",
+      "family": "CERCOPITHECIDAE",
+      "category": "CR",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12556/17950422",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 5,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3357272,
+          "category": "CR"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3357203,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3357464,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 3357253,
+          "category": "I"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12560,
+      "assessment_id": 17951229,
+      "scientific_name": "Macaca sinica",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2015-11-28",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12560/17951229",
+      "population_trend": "Decreasing",
+      "countries": [
+        "LK"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3358720,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3358672,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3358906,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12559,
+      "assessment_id": 17951402,
+      "scientific_name": "Macaca silenus",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2015-11-20",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12559/17951402",
+      "population_trend": "Decreasing",
+      "countries": [
+        "IN"
+      ],
+      "assessment_count": 9,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3358033,
+          "category": "EN"
+        },
+        {
+          "year": "2004",
+          "assessment_id": 3358237,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3358002,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3357979,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 3358401,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 3358382,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 3358439,
+          "category": "E"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 3358420,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12558,
+      "assessment_id": 17951596,
+      "scientific_name": "Macaca radiata",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2015-11-21",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12558/17951596",
+      "population_trend": "Decreasing",
+      "countries": [
+        "IN"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3357748,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3357941,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3357724,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12754,
+      "assessment_id": 17952325,
+      "scientific_name": "Mandrillus sphinx",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2016-11-22",
+      "year_published": "2019",
+      "url": "https://www.iucnredlist.org/species/12754/17952325",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CG",
+        "CM",
+        "GA",
+        "GQ"
+      ],
+      "assessment_count": 9,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3377579,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3377459,
+          "category": "VU"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3377758,
+          "category": "LR/nt"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 3377795,
+          "category": "V"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 3377778,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 3377812,
+          "category": "V"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 3377829,
+          "category": "V"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 3377556,
+          "category": "V"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 12753,
+      "assessment_id": 17952490,
+      "scientific_name": "Mandrillus leucophaeus",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2017-07-27",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/12753/17952490",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CM",
+        "GQ",
+        "NG"
+      ],
+      "assessment_count": 9,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 3377185,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 3377064,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 3377370,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 3377408,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 3377391,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 3377442,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 3377425,
+          "category": "E"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 3377162,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 16019,
+      "assessment_id": 17953082,
+      "scientific_name": "Papio hamadryas",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2016-08-04",
+      "year_published": "2019",
+      "url": "https://www.iucnredlist.org/species/16019/17953082",
+      "population_trend": "Increasing",
+      "countries": [
+        "DJ",
+        "ER",
+        "ET",
+        "SA",
+        "SD",
+        "SO",
+        "YE"
+      ],
+      "assessment_count": 6,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 5354647,
+          "category": "LC"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 5354778,
+          "category": "LR/nt"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 5354866,
+          "category": "R"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 5354609,
+          "category": "R"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 5354628,
+          "category": "R"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 40647,
+      "assessment_id": 17953200,
+      "scientific_name": "Papio anubis",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2020-01-28",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/40647/17953200",
+      "population_trend": "Stable",
+      "countries": [
+        "BF",
+        "BI",
+        "BJ",
+        "CD",
+        "CF",
+        "CG",
+        "CI",
+        "CM",
+        "ER",
+        "ET",
+        "GH",
+        "GN",
+        "KE",
+        "ML",
+        "MR",
+        "NE",
+        "NG",
+        "RW",
+        "SD",
+        "SL",
+        "SO",
+        "SS",
+        "TD",
+        "TG",
+        "TZ",
+        "UG"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10348950,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10348787,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10349186,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 20229,
+      "assessment_id": 17953422,
+      "scientific_name": "Simias concolor",
+      "family": "CERCOPITHECIDAE",
+      "category": "CR",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/20229/17953422",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 8,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 9181121,
+          "category": "CR"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 9181043,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 9181287,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 9181310,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 9181350,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 9181331,
+          "category": "E"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 9181102,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 41570,
+      "assessment_id": 17953573,
+      "scientific_name": "Miopithecus ogouensis",
+      "family": "CERCOPITHECIDAE",
+      "category": "NT",
+      "assessment_date": "2017-12-04",
+      "year_published": "2019",
+      "url": "https://www.iucnredlist.org/species/41570/17953573",
+      "population_trend": "Decreasing",
+      "countries": [
+        "AO",
+        "CG",
+        "CM",
+        "GA",
+        "GQ"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10500613,
+          "category": "LC"
+        },
+        {
+          "year": "2003",
+          "assessment_id": 10500739,
+          "category": "NE"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 18134,
+      "assessment_id": 17953755,
+      "scientific_name": "Presbytis siamensis",
+      "family": "CERCOPITHECIDAE",
+      "category": "NT",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/18134/17953755",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID",
+        "MY",
+        "TH"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 7668889,
+          "category": "NT"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 7669078,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 7668867,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 18131,
+      "assessment_id": 17953935,
+      "scientific_name": "Presbytis rubicunda",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2015-09-17",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/18131/17953935",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID",
+        "MY"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 7667504,
+          "category": "LC"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 7667716,
+          "category": "LR/lc"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 7667480,
+          "category": "LR/lc"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 18132,
+      "assessment_id": 17954139,
+      "scientific_name": "Presbytis thomasi",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2015-12-20",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/18132/17954139",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 7667839,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 7667788,
+          "category": "LR/nt"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 7667983,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39811,
+      "assessment_id": 17954271,
+      "scientific_name": "Presbytis melalophos",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39811/17954271",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10270205,
+          "category": "NT"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10270268,
+          "category": "LR/nt"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39815,
+      "assessment_id": 17954456,
+      "scientific_name": "Presbytis potenziani",
+      "family": "CERCOPITHECIDAE",
+      "category": "CR",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39815/17954456",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10270795,
+          "category": "CR"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10270834,
+          "category": "VU"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 18127,
+      "assessment_id": 17954836,
+      "scientific_name": "Presbytis frontata",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2015-11-20",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/18127/17954836",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID",
+        "MY"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 7665520,
+          "category": "VU"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 7665714,
+          "category": "DD"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 7665500,
+          "category": "DD"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 39803,
+      "assessment_id": 17955321,
+      "scientific_name": "Presbytis chrysomelas",
+      "family": "CERCOPITHECIDAE",
+      "category": "CR",
+      "assessment_date": "2015-11-22",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/39803/17955321",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BN",
+        "ID",
+        "MY"
+      ],
+      "assessment_count": 3,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10268236,
+          "category": "CR"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10268417,
+          "category": "DD"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 136500,
+      "assessment_id": 17955492,
+      "scientific_name": "Presbytis natunae",
+      "family": "CERCOPITHECIDAE",
+      "category": "VU",
+      "assessment_date": "2015-11-23",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/136500/17955492",
+      "population_trend": "Decreasing",
+      "countries": [
+        "ID"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 4301419,
+          "category": "VU"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 4203,
+      "assessment_id": 17955753,
+      "scientific_name": "Cercocebus sanjei",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2016-10-24",
+      "year_published": "2019",
+      "url": "https://www.iucnredlist.org/species/4203/17955753",
+      "population_trend": "Decreasing",
+      "countries": [
+        "TZ"
+      ],
+      "assessment_count": 7,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10632228,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10632351,
+          "category": "EN"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10632184,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10632451,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 10632433,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10632206,
+          "category": "E"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 4207,
+      "assessment_id": 17956177,
+      "scientific_name": "Cercocebus chrysogaster",
+      "family": "CERCOPITHECIDAE",
+      "category": "EN",
+      "assessment_date": "2020-01-20",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/4207/17956177",
+      "population_trend": "Decreasing",
+      "countries": [
+        "CD"
+      ],
+      "assessment_count": 4,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10643145,
+          "category": "DD"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10643068,
+          "category": "DD"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10643260,
+          "category": "DD"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 4200,
+      "assessment_id": 17956330,
+      "scientific_name": "Cercocebus galeritus",
+      "family": "CERCOPITHECIDAE",
+      "category": "CR",
+      "assessment_date": "2019-11-04",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/4200/17956330",
+      "population_trend": "Decreasing",
+      "countries": [
+        "KE"
+      ],
+      "assessment_count": 10,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 10615270,
+          "category": "EN"
+        },
+        {
+          "year": "2000",
+          "assessment_id": 10615167,
+          "category": "CR"
+        },
+        {
+          "year": "1996",
+          "assessment_id": 10615403,
+          "category": "EN"
+        },
+        {
+          "year": "1994",
+          "assessment_id": 10615496,
+          "category": "E"
+        },
+        {
+          "year": "1990",
+          "assessment_id": 10615443,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10615478,
+          "category": "E"
+        },
+        {
+          "year": "1988",
+          "assessment_id": 10615425,
+          "category": "E"
+        },
+        {
+          "year": "1986",
+          "assessment_id": 10615460,
+          "category": "E"
+        },
+        {
+          "year": "1965",
+          "assessment_id": 10615253,
+          "category": "N/A"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 136291,
+      "assessment_id": 17957592,
+      "scientific_name": "Chlorocebus cynosuros",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2016-08-04",
+      "year_published": "2019",
+      "url": "https://www.iucnredlist.org/species/136291/17957592",
+      "population_trend": "Stable",
+      "countries": [
+        "AO",
+        "CD",
+        "CG",
+        "NA",
+        "ZM"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 4270290,
+          "category": "LC"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 136265,
+      "assessment_id": 17958099,
+      "scientific_name": "Chlorocebus sabaeus",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2020-01-13",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/136265/17958099",
+      "population_trend": "Decreasing",
+      "countries": [
+        "BF",
+        "CI",
+        "GH",
+        "GM",
+        "GN",
+        "GW",
+        "LR",
+        "ML",
+        "MR",
+        "SL",
+        "SN"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 4267012,
+          "category": "LC"
+        }
+      ]
+    },
+    {
+      "sis_taxon_id": 136208,
+      "assessment_id": 17958272,
+      "scientific_name": "Chlorocebus tantalus",
+      "family": "CERCOPITHECIDAE",
+      "category": "LC",
+      "assessment_date": "2019-10-14",
+      "year_published": "2020",
+      "url": "https://www.iucnredlist.org/species/136208/17958272",
+      "population_trend": "Stable",
+      "countries": [
+        "BF",
+        "BJ",
+        "CD",
+        "CF",
+        "CM",
+        "GH",
+        "NE",
+        "NG",
+        "SD",
+        "SS",
+        "TD",
+        "TG",
+        "UG"
+      ],
+      "assessment_count": 2,
+      "previous_assessments": [
+        {
+          "year": "2008",
+          "assessment_id": 4259825,
+          "category": "LC"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "totalSpecies": 100,
+    "fetchedAt": "2025-12-09T17:43:25.961Z",
+    "pagesProcessed": 1,
+    "lastPage": 1,
+    "byCategory": {
+      "DD": 4,
+      "VU": 20,
+      "EN": 21,
+      "LC": 24,
+      "NT": 17,
+      "LR/nt": 1,
+      "CR": 13
+    },
+    "complete": false,
+    "taxonId": "mammalia"
+  }
+}
