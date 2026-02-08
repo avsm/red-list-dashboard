@@ -14,7 +14,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 43995,
@@ -30,7 +31,8 @@
         "CA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Boreal Felt Lichen"
     },
     {
       "sis_taxon_id": 58515314,
@@ -56,7 +58,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Witches Cauldron"
     },
     {
       "sis_taxon_id": 58517597,
@@ -72,7 +75,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 58517895,
@@ -89,7 +93,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 58520980,
@@ -106,7 +111,8 @@
         "TW"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 70382754,
@@ -122,7 +128,8 @@
         "PT"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "James' Strap Lichen"
     },
     {
       "sis_taxon_id": 70382792,
@@ -138,7 +145,8 @@
         "PT"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Mountain Garland Lichen"
     },
     {
       "sis_taxon_id": 70385861,
@@ -155,7 +163,8 @@
         "NO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Starry Breck Lichen"
     },
     {
       "sis_taxon_id": 70386009,
@@ -171,7 +180,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Rock Gnome Lichen"
     },
     {
       "sis_taxon_id": 70386122,
@@ -187,7 +197,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 70416939,
@@ -204,7 +215,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 71542492,
@@ -220,7 +232,8 @@
         "PG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 71598929,
@@ -242,7 +255,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Flooded Jellyskin Lichen"
     },
     {
       "sis_taxon_id": 71605769,
@@ -259,7 +273,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 71622372,
@@ -276,7 +291,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Old Gray Crosslobes"
     },
     {
       "sis_taxon_id": 71639618,
@@ -292,7 +308,8 @@
         "SH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 71670425,
@@ -308,7 +325,8 @@
         "PG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 74848109,
@@ -324,7 +342,8 @@
         "BR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80702763,
@@ -340,7 +359,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80702772,
@@ -356,7 +376,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80702807,
@@ -373,7 +394,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Golden Spruce Dots"
     },
     {
       "sis_taxon_id": 80702824,
@@ -389,7 +411,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Old Birch Spots"
     },
     {
       "sis_taxon_id": 80702844,
@@ -405,7 +428,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Evelyn's Buttons"
     },
     {
       "sis_taxon_id": 80702853,
@@ -421,7 +445,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80702901,
@@ -437,7 +462,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Sterling Lips"
     },
     {
       "sis_taxon_id": 80702914,
@@ -453,7 +479,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80702927,
@@ -469,7 +496,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Appalachian Dust Bunnies"
     },
     {
       "sis_taxon_id": 80702946,
@@ -485,7 +513,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80702970,
@@ -501,7 +530,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80702989,
@@ -518,7 +548,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80703002,
@@ -534,7 +565,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Carolina Beach Dots"
     },
     {
       "sis_taxon_id": 80703017,
@@ -550,7 +582,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Lea's Bog Lichen"
     },
     {
       "sis_taxon_id": 80703034,
@@ -567,7 +600,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Pale-belly Frost Lichen"
     },
     {
       "sis_taxon_id": 80703047,
@@ -584,7 +618,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Appalachian Matchsticks"
     },
     {
       "sis_taxon_id": 80703064,
@@ -600,7 +635,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80703073,
@@ -617,7 +653,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Muhlenberg’s Smile"
     },
     {
       "sis_taxon_id": 80703097,
@@ -633,7 +670,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80703106,
@@ -649,7 +687,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Dune Hair Lichen"
     },
     {
       "sis_taxon_id": 80703121,
@@ -665,7 +704,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Carolina Thelomma Lichen"
     },
     {
       "sis_taxon_id": 97459969,
@@ -681,7 +721,8 @@
         "EC"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Fragile Ramalina"
     },
     {
       "sis_taxon_id": 109418858,
@@ -697,7 +738,8 @@
         "IT"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80703140,
@@ -715,7 +757,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 109425875,
@@ -738,7 +781,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 109425987,
@@ -782,7 +826,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 74847931,
@@ -798,7 +843,8 @@
         "VE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 147691134,
@@ -815,7 +861,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 147296771,
@@ -849,7 +896,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Dark-purple Earthtongue"
     },
     {
       "sis_taxon_id": 147440561,
@@ -885,7 +933,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 154634653,
@@ -901,7 +950,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 154635584,
@@ -917,7 +967,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 154636537,
@@ -934,7 +985,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 154811245,
@@ -950,7 +1002,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 154811723,
@@ -966,7 +1019,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 154816078,
@@ -982,7 +1036,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 154926290,
@@ -998,7 +1053,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 163618381,
@@ -1015,7 +1071,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172734855,
@@ -1032,7 +1089,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172735556,
@@ -1048,7 +1106,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172735597,
@@ -1064,7 +1123,8 @@
         "AR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172735667,
@@ -1081,7 +1141,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172735856,
@@ -1098,7 +1159,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172740470,
@@ -1114,7 +1176,8 @@
         "AR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172740818,
@@ -1130,7 +1193,8 @@
         "GY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172740855,
@@ -1146,7 +1210,8 @@
         "GY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172740916,
@@ -1162,7 +1227,8 @@
         "GY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172817937,
@@ -1178,7 +1244,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172818281,
@@ -1195,7 +1262,8 @@
         "BR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172832888,
@@ -1211,7 +1279,8 @@
         "AR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172832924,
@@ -1228,7 +1297,8 @@
         "GY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 172833061,
@@ -1245,7 +1315,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 70385721,
@@ -1267,7 +1338,8 @@
           "assessment_id": 70385726,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": "Hot Dots"
     },
     {
       "sis_taxon_id": 175708768,
@@ -1283,7 +1355,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Woven-spore Lichen"
     },
     {
       "sis_taxon_id": 175708981,
@@ -1303,7 +1376,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Resin Whiskers"
     },
     {
       "sis_taxon_id": 175709575,
@@ -1325,7 +1399,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Wila"
     },
     {
       "sis_taxon_id": 175709793,
@@ -1341,7 +1416,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175710010,
@@ -1357,7 +1433,8 @@
         "CA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Arctic Orangebush Lichen"
     },
     {
       "sis_taxon_id": 175710250,
@@ -1373,7 +1450,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Carolina Moon Lichen"
     },
     {
       "sis_taxon_id": 175710297,
@@ -1389,7 +1467,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Tammy's Pumpkin Pails"
     },
     {
       "sis_taxon_id": 175710321,
@@ -1405,7 +1484,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Dey's Moon Lichen"
     },
     {
       "sis_taxon_id": 175710398,
@@ -1422,7 +1502,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 176075840,
@@ -1438,7 +1519,8 @@
         "FK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 176075275,
@@ -1454,7 +1536,8 @@
         "FK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 176075451,
@@ -1470,7 +1553,8 @@
         "FK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 176075946,
@@ -1486,7 +1570,8 @@
         "FK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 176076887,
@@ -1502,7 +1587,8 @@
         "FK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 58514773,
@@ -1527,7 +1613,8 @@
           "assessment_id": 58514845,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": "Chinese Caterpillar Fungus"
     },
     {
       "sis_taxon_id": 180096947,
@@ -1587,7 +1674,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Common Green Shield"
     },
     {
       "sis_taxon_id": 180096952,
@@ -1604,7 +1692,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Lesser Dust My Discs"
     },
     {
       "sis_taxon_id": 180096955,
@@ -1621,7 +1710,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180096958,
@@ -1638,7 +1728,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Lesser Lichen Vulgaris"
     },
     {
       "sis_taxon_id": 180096965,
@@ -1655,7 +1746,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Eggshell Rock Blaze"
     },
     {
       "sis_taxon_id": 180150537,
@@ -1671,7 +1763,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180149902,
@@ -1687,7 +1780,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180149333,
@@ -1703,7 +1797,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148753,
@@ -1719,7 +1814,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148672,
@@ -1735,7 +1831,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148659,
@@ -1751,7 +1848,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148009,
@@ -1767,7 +1865,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180147808,
@@ -1783,7 +1882,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180147793,
@@ -1799,7 +1899,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180147622,
@@ -1815,7 +1916,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180147489,
@@ -1831,7 +1933,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180147465,
@@ -1847,7 +1950,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180147390,
@@ -1863,7 +1967,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180147261,
@@ -1879,7 +1984,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180146600,
@@ -1895,7 +2001,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180142454,
@@ -1911,7 +2018,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180142209,
@@ -1927,7 +2035,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148257,
@@ -1943,7 +2052,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180149343,
@@ -1959,7 +2069,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180146816,
@@ -1975,7 +2086,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180142850,
@@ -1991,7 +2103,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180149808,
@@ -2007,7 +2120,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180149486,
@@ -2023,7 +2137,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180142998,
@@ -2039,7 +2154,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180150775,
@@ -2055,7 +2171,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180149441,
@@ -2071,7 +2188,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180149612,
@@ -2087,7 +2205,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148385,
@@ -2103,7 +2222,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180142219,
@@ -2119,7 +2239,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180150487,
@@ -2135,7 +2256,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180149784,
@@ -2151,7 +2273,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180146639,
@@ -2167,7 +2290,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148682,
@@ -2183,7 +2307,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148763,
@@ -2199,7 +2324,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148415,
@@ -2215,7 +2341,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148199,
@@ -2231,7 +2358,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148143,
@@ -2247,7 +2375,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180147522,
@@ -2263,7 +2392,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180143141,
@@ -2279,7 +2409,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148747,
@@ -2296,7 +2427,8 @@
         "EC"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180142742,
@@ -2312,7 +2444,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180149539,
@@ -2328,7 +2461,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180142378,
@@ -2344,7 +2478,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180142319,
@@ -2360,7 +2495,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180148587,
@@ -2376,7 +2512,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180142187,
@@ -2392,7 +2529,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180150643,
@@ -2408,7 +2546,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 71597387,
@@ -2430,7 +2569,8 @@
           "assessment_id": 71597454,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 180875146,
@@ -2446,7 +2586,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Gladys' Mountain Spikes"
     },
     {
       "sis_taxon_id": 183335302,
@@ -2462,7 +2603,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Mid-Atlantic Comb-over"
     },
     {
       "sis_taxon_id": 180412795,
@@ -2478,7 +2620,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Redwood Stubble"
     },
     {
       "sis_taxon_id": 95383414,
@@ -2502,7 +2645,8 @@
           "assessment_id": 95385394,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 80188449,
@@ -2525,7 +2669,8 @@
           "assessment_id": 80188453,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 58517228,
@@ -2589,7 +2734,8 @@
           "assessment_id": 58517248,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Nail Fungus"
     },
     {
       "sis_taxon_id": 154440031,
@@ -2611,7 +2757,8 @@
           "assessment_id": 154440075,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 194660207,
@@ -2627,7 +2774,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Bubbling Witches Hair"
     },
     {
       "sis_taxon_id": 194660286,
@@ -2643,7 +2791,8 @@
         "CA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Smooth Horsehair Lichen"
     },
     {
       "sis_taxon_id": 194660372,
@@ -2659,7 +2808,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Smooth Eyelash Lichen"
     },
     {
       "sis_taxon_id": 194660573,
@@ -2722,7 +2872,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Salted Shield Lichen"
     },
     {
       "sis_taxon_id": 194660642,
@@ -2759,7 +2910,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Bottle Brush Shield Lichen"
     },
     {
       "sis_taxon_id": 194660719,
@@ -2826,7 +2978,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Green Starburst Lichen"
     },
     {
       "sis_taxon_id": 194660868,
@@ -2882,7 +3035,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Grey Starburst Lichen"
     },
     {
       "sis_taxon_id": 194661476,
@@ -2978,7 +3132,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Salted Ruffle Lichen"
     },
     {
       "sis_taxon_id": 194661553,
@@ -2996,7 +3151,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Powdered Ruffle Lichen"
     },
     {
       "sis_taxon_id": 194661584,
@@ -3014,7 +3170,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Perforated Ruffle Lichen"
     },
     {
       "sis_taxon_id": 194662148,
@@ -3032,7 +3189,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 194662185,
@@ -3048,7 +3206,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Idaho Grouse Pellet"
     },
     {
       "sis_taxon_id": 194662208,
@@ -3084,7 +3243,8 @@
         "VE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Carolina Shield Lichen"
     },
     {
       "sis_taxon_id": 194662214,
@@ -3107,7 +3267,8 @@
         "VE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Rock Greenshield"
     },
     {
       "sis_taxon_id": 194662493,
@@ -3124,7 +3285,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Appalachian Tree Camouflage Lichen"
     },
     {
       "sis_taxon_id": 194663043,
@@ -3149,7 +3311,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 195432681,
@@ -3165,7 +3328,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 198480554,
@@ -3182,7 +3346,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 198481380,
@@ -3199,7 +3364,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175709748,
@@ -3221,7 +3387,8 @@
           "assessment_id": 175710672,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175710031,
@@ -3244,7 +3411,8 @@
           "assessment_id": 175710697,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": "Peruvian Orange-bush Lichen"
     },
     {
       "sis_taxon_id": 147297001,
@@ -3282,7 +3450,8 @@
           "assessment_id": 148464802,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": "Slimy Earthtongue"
     },
     {
       "sis_taxon_id": 64081145,
@@ -3304,7 +3473,8 @@
           "assessment_id": 64081186,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": "Porto Santo Foam Lichen"
     },
     {
       "sis_taxon_id": 209595557,
@@ -3320,7 +3490,8 @@
         "BR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 209742938,
@@ -3334,7 +3505,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 209742965,
@@ -3351,7 +3523,8 @@
         "UY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 194674651,
@@ -3367,7 +3540,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 194662559,
@@ -3383,7 +3557,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 213314289,
@@ -3401,7 +3576,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Lace Lichen"
     },
     {
       "sis_taxon_id": 70380974,
@@ -3428,7 +3604,8 @@
           "assessment_id": 70380980,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": "Porto Santo Strap Lichen"
     },
     {
       "sis_taxon_id": 70381370,
@@ -3450,7 +3627,8 @@
           "assessment_id": 70381417,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": "Mountain Strap Lichen"
     },
     {
       "sis_taxon_id": 70382699,
@@ -3472,7 +3650,8 @@
           "assessment_id": 70382708,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": "Prime Strap Lichen"
     },
     {
       "sis_taxon_id": 70384543,
@@ -3494,7 +3673,8 @@
           "assessment_id": 70384546,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": "Timdal's Strap Lichen"
     },
     {
       "sis_taxon_id": 180096939,
@@ -3519,7 +3699,8 @@
           "assessment_id": 180096991,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Surprise Lichen"
     },
     {
       "sis_taxon_id": 228795876,
@@ -3535,7 +3716,8 @@
         "GR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 228795429,
@@ -3551,7 +3733,8 @@
         "GR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 238219528,
@@ -3567,7 +3750,8 @@
         "AR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 238220937,
@@ -3583,7 +3767,8 @@
         "AR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 238222141,
@@ -3603,7 +3788,8 @@
         "UY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 75118940,
@@ -3617,7 +3803,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Round-spored False Morel"
     },
     {
       "sis_taxon_id": 113197460,
@@ -3655,7 +3842,8 @@
           "assessment_id": 113197543,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": "Short-spored Earthtongue"
     },
     {
       "sis_taxon_id": 266357751,
@@ -3669,7 +3857,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 266357535,
@@ -3685,7 +3874,8 @@
         "BR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 273188747,
@@ -3713,7 +3903,8 @@
         "UA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 273188403,
@@ -3727,7 +3918,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 273188534,
@@ -3743,7 +3935,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     }
   ],
   "metadata": {

@@ -40,7 +40,8 @@
           "assessment_id": 3265231,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11249,
@@ -67,7 +68,8 @@
           "assessment_id": 3265616,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Pink Mucket"
     },
     {
       "sis_taxon_id": 11250,
@@ -94,7 +96,8 @@
           "assessment_id": 3265679,
           "category": "V"
         }
-      ]
+      ],
+      "common_name": "Finelined Pocketbook"
     },
     {
       "sis_taxon_id": 11256,
@@ -114,7 +117,8 @@
           "assessment_id": 3266027,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Haddleton Lampmussel"
     },
     {
       "sis_taxon_id": 11257,
@@ -136,7 +140,8 @@
           "assessment_id": 3266059,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Southern Pocketbook"
     },
     {
       "sis_taxon_id": 11263,
@@ -158,7 +163,8 @@
           "assessment_id": 3266254,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Rayed Pink Fatmucket"
     },
     {
       "sis_taxon_id": 11361,
@@ -185,7 +191,8 @@
           "assessment_id": 3273672,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11479,
@@ -212,7 +219,8 @@
           "assessment_id": 3282878,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Birdwing Pearlymussel"
     },
     {
       "sis_taxon_id": 11686,
@@ -235,7 +243,8 @@
           "assessment_id": 3301458,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Tidewater Mucket"
     },
     {
       "sis_taxon_id": 11922,
@@ -277,7 +286,8 @@
           "assessment_id": 3315300,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Slab-sided Pearly Mussel"
     },
     {
       "sis_taxon_id": 12800,
@@ -324,7 +334,8 @@
           "assessment_id": 3383599,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Alabama Pearlshell"
     },
     {
       "sis_taxon_id": 12803,
@@ -351,7 +362,8 @@
           "assessment_id": 3383793,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 12927,
@@ -378,7 +390,8 @@
           "assessment_id": 3398994,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Coosa Moccasinshell"
     },
     {
       "sis_taxon_id": 12930,
@@ -400,7 +413,8 @@
           "assessment_id": 3399213,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": "Suwannee Moccasinshell"
     },
     {
       "sis_taxon_id": 15021,
@@ -422,7 +436,8 @@
           "assessment_id": 4488657,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Southern Hickorynut"
     },
     {
       "sis_taxon_id": 15022,
@@ -445,7 +460,8 @@
           "assessment_id": 4488687,
           "category": "LR/lc"
         }
-      ]
+      ],
+      "common_name": "Hickorynut"
     },
     {
       "sis_taxon_id": 155511,
@@ -501,7 +517,8 @@
           "assessment_id": 4789834,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Horny Orb Mussel"
     },
     {
       "sis_taxon_id": 155736,
@@ -524,7 +541,8 @@
           "assessment_id": 4835160,
           "category": "NA"
         }
-      ]
+      ],
+      "common_name": "Asian Clam"
     },
     {
       "sis_taxon_id": 155986,
@@ -559,7 +577,8 @@
           "assessment_id": 4878927,
           "category": "NT"
         }
-      ]
+      ],
+      "common_name": "Witham Orb Mussel"
     },
     {
       "sis_taxon_id": 16479,
@@ -601,7 +620,8 @@
           "assessment_id": 5927130,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 164806,
@@ -618,7 +638,8 @@
         "TR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 164813,
@@ -635,7 +656,8 @@
         "TR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 164815,
@@ -654,7 +676,8 @@
         "TR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 164816,
@@ -671,7 +694,8 @@
         "SY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 164841,
@@ -689,7 +713,8 @@
         "TR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 164851,
@@ -705,7 +730,8 @@
         "TR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166252,
@@ -722,7 +748,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166297,
@@ -739,7 +766,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166315,
@@ -755,7 +783,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166774,
@@ -783,7 +812,8 @@
           "assessment_id": 6280329,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Bengali Geloina"
     },
     {
       "sis_taxon_id": 171804,
@@ -800,7 +830,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171806,
@@ -816,7 +847,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171807,
@@ -832,7 +864,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171815,
@@ -850,7 +883,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171817,
@@ -871,7 +905,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171818,
@@ -889,7 +924,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Golden Mussel"
     },
     {
       "sis_taxon_id": 171825,
@@ -906,7 +942,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171826,
@@ -926,7 +963,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171830,
@@ -942,7 +980,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171832,
@@ -962,7 +1001,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171833,
@@ -980,7 +1020,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171835,
@@ -996,7 +1037,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171848,
@@ -1012,7 +1054,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171856,
@@ -1028,7 +1071,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171860,
@@ -1046,7 +1090,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171861,
@@ -1062,7 +1107,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171863,
@@ -1078,7 +1124,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171866,
@@ -1096,7 +1143,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171867,
@@ -1114,7 +1162,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171869,
@@ -1132,7 +1181,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171870,
@@ -1149,7 +1199,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171875,
@@ -1167,7 +1218,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171876,
@@ -1183,7 +1235,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171880,
@@ -1200,7 +1253,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171882,
@@ -1219,7 +1273,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171886,
@@ -1240,7 +1295,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171889,
@@ -1262,7 +1318,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171891,
@@ -1283,7 +1340,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171892,
@@ -1301,7 +1359,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171894,
@@ -1317,7 +1376,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171895,
@@ -1334,7 +1394,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171899,
@@ -1350,7 +1411,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171900,
@@ -1368,7 +1430,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171901,
@@ -1385,7 +1448,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171903,
@@ -1401,7 +1465,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171906,
@@ -1425,7 +1490,8 @@
         "SG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171911,
@@ -1446,7 +1512,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171913,
@@ -1465,7 +1532,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173025,
@@ -1483,7 +1551,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173032,
@@ -1500,7 +1569,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173053,
@@ -1516,7 +1586,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Ellipse"
     },
     {
       "sis_taxon_id": 173058,
@@ -1532,7 +1603,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Canoe Creek Pigtoe"
     },
     {
       "sis_taxon_id": 173061,
@@ -1549,7 +1621,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Round Pigtoe"
     },
     {
       "sis_taxon_id": 173063,
@@ -1565,7 +1638,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Florida Pondhorn"
     },
     {
       "sis_taxon_id": 173064,
@@ -1582,7 +1656,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Pondhorn"
     },
     {
       "sis_taxon_id": 173069,
@@ -1598,7 +1673,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Bankclimber"
     },
     {
       "sis_taxon_id": 173070,
@@ -1614,7 +1690,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173142,
@@ -1630,7 +1707,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173147,
@@ -1646,7 +1724,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173154,
@@ -1662,7 +1741,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17397,
@@ -1704,7 +1784,8 @@
           "assessment_id": 7012133,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17398,
@@ -1731,7 +1812,8 @@
           "assessment_id": 7012176,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175079,
@@ -1747,7 +1829,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17666,
@@ -1787,7 +1870,8 @@
           "assessment_id": 7280359,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Black Clubshell"
     },
     {
       "sis_taxon_id": 17671,
@@ -1834,7 +1918,8 @@
           "assessment_id": 7287939,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Heavy Pigtoe"
     },
     {
       "sis_taxon_id": 17679,
@@ -1866,7 +1951,8 @@
           "assessment_id": 7305185,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17685,
@@ -1893,7 +1979,8 @@
           "assessment_id": 7316950,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": "Georgia Pigtoe"
     },
     {
       "sis_taxon_id": 17689,
@@ -1918,7 +2005,8 @@
           "assessment_id": 7325659,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Ovate Clubshell"
     },
     {
       "sis_taxon_id": 17690,
@@ -1950,7 +2038,8 @@
           "assessment_id": 7327314,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17692,
@@ -1982,7 +2071,8 @@
           "assessment_id": 7331284,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Warrior Pigtoe"
     },
     {
       "sis_taxon_id": 18091,
@@ -2024,7 +2114,8 @@
           "assessment_id": 7655434,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Fat Pocketbook"
     },
     {
       "sis_taxon_id": 18825,
@@ -2051,7 +2142,8 @@
           "assessment_id": 8645219,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Triangular Kidneyshell"
     },
     {
       "sis_taxon_id": 18826,
@@ -2078,7 +2170,8 @@
           "assessment_id": 8645267,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188871,
@@ -2099,7 +2192,8 @@
         "UZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188874,
@@ -2117,7 +2211,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Fawnsfoot"
     },
     {
       "sis_taxon_id": 188908,
@@ -2134,7 +2229,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Yellow Sandshell"
     },
     {
       "sis_taxon_id": 188910,
@@ -2150,7 +2246,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Ebonyshell"
     },
     {
       "sis_taxon_id": 188973,
@@ -2166,7 +2263,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Downy Rainbow"
     },
     {
       "sis_taxon_id": 189007,
@@ -2183,7 +2281,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Eastern Floater"
     },
     {
       "sis_taxon_id": 189032,
@@ -2199,7 +2298,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189060,
@@ -2215,7 +2315,8 @@
         "TZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189093,
@@ -2231,7 +2332,8 @@
         "CA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189102,
@@ -2249,7 +2351,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189156,
@@ -2266,7 +2369,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189185,
@@ -2282,7 +2386,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Pink Papershell"
     },
     {
       "sis_taxon_id": 189193,
@@ -2299,7 +2404,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Lilliput"
     },
     {
       "sis_taxon_id": 189279,
@@ -2316,7 +2422,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Wavyrayed Lampmussel"
     },
     {
       "sis_taxon_id": 189290,
@@ -2332,7 +2439,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189346,
@@ -2348,7 +2456,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 18934,
@@ -2370,7 +2479,8 @@
           "assessment_id": 8718413,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189371,
@@ -2386,7 +2496,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Southern Elktoe"
     },
     {
       "sis_taxon_id": 189381,
@@ -2402,7 +2513,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189434,
@@ -2418,7 +2530,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189448,
@@ -2435,7 +2548,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Fatmucket"
     },
     {
       "sis_taxon_id": 189496,
@@ -2451,7 +2565,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Louisiana Fatmucket"
     },
     {
       "sis_taxon_id": 189539,
@@ -2467,7 +2582,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Roanoke Slabshell"
     },
     {
       "sis_taxon_id": 189560,
@@ -2483,7 +2599,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Notched Rainbow"
     },
     {
       "sis_taxon_id": 189566,
@@ -2499,7 +2616,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 19050,
@@ -2521,7 +2639,8 @@
           "assessment_id": 8802749,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Ridged Mapleleaf"
     },
     {
       "sis_taxon_id": 19056,
@@ -2548,7 +2667,8 @@
           "assessment_id": 8803015,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 198678,
@@ -2564,7 +2684,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "New Zealand Freshwater Mussel"
     },
     {
       "sis_taxon_id": 198679,
@@ -2580,7 +2701,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 198827,
@@ -2596,7 +2718,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 200787,
@@ -2614,7 +2737,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Cape Rock Oyster"
     },
     {
       "sis_taxon_id": 200797,
@@ -2628,7 +2752,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 200855,
@@ -2658,7 +2783,8 @@
         "TG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 200866,
@@ -2713,7 +2839,8 @@
         "YT"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Fingerprint Oyster"
     },
     {
       "sis_taxon_id": 200901,
@@ -2729,7 +2856,8 @@
         "JP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Horikoshi's Giant Mussel"
     },
     {
       "sis_taxon_id": 200950,
@@ -2747,7 +2875,8 @@
         "TW"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 200957,
@@ -2763,7 +2892,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Red Oyster"
     },
     {
       "sis_taxon_id": 200958,
@@ -2780,7 +2910,8 @@
         "TW"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 200959,
@@ -2797,7 +2928,8 @@
         "TO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Diamante Punk-rock Snail"
     },
     {
       "sis_taxon_id": 200966,
@@ -2816,7 +2948,8 @@
         "PH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 200988,
@@ -2832,7 +2965,8 @@
         "VE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201004,
@@ -2848,7 +2982,8 @@
         "FJ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Elongate Vent Mussel"
     },
     {
       "sis_taxon_id": 201031,
@@ -2870,7 +3005,8 @@
         "SV"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201041,
@@ -2889,7 +3025,8 @@
         "TZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201062,
@@ -2905,7 +3042,8 @@
         "PH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201075,
@@ -2921,7 +3059,8 @@
         "JP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Seven Luminaries Vent Mussel"
     },
     {
       "sis_taxon_id": 201085,
@@ -2937,7 +3076,8 @@
         "MU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Indian Ocean Vent Mussel"
     },
     {
       "sis_taxon_id": 201096,
@@ -2953,7 +3093,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201098,
@@ -2990,7 +3131,8 @@
         "VE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201106,
@@ -3006,7 +3148,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Cape Weed Oyster"
     },
     {
       "sis_taxon_id": 201108,
@@ -3062,7 +3205,8 @@
         "WS"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201121,
@@ -3134,7 +3278,8 @@
         "YE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201141,
@@ -3181,7 +3326,8 @@
         "VU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201159,
@@ -3216,7 +3362,8 @@
         "TL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201164,
@@ -3232,7 +3379,8 @@
         "PG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Manus Basin Vent Mussel"
     },
     {
       "sis_taxon_id": 201194,
@@ -3248,7 +3396,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Cat's Paw Oyster"
     },
     {
       "sis_taxon_id": 201244,
@@ -3266,7 +3415,8 @@
         "TW"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201249,
@@ -3304,7 +3454,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Flat Oyster"
     },
     {
       "sis_taxon_id": 201281,
@@ -3320,7 +3471,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201319,
@@ -3337,7 +3489,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201320,
@@ -3356,7 +3509,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201428,
@@ -3375,7 +3529,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201455,
@@ -3394,7 +3549,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201456,
@@ -3413,7 +3569,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201502,
@@ -3431,7 +3588,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 201752,
@@ -3448,7 +3606,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 203707,
@@ -3469,7 +3628,8 @@
         "TW"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 203724,
@@ -3486,7 +3646,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Threeridge"
     },
     {
       "sis_taxon_id": 20939,
@@ -3508,7 +3669,8 @@
           "assessment_id": 9237380,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 22013,
@@ -3550,7 +3712,8 @@
           "assessment_id": 9346421,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 22972,
@@ -3592,7 +3755,8 @@
           "assessment_id": 9403841,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Choctaw Bean"
     },
     {
       "sis_taxon_id": 22973,
@@ -3635,7 +3799,8 @@
           "assessment_id": 9403933,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Bean Mussel"
     },
     {
       "sis_taxon_id": 5952,
@@ -3682,7 +3847,8 @@
           "assessment_id": 11954976,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Spectaclecase"
     },
     {
       "sis_taxon_id": 6182,
@@ -3724,7 +3890,8 @@
           "assessment_id": 12562846,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Western Fanshell"
     },
     {
       "sis_taxon_id": 62262,
@@ -3741,7 +3908,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Tubercled Blossom"
     },
     {
       "sis_taxon_id": 7631,
@@ -3786,7 +3954,8 @@
           "assessment_id": 12837538,
           "category": "Ex"
         }
-      ]
+      ],
+      "common_name": "Recovery Pearly Mussel"
     },
     {
       "sis_taxon_id": 7633,
@@ -3828,7 +3997,8 @@
           "assessment_id": 12837637,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7652,
@@ -3860,7 +4030,8 @@
           "assessment_id": 12840069,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Purple Bankclimber"
     },
     {
       "sis_taxon_id": 773,
@@ -3907,7 +4078,8 @@
           "assessment_id": 13077233,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 774,
@@ -3954,7 +4126,8 @@
           "assessment_id": 13077375,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 776,
@@ -4001,7 +4174,8 @@
           "assessment_id": 13077945,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Appalachian Elktoe"
     },
     {
       "sis_taxon_id": 7866,
@@ -4053,7 +4227,8 @@
           "assessment_id": 12859325,
           "category": "V"
         }
-      ]
+      ],
+      "common_name": "Oyster Mussel"
     },
     {
       "sis_taxon_id": 7877,
@@ -4098,7 +4273,8 @@
           "assessment_id": 12860485,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Southern Acorn Riffle Shell"
     },
     {
       "sis_taxon_id": 8773,
@@ -4140,7 +4316,8 @@
           "assessment_id": 12930876,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Finerayed Pigtoe"
     },
     {
       "sis_taxon_id": 8775,
@@ -4162,7 +4339,8 @@
           "assessment_id": 12930893,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Longsolid"
     },
     {
       "sis_taxon_id": 8777,
@@ -4184,7 +4362,8 @@
           "assessment_id": 12930958,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Tennessee Pigtoe"
     },
     {
       "sis_taxon_id": 8778,
@@ -4226,7 +4405,8 @@
           "assessment_id": 12931074,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 8780,
@@ -4248,7 +4428,8 @@
           "assessment_id": 12931141,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Triangle Pigtoe"
     },
     {
       "sis_taxon_id": 1076,
@@ -4270,7 +4451,8 @@
           "assessment_id": 3214241,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11235,
@@ -4297,7 +4479,8 @@
           "assessment_id": 3264883,
           "category": "Ex?"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11237,
@@ -4334,7 +4517,8 @@
           "assessment_id": 3265032,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11241,
@@ -4371,7 +4555,8 @@
           "assessment_id": 3265132,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Orangenacre Mucket"
     },
     {
       "sis_taxon_id": 11244,
@@ -4413,7 +4598,8 @@
           "assessment_id": 3265387,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11245,
@@ -4450,7 +4636,8 @@
           "assessment_id": 3265486,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11251,
@@ -4475,7 +4662,8 @@
           "assessment_id": 3265698,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11252,
@@ -4491,7 +4679,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11255,
@@ -4513,7 +4702,8 @@
           "assessment_id": 3266010,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11259,
@@ -4535,7 +4725,8 @@
           "assessment_id": 3266150,
           "category": "V"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11262,
@@ -4551,7 +4742,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11357,
@@ -4593,7 +4785,8 @@
           "assessment_id": 3273256,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Tennessee Heelsplitter"
     },
     {
       "sis_taxon_id": 11360,
@@ -4615,7 +4808,8 @@
           "assessment_id": 3273625,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11685,
@@ -4647,7 +4841,8 @@
           "assessment_id": 3301394,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11923,
@@ -4663,7 +4858,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 12924,
@@ -4685,7 +4881,8 @@
           "assessment_id": 3398857,
           "category": "V"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 12925,
@@ -4701,7 +4898,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 12926,
@@ -4715,7 +4913,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 12928,
@@ -4737,7 +4936,8 @@
           "assessment_id": 3399011,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 12929,
@@ -4759,7 +4959,8 @@
           "assessment_id": 3399088,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 1312,
@@ -4779,7 +4980,8 @@
           "assessment_id": 3410796,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Rayed Creekshell"
     },
     {
       "sis_taxon_id": 14831,
@@ -4795,7 +4997,8 @@
         "EC"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 15020,
@@ -4809,7 +5012,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 15023,
@@ -4836,7 +5040,8 @@
           "assessment_id": 4488721,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 15025,
@@ -4852,7 +5057,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 155467,
@@ -4866,7 +5072,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 155543,
@@ -4928,7 +5135,8 @@
           "assessment_id": 4796089,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Painter's Mussel"
     },
     {
       "sis_taxon_id": 155580,
@@ -4942,7 +5150,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Oval Orb Mussel"
     },
     {
       "sis_taxon_id": 155623,
@@ -4964,7 +5173,8 @@
           "assessment_id": 4810209,
           "category": "NA"
         }
-      ]
+      ],
+      "common_name": "Dark False Mussel"
     },
     {
       "sis_taxon_id": 155782,
@@ -4996,7 +5206,8 @@
           "assessment_id": 4841701,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Hump-Backed Pea Mussel"
     },
     {
       "sis_taxon_id": 155853,
@@ -5016,7 +5227,8 @@
           "assessment_id": 4855418,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "River Orb Mussel"
     },
     {
       "sis_taxon_id": 155974,
@@ -5042,7 +5254,8 @@
           "assessment_id": 4876973,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Walden's Pea Mussel"
     },
     {
       "sis_taxon_id": 156059,
@@ -5056,7 +5269,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 156025,
@@ -5084,7 +5298,8 @@
           "assessment_id": 4892113,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Henslow's Pea Mussel"
     },
     {
       "sis_taxon_id": 156111,
@@ -5144,7 +5359,8 @@
           "assessment_id": 4899186,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Swollen River Mussel"
     },
     {
       "sis_taxon_id": 156122,
@@ -5164,7 +5380,8 @@
           "assessment_id": 4905375,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Porous Pea Mussel"
     },
     {
       "sis_taxon_id": 165309,
@@ -5182,7 +5399,8 @@
         "PY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165402,
@@ -5196,7 +5414,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165592,
@@ -5212,7 +5431,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165760,
@@ -5230,7 +5450,8 @@
         "ZM"
       ],
       "assessment_count": 3,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165770,
@@ -5244,7 +5465,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165781,
@@ -5263,7 +5485,8 @@
         "ZW"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165801,
@@ -5277,7 +5500,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166247,
@@ -5294,7 +5518,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166260,
@@ -5310,7 +5535,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166262,
@@ -5324,7 +5550,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166264,
@@ -5340,7 +5567,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166266,
@@ -5354,7 +5582,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166271,
@@ -5370,7 +5599,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166273,
@@ -5386,7 +5616,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166274,
@@ -5400,7 +5631,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166275,
@@ -5416,7 +5648,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166276,
@@ -5430,7 +5663,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166277,
@@ -5446,7 +5680,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166280,
@@ -5464,7 +5699,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166284,
@@ -5478,7 +5714,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166286,
@@ -5495,7 +5732,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166287,
@@ -5509,7 +5747,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166288,
@@ -5525,7 +5764,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166289,
@@ -5541,7 +5781,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166291,
@@ -5555,7 +5796,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166296,
@@ -5571,7 +5813,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166300,
@@ -5585,7 +5828,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166301,
@@ -5602,7 +5846,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166303,
@@ -5618,7 +5863,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166305,
@@ -5632,7 +5878,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166306,
@@ -5648,7 +5895,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166308,
@@ -5662,7 +5910,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166676,
@@ -5678,7 +5927,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166677,
@@ -5696,7 +5946,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166679,
@@ -5710,7 +5961,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166685,
@@ -5730,7 +5982,8 @@
         "PK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166687,
@@ -5744,7 +5997,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166688,
@@ -5763,7 +6017,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166695,
@@ -5779,7 +6034,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166702,
@@ -5793,7 +6049,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166703,
@@ -5810,7 +6067,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166705,
@@ -5824,7 +6082,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166709,
@@ -5841,7 +6100,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166710,
@@ -5857,7 +6117,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166714,
@@ -5871,7 +6132,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166716,
@@ -5888,7 +6150,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166719,
@@ -5902,7 +6165,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166720,
@@ -5919,7 +6183,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166723,
@@ -5938,7 +6203,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166724,
@@ -5952,7 +6218,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166731,
@@ -5972,7 +6239,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166734,
@@ -5990,7 +6258,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166735,
@@ -6009,7 +6278,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166738,
@@ -6025,7 +6295,8 @@
         "BD"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166740,
@@ -6042,7 +6313,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166745,
@@ -6059,7 +6331,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166751,
@@ -6076,7 +6349,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166753,
@@ -6098,7 +6372,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166761,
@@ -6116,7 +6391,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166763,
@@ -6132,7 +6408,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166764,
@@ -6148,7 +6425,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166765,
@@ -6166,7 +6444,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166766,
@@ -6183,7 +6462,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166768,
@@ -6200,7 +6480,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166770,
@@ -6217,7 +6498,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166775,
@@ -6236,7 +6518,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166779,
@@ -6252,7 +6535,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166780,
@@ -6271,7 +6555,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166786,
@@ -6287,7 +6572,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166787,
@@ -6304,7 +6590,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166788,
@@ -6320,7 +6607,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166789,
@@ -6339,7 +6627,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166794,
@@ -6356,7 +6645,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166795,
@@ -6373,7 +6663,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166797,
@@ -6389,7 +6680,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166802,
@@ -6405,7 +6697,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 168210,
@@ -6419,7 +6712,8 @@
       "population_trend": "Decreasing",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171803,
@@ -6437,7 +6731,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171805,
@@ -6453,7 +6748,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171821,
@@ -6472,7 +6768,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171822,
@@ -6488,7 +6785,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171823,
@@ -6504,7 +6802,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171827,
@@ -6520,7 +6819,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171828,
@@ -6534,7 +6834,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171843,
@@ -6548,7 +6849,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171846,
@@ -6564,7 +6866,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171858,
@@ -6580,7 +6883,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171859,
@@ -6596,7 +6900,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171865,
@@ -6614,7 +6919,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171868,
@@ -6632,7 +6938,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171874,
@@ -6653,7 +6960,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171879,
@@ -6670,7 +6978,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171883,
@@ -6686,7 +6995,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171885,
@@ -6702,7 +7012,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171907,
@@ -6718,7 +7029,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171910,
@@ -6734,7 +7046,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173022,
@@ -6750,7 +7063,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173023,
@@ -6767,7 +7081,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173100,
@@ -6784,7 +7099,8 @@
         "ZM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173026,
@@ -6800,7 +7116,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173027,
@@ -6818,7 +7135,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173028,
@@ -6835,7 +7153,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173030,
@@ -6852,7 +7171,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173106,
@@ -6869,7 +7189,8 @@
         "ZM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173035,
@@ -6885,7 +7206,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173036,
@@ -6901,7 +7223,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173037,
@@ -6917,7 +7240,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173038,
@@ -6934,7 +7258,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173039,
@@ -6950,7 +7275,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173040,
@@ -6966,7 +7292,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173041,
@@ -6982,7 +7309,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173125,
@@ -6998,7 +7326,8 @@
         "JP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173066,
@@ -7015,7 +7344,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Washboard"
     },
     {
       "sis_taxon_id": 173143,
@@ -7031,7 +7361,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173144,
@@ -7047,7 +7378,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173145,
@@ -7063,7 +7395,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173146,
@@ -7080,7 +7413,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173148,
@@ -7097,7 +7431,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173149,
@@ -7113,7 +7448,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173150,
@@ -7129,7 +7465,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173151,
@@ -7145,7 +7482,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173153,
@@ -7161,7 +7499,8 @@
         "MM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17399,
@@ -7183,7 +7522,8 @@
           "assessment_id": 7012193,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175078,
@@ -7199,7 +7539,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175080,
@@ -7216,7 +7557,8 @@
         "PK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175071,
@@ -7232,7 +7574,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175074,
@@ -7248,7 +7591,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175075,
@@ -7264,7 +7608,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175076,
@@ -7280,7 +7625,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Black Clam"
     },
     {
       "sis_taxon_id": 175077,
@@ -7296,7 +7642,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17622,
@@ -7338,7 +7685,8 @@
           "assessment_id": 7198807,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "White Warty-back Pearly Mussel"
     },
     {
       "sis_taxon_id": 17623,
@@ -7375,7 +7723,8 @@
           "assessment_id": 7201095,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17665,
@@ -7412,7 +7761,8 @@
           "assessment_id": 7280260,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17667,
@@ -7449,7 +7799,8 @@
           "assessment_id": 7281024,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17668,
@@ -7486,7 +7837,8 @@
           "assessment_id": 7282632,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17669,
@@ -7523,7 +7875,8 @@
           "assessment_id": 7284514,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17670,
@@ -7560,7 +7913,8 @@
           "assessment_id": 7286161,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17672,
@@ -7580,7 +7934,8 @@
           "assessment_id": 7290146,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17673,
@@ -7600,7 +7955,8 @@
           "assessment_id": 7292201,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17674,
@@ -7622,7 +7978,8 @@
           "assessment_id": 7294653,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Mississippi Pigtoe"
     },
     {
       "sis_taxon_id": 17675,
@@ -7642,7 +7999,8 @@
           "assessment_id": 7296912,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17676,
@@ -7664,7 +8022,8 @@
           "assessment_id": 7298981,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17677,
@@ -7686,7 +8045,8 @@
           "assessment_id": 7301121,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17678,
@@ -7702,7 +8062,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17680,
@@ -7722,7 +8083,8 @@
           "assessment_id": 7307060,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17681,
@@ -7744,7 +8106,8 @@
           "assessment_id": 7309013,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17682,
@@ -7766,7 +8129,8 @@
           "assessment_id": 7310464,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17683,
@@ -7788,7 +8152,8 @@
           "assessment_id": 7312713,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17684,
@@ -7808,7 +8173,8 @@
           "assessment_id": 7314866,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17686,
@@ -7828,7 +8194,8 @@
           "assessment_id": 7319155,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17687,
@@ -7848,7 +8215,8 @@
           "assessment_id": 7321303,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17688,
@@ -7868,7 +8236,8 @@
           "assessment_id": 7323799,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17691,
@@ -7884,7 +8253,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17693,
@@ -7906,7 +8276,8 @@
           "assessment_id": 7333706,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17694,
@@ -7926,7 +8297,8 @@
           "assessment_id": 7335128,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17695,
@@ -7951,7 +8323,8 @@
           "assessment_id": 7336530,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 177460,
@@ -7967,7 +8340,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 177461,
@@ -7983,7 +8357,8 @@
         "NP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17992,
@@ -7999,7 +8374,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 18092,
@@ -8036,7 +8412,8 @@
           "assessment_id": 7655533,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 18094,
@@ -8058,7 +8435,8 @@
           "assessment_id": 7655793,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184490,
@@ -8075,7 +8453,8 @@
         "CG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184491,
@@ -8092,7 +8471,8 @@
         "ZM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184500,
@@ -8108,7 +8488,8 @@
         "KE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184510,
@@ -8122,7 +8503,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184513,
@@ -8138,7 +8520,8 @@
         "CD"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184519,
@@ -8154,7 +8537,8 @@
         "ET"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184550,
@@ -8172,7 +8556,8 @@
         "CG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184567,
@@ -8189,7 +8574,8 @@
         "SS"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184568,
@@ -8206,7 +8592,8 @@
         "TZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184569,
@@ -8223,7 +8610,8 @@
         "ZM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184585,
@@ -8240,7 +8628,8 @@
         "ZM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184588,
@@ -8258,7 +8647,8 @@
         "CG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184590,
@@ -8274,7 +8664,8 @@
         "CD"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184591,
@@ -8290,7 +8681,8 @@
         "KE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184606,
@@ -8306,7 +8698,8 @@
         "MA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184608,
@@ -8323,7 +8716,8 @@
         "CD"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184614,
@@ -8340,7 +8734,8 @@
         "MA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184633,
@@ -8358,7 +8753,8 @@
         "CG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184635,
@@ -8374,7 +8770,8 @@
         "CM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184636,
@@ -8391,7 +8788,8 @@
         "CG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184637,
@@ -8407,7 +8805,8 @@
         "TN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184648,
@@ -8423,7 +8822,8 @@
         "ET"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184664,
@@ -8439,7 +8839,8 @@
         "TZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184669,
@@ -8458,7 +8859,8 @@
         "ZM"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184676,
@@ -8476,7 +8878,8 @@
         "ZM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184693,
@@ -8495,7 +8898,8 @@
         "CG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184700,
@@ -8516,7 +8920,8 @@
         "GQ"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184701,
@@ -8532,7 +8937,8 @@
         "MA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184703,
@@ -8548,7 +8954,8 @@
         "KE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184708,
@@ -8564,7 +8971,8 @@
         "MA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184715,
@@ -8580,7 +8988,8 @@
         "ZM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184729,
@@ -8597,7 +9006,8 @@
         "CD"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184756,
@@ -8616,7 +9026,8 @@
         "ZM"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184760,
@@ -8633,7 +9044,8 @@
         "TZ"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184761,
@@ -8652,7 +9064,8 @@
         "ZM"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 18827,
@@ -8668,7 +9081,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 18828,
@@ -8684,7 +9098,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188873,
@@ -8700,7 +9115,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188876,
@@ -8716,7 +9132,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Oval Orb Shell"
     },
     {
       "sis_taxon_id": 188880,
@@ -8733,7 +9150,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Eastern Elliptio"
     },
     {
       "sis_taxon_id": 188881,
@@ -8751,7 +9169,8 @@
         "PE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188882,
@@ -8769,7 +9188,8 @@
         "ZW"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188885,
@@ -8785,7 +9205,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188895,
@@ -8801,7 +9222,8 @@
         "JP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188898,
@@ -8817,7 +9239,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188900,
@@ -8833,7 +9256,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188902,
@@ -8849,7 +9273,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Florida Shiny Spike"
     },
     {
       "sis_taxon_id": 188903,
@@ -8865,7 +9290,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188904,
@@ -8881,7 +9307,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Coosa Fiveridge"
     },
     {
       "sis_taxon_id": 188905,
@@ -8898,7 +9325,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Elephantear Mussel"
     },
     {
       "sis_taxon_id": 188907,
@@ -8914,7 +9342,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188939,
@@ -8930,7 +9359,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Box Spike"
     },
     {
       "sis_taxon_id": 188959,
@@ -8946,7 +9376,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Florida Rainbow"
     },
     {
       "sis_taxon_id": 188971,
@@ -8960,7 +9391,8 @@
       "population_trend": "Decreasing",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188974,
@@ -8978,7 +9410,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Yukon Floater"
     },
     {
       "sis_taxon_id": 188990,
@@ -8995,7 +9428,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Slippershell Mussel"
     },
     {
       "sis_taxon_id": 188991,
@@ -9014,7 +9448,8 @@
         "UY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189003,
@@ -9030,7 +9465,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Oval Elliptio"
     },
     {
       "sis_taxon_id": 189072,
@@ -9046,7 +9482,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189073,
@@ -9065,7 +9502,8 @@
         "UY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189076,
@@ -9082,7 +9520,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189080,
@@ -9098,7 +9537,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189025,
@@ -9117,7 +9557,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189095,
@@ -9137,7 +9578,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Marsh Clam"
     },
     {
       "sis_taxon_id": 189105,
@@ -9153,7 +9595,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189040,
@@ -9171,7 +9614,8 @@
         "PE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189106,
@@ -9188,7 +9632,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Triangle Floater"
     },
     {
       "sis_taxon_id": 189042,
@@ -9205,7 +9650,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189053,
@@ -9260,7 +9706,8 @@
         "VI"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189054,
@@ -9276,7 +9723,8 @@
         "BR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189120,
@@ -9297,7 +9745,8 @@
         "UZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189125,
@@ -9313,7 +9762,8 @@
         "EC"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189127,
@@ -9331,7 +9781,8 @@
         "PE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189069,
@@ -9348,7 +9799,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189128,
@@ -9364,7 +9816,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Wartyback"
     },
     {
       "sis_taxon_id": 189134,
@@ -9380,7 +9833,8 @@
         "CU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189137,
@@ -9396,7 +9850,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Rock Pocketbook"
     },
     {
       "sis_taxon_id": 189138,
@@ -9415,7 +9870,8 @@
         "VE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189148,
@@ -9431,7 +9887,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Etheridge’s Pea Shell"
     },
     {
       "sis_taxon_id": 189151,
@@ -9450,7 +9907,8 @@
         "UY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189152,
@@ -9466,7 +9924,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189155,
@@ -9482,7 +9941,8 @@
         "JP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189160,
@@ -9498,7 +9958,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Sad Elliptio"
     },
     {
       "sis_taxon_id": 189186,
@@ -9515,7 +9976,8 @@
         "CL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189195,
@@ -9533,7 +9995,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189213,
@@ -9549,7 +10012,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Southern Sandshell"
     },
     {
       "sis_taxon_id": 189225,
@@ -9567,7 +10031,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189239,
@@ -9583,7 +10048,8 @@
         "ID"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189242,
@@ -9599,7 +10065,8 @@
         "MX"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189245,
@@ -9616,7 +10083,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189250,
@@ -9632,7 +10100,8 @@
         "IN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189260,
@@ -9646,7 +10115,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189269,
@@ -9663,7 +10133,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189270,
@@ -9679,7 +10150,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189275,
@@ -9696,7 +10168,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Wabash Pigtoe"
     },
     {
       "sis_taxon_id": 189286,
@@ -9713,7 +10186,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189295,
@@ -9733,7 +10207,8 @@
         "PE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189298,
@@ -9754,7 +10229,8 @@
         "VE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189301,
@@ -9773,7 +10249,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189307,
@@ -9789,7 +10266,8 @@
         "FK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189311,
@@ -9805,7 +10283,8 @@
         "AR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189315,
@@ -9821,7 +10300,8 @@
         "ID"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189328,
@@ -9841,7 +10321,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189352,
@@ -9882,7 +10363,8 @@
         "VE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189369,
@@ -9903,7 +10385,8 @@
         "UA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189374,
@@ -9919,7 +10402,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189376,
@@ -9935,7 +10419,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189380,
@@ -9951,7 +10436,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189396,
@@ -9970,7 +10456,8 @@
         "UY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189414,
@@ -9984,7 +10471,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189426,
@@ -10003,7 +10491,8 @@
         "UY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189430,
@@ -10022,7 +10511,8 @@
         "VN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189452,
@@ -10038,7 +10528,8 @@
         "CN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189483,
@@ -10054,7 +10545,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Savannah Lilliput"
     },
     {
       "sis_taxon_id": 189485,
@@ -10071,7 +10563,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Round Peaclam"
     },
     {
       "sis_taxon_id": 189488,
@@ -10087,7 +10580,8 @@
         "MN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189500,
@@ -10105,7 +10599,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189504,
@@ -10122,7 +10617,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Mucket"
     },
     {
       "sis_taxon_id": 189505,
@@ -10138,7 +10634,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189523,
@@ -10155,7 +10652,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Pimpleback"
     },
     {
       "sis_taxon_id": 189548,
@@ -10171,7 +10669,8 @@
         "UY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189561,
@@ -10187,7 +10686,8 @@
         "JP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189564,
@@ -10204,7 +10704,8 @@
         "KR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189568,
@@ -10222,7 +10723,8 @@
         "VE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189583,
@@ -10238,7 +10740,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Northern Lance"
     },
     {
       "sis_taxon_id": 189634,
@@ -10255,7 +10758,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Spike"
     },
     {
       "sis_taxon_id": 189693,
@@ -10273,7 +10777,8 @@
         "TH"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189753,
@@ -10289,7 +10794,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189779,
@@ -10307,7 +10813,8 @@
         "SR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189781,
@@ -10324,7 +10831,8 @@
         "BO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189807,
@@ -10340,7 +10848,8 @@
         "JP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 19040,
@@ -10377,7 +10886,8 @@
           "assessment_id": 8792748,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 19042,
@@ -10414,7 +10924,8 @@
           "assessment_id": 8792993,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 19043,
@@ -10451,7 +10962,8 @@
           "assessment_id": 8795398,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 19044,
@@ -10467,7 +10979,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 19045,
@@ -10483,7 +10996,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 19047,
@@ -10499,7 +11013,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 19049,
@@ -10515,7 +11030,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 19051,
@@ -10531,7 +11047,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 19055,
@@ -10547,7 +11064,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 197457,
@@ -10563,7 +11081,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 20940,
@@ -10579,7 +11098,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 2114,
@@ -10621,7 +11141,8 @@
           "assessment_id": 9250096,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Wheeler's Pearly Mussel"
     },
     {
       "sis_taxon_id": 22740,
@@ -10641,7 +11162,8 @@
           "assessment_id": 9384380,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 22741,
@@ -10663,7 +11185,8 @@
           "assessment_id": 9384427,
           "category": "R"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 22976,
@@ -10705,7 +11228,8 @@
           "assessment_id": 9404183,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 22977,
@@ -10747,7 +11271,8 @@
           "assessment_id": 9404322,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 29618,
@@ -10774,7 +11299,8 @@
           "assessment_id": 9505638,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 4002,
@@ -10790,7 +11316,8 @@
         "BR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44233,
@@ -10815,7 +11342,8 @@
           "assessment_id": 10877215,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44234,
@@ -10840,7 +11368,8 @@
           "assessment_id": 10877652,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44247,
@@ -10863,7 +11392,8 @@
           "assessment_id": 10881046,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44273,
@@ -10885,7 +11415,8 @@
           "assessment_id": 10886123,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 6184,
@@ -10907,7 +11438,8 @@
           "assessment_id": 12566265,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 63454,
@@ -10929,7 +11461,8 @@
           "assessment_id": 12679378,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 63455,
@@ -10955,7 +11488,8 @@
           "assessment_id": 12679573,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 63456,
@@ -10979,7 +11513,8 @@
           "assessment_id": 12679884,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 63458,
@@ -11002,7 +11537,8 @@
           "assessment_id": 12680461,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 63459,
@@ -11024,7 +11560,8 @@
           "assessment_id": 12680696,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 6631,
@@ -11040,7 +11577,8 @@
         "BR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 6632,
@@ -11056,7 +11594,8 @@
         "BR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 6633,
@@ -11072,7 +11611,8 @@
         "BR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 6634,
@@ -11088,7 +11628,8 @@
         "BR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 6718,
@@ -11110,7 +11651,8 @@
           "assessment_id": 12799491,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 6843,
@@ -11147,7 +11689,8 @@
           "assessment_id": 12810352,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Dromedary Naiad"
     },
     {
       "sis_taxon_id": 7629,
@@ -11163,7 +11706,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7634,
@@ -11200,7 +11744,8 @@
           "assessment_id": 12837736,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7635,
@@ -11242,7 +11787,8 @@
           "assessment_id": 12837828,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Waccamaw Spike"
     },
     {
       "sis_taxon_id": 7636,
@@ -11269,7 +11815,8 @@
           "assessment_id": 12838158,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Flat Spike"
     },
     {
       "sis_taxon_id": 7637,
@@ -11285,7 +11832,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7638,
@@ -11307,7 +11855,8 @@
           "assessment_id": 12838205,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Carolina Lance"
     },
     {
       "sis_taxon_id": 7639,
@@ -11329,7 +11878,8 @@
           "assessment_id": 12838412,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7640,
@@ -11351,7 +11901,8 @@
           "assessment_id": 12838468,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7641,
@@ -11367,7 +11918,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7642,
@@ -11383,7 +11935,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7643,
@@ -11405,7 +11958,8 @@
           "assessment_id": 12838612,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Satilla Elephantear"
     },
     {
       "sis_taxon_id": 7644,
@@ -11427,7 +11981,8 @@
           "assessment_id": 12838820,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Pod Lance"
     },
     {
       "sis_taxon_id": 7645,
@@ -11449,7 +12004,8 @@
           "assessment_id": 12839052,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7646,
@@ -11471,7 +12027,8 @@
           "assessment_id": 12839170,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Altamaha Slabshell"
     },
     {
       "sis_taxon_id": 7647,
@@ -11493,7 +12050,8 @@
           "assessment_id": 12839390,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Yellow Lance"
     },
     {
       "sis_taxon_id": 7648,
@@ -11515,7 +12073,8 @@
           "assessment_id": 12839407,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Fluted Elephantear"
     },
     {
       "sis_taxon_id": 7649,
@@ -11537,7 +12096,8 @@
           "assessment_id": 12839620,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Atlantic Spike"
     },
     {
       "sis_taxon_id": 7650,
@@ -11559,7 +12119,8 @@
           "assessment_id": 12839830,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7651,
@@ -11586,7 +12147,8 @@
           "assessment_id": 12840013,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": "Florida Lance"
     },
     {
       "sis_taxon_id": 7863,
@@ -11636,7 +12198,8 @@
           "assessment_id": 12858735,
           "category": "Ex"
         }
-      ]
+      ],
+      "common_name": "Arc-form Pearly Mussel"
     },
     {
       "sis_taxon_id": 7864,
@@ -11686,7 +12249,8 @@
           "assessment_id": 12858961,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7865,
@@ -11733,7 +12297,8 @@
           "assessment_id": 12859149,
           "category": "V"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7868,
@@ -11783,7 +12348,8 @@
           "assessment_id": 12859543,
           "category": "Ex"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7872,
@@ -11833,7 +12399,8 @@
           "assessment_id": 12860098,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7874,
@@ -11883,7 +12450,8 @@
           "assessment_id": 12860310,
           "category": "Ex"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7876,
@@ -11925,7 +12493,8 @@
           "assessment_id": 12860367,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7878,
@@ -11972,7 +12541,8 @@
           "assessment_id": 12860723,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7879,
@@ -12022,7 +12592,8 @@
           "assessment_id": 12861047,
           "category": "Ex"
         }
-      ]
+      ],
+      "common_name": "Fine-rayed Pearly Mussel"
     },
     {
       "sis_taxon_id": 7880,
@@ -12072,7 +12643,8 @@
           "assessment_id": 12861347,
           "category": "Ex"
         }
-      ]
+      ],
+      "common_name": "Nearby Pearly Mussel"
     },
     {
       "sis_taxon_id": 7881,
@@ -12122,7 +12694,8 @@
           "assessment_id": 12861556,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7890,
@@ -12167,7 +12740,8 @@
           "assessment_id": 12862314,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7892,
@@ -12217,7 +12791,8 @@
           "assessment_id": 12862532,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 7895,
@@ -12267,7 +12842,8 @@
           "assessment_id": 12863011,
           "category": "Ex"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 8776,
@@ -12283,7 +12859,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 8779,
@@ -12305,7 +12882,8 @@
           "assessment_id": 12931124,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 8781,
@@ -12327,7 +12905,8 @@
           "assessment_id": 12931202,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 8782,
@@ -12349,7 +12928,8 @@
           "assessment_id": 12931219,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Ozark Pigtoe"
     },
     {
       "sis_taxon_id": 8783,
@@ -12371,7 +12951,8 @@
           "assessment_id": 12931402,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Purple Pigtoe"
     },
     {
       "sis_taxon_id": 9907,
@@ -12408,7 +12989,8 @@
           "assessment_id": 13025958,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 511,
@@ -12424,7 +13006,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 775,
@@ -12471,7 +13054,8 @@
           "assessment_id": 13077807,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Dwarf Wedgemussel"
     },
     {
       "sis_taxon_id": 777,
@@ -12511,7 +13095,8 @@
           "assessment_id": 13078078,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 778,
@@ -12551,7 +13136,8 @@
           "assessment_id": 13078206,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 780,
@@ -12576,7 +13162,8 @@
           "assessment_id": 13078465,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": "Coosa Elktoe"
     },
     {
       "sis_taxon_id": 189689,
@@ -12592,7 +13179,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 13295364,
@@ -12612,7 +13200,8 @@
         "UZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 13509199,
@@ -12628,7 +13217,8 @@
         "ID"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 17624,
@@ -12650,7 +13240,8 @@
           "assessment_id": 7202730,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Sheepnose"
     },
     {
       "sis_taxon_id": 155667,
@@ -12712,7 +13303,8 @@
           "assessment_id": 4818080,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Duck Mussel"
     },
     {
       "sis_taxon_id": 156066,
@@ -12777,7 +13369,8 @@
           "assessment_id": 4907255,
           "category": "NT"
         }
-      ]
+      ],
+      "common_name": "Swan Mussel"
     },
     {
       "sis_taxon_id": 164828,
@@ -12796,7 +13389,8 @@
         "TR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 155495,
@@ -12830,7 +13424,8 @@
           "assessment_id": 4787531,
           "category": "NA"
         }
-      ]
+      ],
+      "common_name": "Zebra Mussel"
     },
     {
       "sis_taxon_id": 155923,
@@ -12886,7 +13481,8 @@
           "assessment_id": 4867014,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Rosy Pea Mussel"
     },
     {
       "sis_taxon_id": 155908,
@@ -12943,7 +13539,8 @@
           "assessment_id": 4864228,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Short-ended Pea Mussel"
     },
     {
       "sis_taxon_id": 164866,
@@ -12963,7 +13560,8 @@
         "TR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189347,
@@ -12986,7 +13584,8 @@
           "assessment_id": 8719191,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189780,
@@ -13011,7 +13610,8 @@
           "assessment_id": 8767716,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44026492,
@@ -13027,7 +13627,8 @@
         "NZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 10743,
@@ -13054,7 +13655,8 @@
           "assessment_id": 3211011,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "South Esk Freshwater Mussel "
     },
     {
       "sis_taxon_id": 189387,
@@ -13076,7 +13678,8 @@
           "assessment_id": 8724803,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": "Southern River Mussel"
     },
     {
       "sis_taxon_id": 188926,
@@ -13098,7 +13701,8 @@
           "assessment_id": 8663463,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 58603358,
@@ -13115,7 +13719,8 @@
         "HR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "South Dinaric Cave Clam"
     },
     {
       "sis_taxon_id": 44255,
@@ -13147,7 +13752,8 @@
           "assessment_id": 10883082,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 155516,
@@ -13189,7 +13795,8 @@
           "assessment_id": 4790686,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Arctic-alpine Pea Clam"
     },
     {
       "sis_taxon_id": 155532,
@@ -13214,7 +13821,8 @@
           "assessment_id": 4793669,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Lilljeborg's Pea Mussel"
     },
     {
       "sis_taxon_id": 155659,
@@ -13270,7 +13878,8 @@
           "assessment_id": 4816501,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Shining Pea Mussel"
     },
     {
       "sis_taxon_id": 165792,
@@ -13293,7 +13902,8 @@
         "ZM"
       ],
       "assessment_count": 5,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165812,
@@ -13315,7 +13925,8 @@
           "assessment_id": 6139360,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184574,
@@ -13341,7 +13952,8 @@
           "assessment_id": 8295040,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 185754,
@@ -13365,7 +13977,8 @@
         "ZW"
       ],
       "assessment_count": 4,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189047,
@@ -13387,7 +14000,8 @@
           "assessment_id": 8684559,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189214,
@@ -13411,7 +14025,8 @@
           "assessment_id": 8702429,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Globular Peaclam"
     },
     {
       "sis_taxon_id": 189364,
@@ -13434,7 +14049,8 @@
           "assessment_id": 8721515,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189415,
@@ -13456,7 +14072,8 @@
           "assessment_id": 8728516,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": "Australian River Mussel "
     },
     {
       "sis_taxon_id": 189450,
@@ -13479,7 +14096,8 @@
           "assessment_id": 8733880,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Rusty Peaclam"
     },
     {
       "sis_taxon_id": 189490,
@@ -13502,7 +14120,8 @@
           "assessment_id": 8739138,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Giant Northern Peaclam"
     },
     {
       "sis_taxon_id": 189587,
@@ -13525,7 +14144,8 @@
           "assessment_id": 1929241,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 58602004,
@@ -13543,7 +14163,8 @@
         "PE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 58602831,
@@ -13560,7 +14181,8 @@
         "SI"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "North Dinaric Cave Clam"
     },
     {
       "sis_taxon_id": 58602837,
@@ -13576,7 +14198,8 @@
         "BA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Bosnian Dinaric Cave Clam"
     },
     {
       "sis_taxon_id": 58609631,
@@ -13592,7 +14215,8 @@
         "AU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Glenelg Freshwater Mussel"
     },
     {
       "sis_taxon_id": 6018,
@@ -13615,7 +14239,8 @@
           "assessment_id": 12302735,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Purple Wartyback"
     },
     {
       "sis_taxon_id": 11253,
@@ -13638,7 +14263,8 @@
           "assessment_id": 3265800,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 62269,
@@ -13655,7 +14281,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173047,
@@ -13672,7 +14299,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Fragile Papershell"
     },
     {
       "sis_taxon_id": 173049,
@@ -13689,7 +14317,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Threehorn Wartyback"
     },
     {
       "sis_taxon_id": 15024,
@@ -13712,7 +14341,8 @@
           "assessment_id": 4488827,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Round Hickorynut"
     },
     {
       "sis_taxon_id": 18093,
@@ -13734,7 +14364,8 @@
           "assessment_id": 7655559,
           "category": "LR/lc"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 18824,
@@ -13757,7 +14388,8 @@
           "assessment_id": 8645158,
           "category": "LR/lc"
         }
-      ]
+      ],
+      "common_name": "Kidneyshell"
     },
     {
       "sis_taxon_id": 19048,
@@ -13780,7 +14412,8 @@
           "assessment_id": 8801144,
           "category": "LR/lc"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 20247,
@@ -13833,7 +14466,8 @@
           "assessment_id": 9181505,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Salamander Mussel"
     },
     {
       "sis_taxon_id": 65403156,
@@ -13849,7 +14483,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 65403196,
@@ -13865,7 +14500,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 65403472,
@@ -13881,7 +14517,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 65403779,
@@ -13897,7 +14534,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 65403790,
@@ -13913,7 +14551,8 @@
         "CO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189506,
@@ -13935,7 +14574,8 @@
           "assessment_id": 8741081,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 66639255,
@@ -13952,7 +14592,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Swamp Fingernailclam"
     },
     {
       "sis_taxon_id": 66639265,
@@ -13969,7 +14610,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Pond Fingerclam"
     },
     {
       "sis_taxon_id": 66639283,
@@ -13986,7 +14628,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Adam's Pea Clam"
     },
     {
       "sis_taxon_id": 66639293,
@@ -14003,7 +14646,8 @@
         "US"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Ridgedbeak Peaclam"
     },
     {
       "sis_taxon_id": 66639309,
@@ -14020,7 +14664,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 66639332,
@@ -14037,7 +14682,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Greater Eastern Peaclam"
     },
     {
       "sis_taxon_id": 66639342,
@@ -14054,7 +14700,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 66639363,
@@ -14071,7 +14718,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 66639395,
@@ -14088,7 +14736,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 66639399,
@@ -14105,7 +14754,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 66639415,
@@ -14122,7 +14772,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 66639423,
@@ -14139,7 +14790,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 66639426,
@@ -14156,7 +14808,8 @@
         "US"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11258,
@@ -14179,7 +14832,8 @@
           "assessment_id": 3266089,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 11254,
@@ -14207,7 +14861,8 @@
           "assessment_id": 3265961,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Yellow Lampmussel"
     },
     {
       "sis_taxon_id": 781,
@@ -14240,7 +14895,8 @@
           "assessment_id": 13078525,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 779,
@@ -14268,7 +14924,8 @@
           "assessment_id": 13078223,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": "Elktoe"
     },
     {
       "sis_taxon_id": 155915,
@@ -14332,7 +14989,8 @@
           "assessment_id": 4865447,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Lake Orb Mussel"
     },
     {
       "sis_taxon_id": 7889,
@@ -14380,7 +15038,8 @@
           "assessment_id": 12862114,
           "category": "V"
         }
-      ]
+      ],
+      "common_name": "Snuffbox"
     },
     {
       "sis_taxon_id": 11359,
@@ -14403,7 +15062,8 @@
           "assessment_id": 3273472,
           "category": "LR/lc"
         }
-      ]
+      ],
+      "common_name": "Creek Heelsplitter"
     },
     {
       "sis_taxon_id": 189603,
@@ -14426,7 +15086,8 @@
           "assessment_id": 8754134,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Alewife Floater"
     },
     {
       "sis_taxon_id": 11967,
@@ -14449,7 +15110,8 @@
           "assessment_id": 3317273,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Eastern Pondmussel"
     },
     {
       "sis_taxon_id": 11968,
@@ -14477,7 +15139,8 @@
           "assessment_id": 3317303,
           "category": "LR/nt"
         }
-      ]
+      ],
+      "common_name": "Black Sandshell"
     },
     {
       "sis_taxon_id": 155937,
@@ -14506,7 +15169,8 @@
           "assessment_id": 4869641,
           "category": "NA"
         }
-      ]
+      ],
+      "common_name": "Long Fingernail Clam"
     },
     {
       "sis_taxon_id": 155761,
@@ -14523,7 +15187,8 @@
         "US"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Arctic Orb Mussel"
     },
     {
       "sis_taxon_id": 189625,
@@ -14553,7 +15218,8 @@
           "assessment_id": 8757121,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175135,
@@ -14593,7 +15259,8 @@
           "assessment_id": 7109530,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173094,
@@ -14618,7 +15285,8 @@
           "assessment_id": 6958681,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 98381977,
@@ -14635,7 +15303,8 @@
         "SD"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173096,
@@ -14649,7 +15318,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 91292433,
@@ -14663,7 +15333,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 91292882,
@@ -14677,7 +15348,8 @@
       "population_trend": null,
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 91293514,
@@ -14693,7 +15365,8 @@
         "MG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 91293534,
@@ -14709,7 +15382,8 @@
         "MG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 91293547,
@@ -14725,7 +15399,8 @@
         "MG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 91293564,
@@ -14739,7 +15414,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165807,
@@ -14762,7 +15438,8 @@
         "ZW"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 195510,
@@ -14785,7 +15462,8 @@
           "assessment_id": 8975648,
           "category": "NT"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 95537387,
@@ -14805,7 +15483,8 @@
         "TN"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 95539652,
@@ -14821,7 +15500,8 @@
         "GR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189083,
@@ -14846,7 +15526,8 @@
           "assessment_id": 8677174,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 98178030,
@@ -14863,7 +15544,8 @@
         "UG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 98178497,
@@ -14880,7 +15562,8 @@
         "UG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 98179041,
@@ -14896,7 +15579,8 @@
         "KE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 189503,
@@ -14920,7 +15604,8 @@
           "assessment_id": 8740606,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166285,
@@ -14949,7 +15634,8 @@
           "assessment_id": 1127578,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 166309,
@@ -14979,7 +15665,8 @@
           "assessment_id": 6197829,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171836,
@@ -15003,7 +15690,8 @@
           "assessment_id": 6805503,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171838,
@@ -15028,7 +15716,8 @@
           "assessment_id": 6805624,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171839,
@@ -15050,7 +15739,8 @@
           "assessment_id": 6805741,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171840,
@@ -15072,7 +15762,8 @@
           "assessment_id": 6805859,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171851,
@@ -15094,7 +15785,8 @@
           "assessment_id": 6807504,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171853,
@@ -15116,7 +15808,8 @@
           "assessment_id": 1334123,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171897,
@@ -15141,7 +15834,8 @@
           "assessment_id": 1336533,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173135,
@@ -15168,7 +15862,8 @@
           "assessment_id": 1378557,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 151515508,
@@ -15185,7 +15880,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 98201936,
@@ -15229,7 +15925,8 @@
         "TR"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Asian Clam"
     },
     {
       "sis_taxon_id": 98382485,
@@ -15246,7 +15943,8 @@
         "TD"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 109723980,
@@ -15262,7 +15960,8 @@
         "ID"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 109724445,
@@ -15278,7 +15977,8 @@
         "ID"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184496,
@@ -15303,7 +16003,8 @@
           "assessment_id": 8281567,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165311,
@@ -15361,7 +16062,8 @@
           "assessment_id": 6003836,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184508,
@@ -15390,7 +16092,8 @@
           "assessment_id": 8283418,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184597,
@@ -15418,7 +16121,8 @@
           "assessment_id": 8298842,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184659,
@@ -15447,7 +16151,8 @@
           "assessment_id": 8308705,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184575,
@@ -15476,7 +16181,8 @@
           "assessment_id": 8295270,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184652,
@@ -15503,7 +16209,8 @@
           "assessment_id": 8307826,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184757,
@@ -15528,7 +16235,8 @@
           "assessment_id": 97870977,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44249,
@@ -15560,7 +16268,8 @@
           "assessment_id": 10881542,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184514,
@@ -15589,7 +16298,8 @@
           "assessment_id": 8284337,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184689,
@@ -15623,7 +16333,8 @@
           "assessment_id": 8314228,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 98324735,
@@ -15649,7 +16360,8 @@
           "assessment_id": 98325008,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44248,
@@ -15682,7 +16394,8 @@
           "assessment_id": 10881299,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44256,
@@ -15716,7 +16429,8 @@
           "assessment_id": 10883808,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 112527827,
@@ -15740,7 +16454,8 @@
           "assessment_id": 8709245,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 91109639,
@@ -15763,7 +16478,8 @@
           "assessment_id": 91109660,
           "category": "NT"
         }
-      ]
+      ],
+      "common_name": "Western Pearlshell"
     },
     {
       "sis_taxon_id": 91149898,
@@ -15787,7 +16503,8 @@
           "assessment_id": 91149903,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": "Winged Floater "
     },
     {
       "sis_taxon_id": 189487,
@@ -15815,7 +16532,8 @@
           "assessment_id": 8738699,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": "Oregon Floater"
     },
     {
       "sis_taxon_id": 173073,
@@ -15838,7 +16556,8 @@
           "assessment_id": 62905403,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": "Western Ridged Mussel"
     },
     {
       "sis_taxon_id": 44024864,
@@ -15860,7 +16579,8 @@
           "assessment_id": 44025064,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 10105,
@@ -15919,7 +16639,8 @@
           "assessment_id": 3164900,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Horse's Hoof Clam"
     },
     {
       "sis_taxon_id": 10106,
@@ -15969,7 +16690,8 @@
           "assessment_id": 3165357,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "China Clam"
     },
     {
       "sis_taxon_id": 22138,
@@ -16070,7 +16792,8 @@
           "assessment_id": 9362482,
           "category": "K"
         }
-      ]
+      ],
+      "common_name": "Small Giant Clam"
     },
     {
       "sis_taxon_id": 22140,
@@ -16171,7 +16894,8 @@
           "assessment_id": 9362853,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Fluted Giant Clam"
     },
     {
       "sis_taxon_id": 44265,
@@ -16201,7 +16925,8 @@
           "assessment_id": 10884438,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 22135,
@@ -16272,7 +16997,8 @@
           "assessment_id": 9361875,
           "category": "K"
         }
-      ]
+      ],
+      "common_name": "Crocus Clam"
     },
     {
       "sis_taxon_id": 22136,
@@ -16330,7 +17056,8 @@
           "assessment_id": 9362060,
           "category": "V"
         }
-      ]
+      ],
+      "common_name": "Smooth Giant Clam"
     },
     {
       "sis_taxon_id": 22137,
@@ -16386,7 +17113,8 @@
           "assessment_id": 9362266,
           "category": "V"
         }
-      ]
+      ],
+      "common_name": "Giant Clam"
     },
     {
       "sis_taxon_id": 231062018,
@@ -16402,7 +17130,8 @@
         "MU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Rosewater’s Giant Clam"
     },
     {
       "sis_taxon_id": 22141,
@@ -16436,7 +17165,8 @@
           "assessment_id": 9363197,
           "category": "K"
         }
-      ]
+      ],
+      "common_name": "Tevoro Clam"
     },
     {
       "sis_taxon_id": 96378503,
@@ -16456,7 +17186,8 @@
         "YE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 96378879,
@@ -16495,7 +17226,8 @@
         "WS"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Noah’s Giant Clam"
     },
     {
       "sis_taxon_id": 98201671,
@@ -16534,7 +17266,8 @@
           "assessment_id": 98201731,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44266,
@@ -16567,7 +17300,8 @@
           "assessment_id": 10884643,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184717,
@@ -16592,7 +17326,8 @@
           "assessment_id": 8320742,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184527,
@@ -16624,7 +17359,8 @@
           "assessment_id": 8286712,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 98324221,
@@ -16673,7 +17409,8 @@
           "assessment_id": 84303306,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44272,
@@ -16702,7 +17439,8 @@
           "assessment_id": 10885948,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165786,
@@ -16774,7 +17512,8 @@
           "assessment_id": 6124053,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165798,
@@ -16825,7 +17564,8 @@
           "assessment_id": 6132977,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184699,
@@ -16849,7 +17589,8 @@
           "assessment_id": 8316208,
           "category": "NT"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165768,
@@ -16876,7 +17617,8 @@
           "assessment_id": 6111849,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173104,
@@ -16899,7 +17641,8 @@
           "assessment_id": 6961196,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 63457,
@@ -16930,7 +17673,8 @@
           "assessment_id": 12680128,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165762,
@@ -16955,7 +17699,8 @@
           "assessment_id": 58617362,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 12799,
@@ -17032,7 +17777,8 @@
           "assessment_id": 3382515,
           "category": "V"
         }
-      ]
+      ],
+      "common_name": "Freshwater Pearl Mussel"
     },
     {
       "sis_taxon_id": 155595,
@@ -17058,7 +17804,8 @@
           "assessment_id": 4805631,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184723,
@@ -17080,7 +17827,8 @@
           "assessment_id": 8321445,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 148802388,
@@ -17104,7 +17852,8 @@
         "TG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184732,
@@ -17126,7 +17875,8 @@
           "assessment_id": 8322972,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175119,
@@ -17171,7 +17921,8 @@
           "assessment_id": 7098848,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 147657848,
@@ -17188,7 +17939,8 @@
         "NE"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 147657877,
@@ -17206,7 +17958,8 @@
         "TD"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 147658057,
@@ -17222,7 +17975,8 @@
         "AO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 147658654,
@@ -17238,7 +17992,8 @@
         "CI"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 147658723,
@@ -17254,7 +18009,8 @@
         "SL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184745,
@@ -17276,7 +18032,8 @@
           "assessment_id": 8325513,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184544,
@@ -17301,7 +18058,8 @@
           "assessment_id": 8289558,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 173117,
@@ -17317,7 +18075,8 @@
         "ID"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 160702103,
@@ -17343,7 +18102,8 @@
         "TG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175124,
@@ -17377,7 +18137,8 @@
           "assessment_id": 7102316,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165384,
@@ -17419,7 +18180,8 @@
           "assessment_id": 6010116,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165405,
@@ -17446,7 +18208,8 @@
           "assessment_id": 6017891,
           "category": "DD"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165796,
@@ -17474,7 +18237,8 @@
           "assessment_id": 6131788,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 44232,
@@ -17511,7 +18275,8 @@
           "assessment_id": 10876479,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175126,
@@ -17550,7 +18315,8 @@
           "assessment_id": 7103182,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 165407,
@@ -17577,7 +18343,8 @@
           "assessment_id": 6018563,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184522,
@@ -17599,7 +18366,8 @@
           "assessment_id": 8285804,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175129,
@@ -17639,7 +18407,8 @@
           "assessment_id": 7104955,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 175142,
@@ -17676,7 +18445,8 @@
           "assessment_id": 7113272,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184621,
@@ -17704,7 +18474,8 @@
           "assessment_id": 8302606,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184642,
@@ -17724,7 +18495,8 @@
           "assessment_id": 8306117,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 159995526,
@@ -17740,7 +18512,8 @@
         "CN"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Chinese Pond Mussel"
     },
     {
       "sis_taxon_id": 157702758,
@@ -17756,7 +18529,8 @@
         "TO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 157703016,
@@ -17773,7 +18547,8 @@
         "TO"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 157735154,
@@ -17789,7 +18564,8 @@
         "PG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 157772803,
@@ -17805,7 +18581,8 @@
         "PG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 157846332,
@@ -17821,7 +18598,8 @@
         "JP"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 157850677,
@@ -17837,7 +18615,8 @@
         "PG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 157861471,
@@ -17853,7 +18632,8 @@
         "MX"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 157861491,
@@ -17869,7 +18649,8 @@
         "CA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 157861594,
@@ -17883,7 +18664,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 157910270,
@@ -17899,7 +18681,8 @@
         "MX"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184711,
@@ -17933,7 +18716,8 @@
           "assessment_id": 8319480,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184686,
@@ -17967,7 +18751,8 @@
           "assessment_id": 8313593,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 158563754,
@@ -17981,7 +18766,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 184626,
@@ -18009,7 +18795,8 @@
           "assessment_id": 8303299,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 158568370,
@@ -18034,7 +18821,8 @@
         "TG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 160075998,
@@ -18071,7 +18859,8 @@
         "TR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Fan Mussel"
     },
     {
       "sis_taxon_id": 172580289,
@@ -18088,7 +18877,8 @@
         "UG"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 113901500,
@@ -18110,7 +18900,8 @@
           "assessment_id": 98191135,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171841,
@@ -18132,7 +18923,8 @@
           "assessment_id": 6806046,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171842,
@@ -18154,7 +18946,8 @@
           "assessment_id": 6806254,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171844,
@@ -18174,7 +18967,8 @@
           "assessment_id": 6806616,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171845,
@@ -18194,7 +18988,8 @@
           "assessment_id": 6806783,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171849,
@@ -18216,7 +19011,8 @@
           "assessment_id": 6807323,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171855,
@@ -18238,7 +19034,8 @@
           "assessment_id": 6807648,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171857,
@@ -18260,7 +19057,8 @@
           "assessment_id": 6807824,
           "category": "NT"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171878,
@@ -18282,7 +19080,8 @@
           "assessment_id": 6808854,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171888,
@@ -18306,7 +19105,8 @@
           "assessment_id": 1335668,
           "category": "NT"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 23073,
@@ -18338,7 +19138,8 @@
           "assessment_id": 9415147,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": "Carter’s Freshwater Mussel"
     },
     {
       "sis_taxon_id": 19041,
@@ -18380,7 +19181,8 @@
           "assessment_id": 8792884,
           "category": "E"
         }
-      ]
+      ],
+      "common_name": "Cumberland Monkey-face Pearly Mussel"
     },
     {
       "sis_taxon_id": 173098,
@@ -18405,7 +19207,8 @@
           "assessment_id": 6959081,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 200790,
@@ -18425,7 +19228,8 @@
           "assessment_id": 2681704,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": "Snake-pit Vent Mussel"
     },
     {
       "sis_taxon_id": 200849,
@@ -18447,7 +19251,8 @@
           "assessment_id": 2683327,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Atlantic Vent Mussel"
     },
     {
       "sis_taxon_id": 157857564,
@@ -18467,7 +19272,8 @@
           "assessment_id": 157858315,
           "category": "CR"
         }
-      ]
+      ],
+      "common_name": "Southward's Cleft Clam"
     },
     {
       "sis_taxon_id": 170873445,
@@ -18489,7 +19295,8 @@
           "assessment_id": 170873537,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Kemp Caldera Cleft Clam"
     },
     {
       "sis_taxon_id": 195277166,
@@ -18503,7 +19310,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 195295180,
@@ -18517,7 +19325,8 @@
       "population_trend": "Unknown",
       "countries": [],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 197357573,
@@ -18533,7 +19342,8 @@
         "KR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 197358269,
@@ -18549,7 +19359,8 @@
         "KR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 210286324,
@@ -18566,7 +19377,8 @@
         "FR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 211039125,
@@ -18605,7 +19417,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 171912,
@@ -18628,7 +19441,8 @@
           "assessment_id": 6809724,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 156119,
@@ -18651,7 +19465,8 @@
           "assessment_id": 4901552,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 155655,
@@ -18674,7 +19489,8 @@
           "assessment_id": 4815815,
           "category": "EN"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 211999791,
@@ -18717,7 +19533,8 @@
         "UA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Depressed River Mussel"
     },
     {
       "sis_taxon_id": 155821,
@@ -18757,7 +19574,8 @@
           "assessment_id": 4849042,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "False-orb Pea Mussel"
     },
     {
       "sis_taxon_id": 212920996,
@@ -18773,7 +19591,8 @@
         "MY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 212920999,
@@ -18789,7 +19608,8 @@
         "MY"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 212965425,
@@ -18805,7 +19625,8 @@
         "TN"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 210286305,
@@ -18824,7 +19645,8 @@
         "MK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 210286331,
@@ -18840,7 +19662,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 210286509,
@@ -18856,7 +19679,8 @@
         "RU"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 210288054,
@@ -18872,7 +19696,8 @@
         "AL"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 210288498,
@@ -18893,7 +19718,8 @@
         "ME"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 210308431,
@@ -18910,7 +19736,8 @@
         "GR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 212975081,
@@ -18932,7 +19759,8 @@
         "SI"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 212975237,
@@ -18950,7 +19778,8 @@
         "IT"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 215446997,
@@ -18968,7 +19797,8 @@
         "MK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 215447310,
@@ -19001,7 +19831,8 @@
         "SK"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 215447398,
@@ -19017,7 +19848,8 @@
         "GR"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 215447488,
@@ -19038,7 +19870,8 @@
         "RS"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 188911,
@@ -19065,7 +19898,8 @@
           "assessment_id": 8661553,
           "category": "LC"
         }
-      ]
+      ],
+      "common_name": "Quagga Mussel"
     },
     {
       "sis_taxon_id": 210291828,
@@ -19105,7 +19939,8 @@
         "UA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Thick Shelled River Mussel"
     },
     {
       "sis_taxon_id": 171935,
@@ -19128,7 +19963,8 @@
           "assessment_id": 6810869,
           "category": "VU"
         }
-      ]
+      ],
+      "common_name": null
     },
     {
       "sis_taxon_id": 231060954,
@@ -19149,7 +19985,8 @@
         "TZ"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 254661607,
@@ -19166,7 +20003,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "White Mussel"
     },
     {
       "sis_taxon_id": 254661633,
@@ -19182,7 +20020,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Butterfly wedge-shell"
     },
     {
       "sis_taxon_id": 254661624,
@@ -19200,7 +20039,8 @@
         "ZA"
       ],
       "assessment_count": 1,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": null
     },
     {
       "sis_taxon_id": 208416226,
@@ -19237,7 +20077,8 @@
         "UA"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Swamp Orb Mussel"
     },
     {
       "sis_taxon_id": 211972330,
@@ -19304,7 +20145,8 @@
         "ZA"
       ],
       "assessment_count": 2,
-      "previous_assessments": []
+      "previous_assessments": [],
+      "common_name": "Caserta Pea Mussel"
     },
     {
       "sis_taxon_id": 12798,
@@ -19372,7 +20214,8 @@
           "assessment_id": 3381785,
           "category": "I"
         }
-      ]
+      ],
+      "common_name": "Spengler's Freshwater Mussel"
     }
   ],
   "metadata": {
